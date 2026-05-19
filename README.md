@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# 타이핑 에듀 (typingedu.com)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+맞춤형 스마트 교구 제작 서비스 랜딩 페이지
 
-Currently, two official plugins are available:
+## 기술 스택
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **프론트엔드**: React 19, TypeScript, Tailwind CSS v4, Framer Motion, Three.js
+- **빌드**: Vite 8
+- **백엔드**: Google Apps Script + Google Sheets (문의 폼)
+- **배포**: AWS EC2 (Amazon Linux 2023) + Nginx
 
-## React Compiler
+## 로컬 실행
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 환경 변수
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+`.env` 파일을 프로젝트 루트에 생성:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+VITE_GAS_URL=<Google Apps Script 웹앱 URL>
+VITE_GAS_SECRET=<비밀키>
+```
+
+## 빌드 및 배포
+
+```bash
+npm run build
+```
+
+빌드된 `dist/` 폴더를 EC2의 `/var/www/typingedu/`에 업로드하면 Nginx가 서빙합니다.
+
+## 프로젝트 구조
+
+```
+src/
+  components/
+    forms/         # 문의 폼
+    layout/        # Navbar, Footer, FloatingWidget, EventPopup
+    sections/      # Hero, Expertise, Portfolio, Process, Pricing, Contact
+    three/         # Three.js 3D 씬
+  hooks/           # 커스텀 훅
+  lib/             # API 호출, 상수
+  types/           # TypeScript 타입 정의
+public/
+  apps/            # 데모 교구 앱 (정적 HTML/JS)
+google-apps-script/
+  inquiries.gs     # GAS 문의 폼 처리 코드
 ```
