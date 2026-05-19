@@ -36,7 +36,11 @@ export default function ProcessSection() {
               className="relative text-center"
             >
               <div className="w-24 h-24 bg-white border-2 border-primary-200 rounded-2xl flex items-center justify-center mx-auto mb-5 relative z-10">
-                <span className="text-3xl">{step.icon}</span>
+                {step.logoUrl ? (
+                  <img src={step.logoUrl} alt="TypingX" className="w-12 h-12 object-contain" />
+                ) : (
+                  <span className="text-3xl">{step.icon}</span>
+                )}
               </div>
               <div className="text-primary-600 font-bold text-sm mb-1">
                 STEP {step.step}

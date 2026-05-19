@@ -40,9 +40,16 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-block px-4 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6"
+            className="inline-flex flex-wrap items-center gap-2 mb-6"
           >
-            맞춤형 스마트 교구 제작 전문
+            <span className="px-3 py-1.5 bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg text-white text-sm font-semibold tracking-wide">
+              맞춤형 스마트 교구 제작
+            </span>
+            {["#교구", "#학습용", "#기업 내부 교육용", "#개인 교습용", "#대형 학원용", "#Gamification", "#시각화"].map((tag) => (
+              <span key={tag} className="px-2.5 py-1 bg-yellow-400/20 border border-yellow-300/40 rounded-md text-yellow-200 text-xs font-medium">
+                {tag}
+              </span>
+            ))}
           </motion.div>
 
           <motion.h1
@@ -53,9 +60,25 @@ export default function HeroSection() {
           >
             우리 기관의 교육 철학 그대로,
             <br />
-            <span className="text-yellow-300">1/10 비용</span>으로
+            <motion.span
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              className="relative inline-block cursor-default"
+            >
+              <span className="relative z-10 text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.5)] hover:drop-shadow-[0_0_32px_rgba(253,224,71,0.9)] transition-all duration-200">1/10 비용</span>
+              <span className="absolute inset-x-0 -bottom-0.5 h-1.5 bg-yellow-400/30 rounded-full scale-x-0 hover:scale-x-100 transition-transform duration-200 origin-left" />
+            </motion.span>
+            으로
             <br />
-            <span className="text-yellow-300">단 1주</span> 만에 완성
+            <motion.span
+              whileHover={{ scale: 1.08 }}
+              transition={{ type: "spring", stiffness: 400, damping: 15 }}
+              className="relative inline-block cursor-default"
+            >
+              <span className="relative z-10 text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.5)] hover:drop-shadow-[0_0_32px_rgba(253,224,71,0.9)] transition-all duration-200">단 1주</span>
+              <span className="absolute inset-x-0 -bottom-0.5 h-1.5 bg-yellow-400/30 rounded-full scale-x-0 hover:scale-x-100 transition-transform duration-200 origin-left" />
+            </motion.span>
+            {" "}만에 완성
           </motion.h1>
 
           <motion.p
@@ -64,9 +87,9 @@ export default function HeroSection() {
             transition={{ delay: 0.6 }}
             className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed"
           >
-            자체 개발 엔진으로 외주 대비 비용 90% 절감.
+            특허 출원 한 자체 개발 엔진으로 외주대비 비용 90% 절감.
             <br />
-            교재 속 문제를 그대로 디지털 교구로 만들어 드립니다.
+            컨텐츠 시각화를 통한 몰입도 향상.
           </motion.p>
 
           <motion.div

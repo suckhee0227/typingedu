@@ -31,8 +31,8 @@ export interface PortfolioItem {
   demoUrl: string;
   thumbnail: string;
   tags: string[];
-  ourPrice: number;
-  outsourcePrice: number;
+  priceDisplay: string;
+  period: string;
 }
 
 export interface ProcessStep {
@@ -40,6 +40,7 @@ export interface ProcessStep {
   title: string;
   description: string;
   icon: string;
+  logoUrl?: string;
 }
 
 export interface PricingPlan {

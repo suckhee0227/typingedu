@@ -1,0 +1,75 @@
+{
+    "appData": {
+        "canvasWidth": 1280,
+        "canvasHeight": 720,
+        "cubeSize": 1,
+        "pastelColors": [
+            "#FF6B6B",
+            "#FF9F43",
+            "#4CD137",
+            "#00A8FF",
+            "#9C88FF",
+            "#E84393",
+            "#00CEC9",
+            "#FDCB6E",
+            "#55EFC4",
+            "#FF7675"
+        ],
+        "opColor": "#54A0FF",
+        "resultColor": "#EE5253",
+        "slotPositions": [
+            {
+                "x": -5.5,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": -1.5,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 2.5,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 6.5,
+                "y": 0,
+                "z": 0
+            },
+            {
+                "x": 8.5,
+                "y": 0,
+                "z": 0
+            }
+        ],
+        "countDuration": 1.5
+    },
+    "textData": {
+        "title": "사칙연산 놀이터",
+        "startBtn": "학습 시작하기",
+        "instructions": "숫자를 연산 기호의 앞이나 뒤로 드래그하면 자동으로 하나의 수식 그룹으로 묶입니다. 여러 숫자를 나열하여 큰 수를 만들 수도 있습니다.",
+        "historyBtn": "이전 기록",
+        "historyTitle": "나의 계산 내역",
+        "closeBtn": "돌아가기",
+        "scorePrefix": "현재 점수:",
+        "gameOverMsg": "첫 번째 수와 두 번째 수에는 최대 5개의 블록을 놓을 수 있어요^^",
+        "deleteBtn": "삭제",
+        "deleteAllBtn": "기록 전체 삭제"
+    },
+    "assetList": {
+        "images": [],
+        "sounds": [
+            {
+                "id": "click",
+                "file_path": "assets/click.mp3",
+                "volume": 0.5,
+                "duration_seconds": 2,
+                "description": "Simple click sound effect for block interaction",
+                "isNewAsset": false,
+                "isBackgroundMusic": false
+            }
+        ]
+    }
+}

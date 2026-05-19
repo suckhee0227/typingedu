@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const STORAGE_KEY = "typingedu_event_popup_dismissed";
-
 export default function EventPopup() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    const dismissed = sessionStorage.getItem(STORAGE_KEY);
-    if (!dismissed) {
-      const timer = setTimeout(() => setShow(true), 1500);
-      return () => clearTimeout(timer);
-    }
+    const timer = setTimeout(() => setShow(true), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const handler = () => setShow(true);
+    window.addEventListener("open-event-popup", handler);
+    return () => window.removeEventListener("open-event-popup", handler);
   }, []);
 
   const handleClose = () => {
     setShow(false);
-    sessionStorage.setItem(STORAGE_KEY, "true");
   };
 
   const handleCTA = () => {
@@ -25,6 +25,8 @@ export default function EventPopup() {
   };
 
   return (
+    <>
+
     <AnimatePresence>
       {show && (
         <motion.div
@@ -45,15 +47,14 @@ export default function EventPopup() {
             {/* 상단 그라데이션 배경 */}
             <div className="bg-gradient-to-br from-primary-600 via-primary-500 to-accent-500 px-8 pt-10 pb-8 text-center">
               <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-yellow-400 text-yellow-900 rounded-full text-xs font-bold mb-4">
-                EVENT
+                기간 한정 6월까지
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-white leading-tight">
-                첫 고객 교구 1종
-                <br />
-                <span className="text-yellow-300">무료 제작</span>
+              <h3 className="text-4xl sm:text-5xl font-black text-yellow-300 leading-tight tracking-tight">
+                1+1
               </h3>
-              <p className="text-white/80 text-sm mt-3">
-                지금 상담하시면 교구 1종을 무료로 제작해 드립니다
+              <p className="text-white/70 text-xs mt-1 mb-1">첫 거래 기준</p>
+              <p className="text-white/90 text-sm mt-2">
+                첫 거래시 일반 교구 1종을 무료로 제작해 드립니다.
               </p>
             </div>
 
@@ -64,7 +65,7 @@ export default function EventPopup() {
                   "기본 템플릿 활용 교구 1종 무료",
                   "난이도별 맞춤 제작 가능",
                   "샘플 미리보기 제공",
-                  "추가 제작 시 특별 할인",
+                  "프리미엄 제작의뢰시 일반 교구 2종 제작",
                 ].map((text) => (
                   <li key={text} className="flex items-center gap-2.5 text-sm text-gray-700">
                     <svg className="w-5 h-5 text-primary-500 shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -106,5 +107,6 @@ export default function EventPopup() {
         </motion.div>
       )}
     </AnimatePresence>
+    </>
   );
 }

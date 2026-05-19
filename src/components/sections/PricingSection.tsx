@@ -21,8 +21,7 @@ export default function PricingSection() {
             합리적인 가격 정책
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            난이도와 요구사항에 따라 가격을 책정합니다.
-            단건 결제도 가능하여 부담 없이 시작할 수 있습니다.
+            요구사항과 제작 기간에 따라 가격을 책정합니다.
           </p>
           <div className="mt-4 inline-block px-5 py-2 bg-yellow-50 border border-yellow-200 rounded-full">
             <span className="text-yellow-800 font-semibold text-sm">
@@ -31,7 +30,7 @@ export default function PricingSection() {
           </div>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="max-w-lg mx-auto">
           {PRICING_PLANS.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -39,103 +38,45 @@ export default function PricingSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`relative rounded-2xl p-8 ${
-                plan.highlighted
-                  ? "bg-primary-600 text-white shadow-xl shadow-primary-200 scale-105"
-                  : "bg-white border border-gray-100 shadow-sm"
-              }`}
+              className="relative rounded-3xl px-10 py-12 bg-white border border-gray-100 shadow-xl"
             >
-              {plan.highlighted && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-yellow-400 text-yellow-900 rounded-full text-xs font-bold">
-                  가장 인기
-                </div>
-              )}
-
-              <h3
-                className={`text-lg font-bold mb-2 ${
-                  plan.highlighted ? "text-white" : "text-gray-900"
-                }`}
-              >
-                {plan.name}
-              </h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{plan.name}</h3>
 
               <div className="mb-1">
                 {plan.originalPrice && (
-                  <span
-                    className={`text-sm line-through ${
-                      plan.highlighted ? "text-white/50" : "text-gray-400"
-                    }`}
-                  >
-                    {plan.originalPrice}
-                  </span>
+                  <span className="text-base line-through text-gray-400">{plan.originalPrice}</span>
                 )}
               </div>
-              <div className="mb-1">
-                <span
-                  className={`text-4xl font-bold ${
-                    plan.highlighted ? "text-white" : "text-gray-900"
-                  }`}
-                >
-                  {plan.price}
-                </span>
+              <div className="mb-2">
+                <span className="text-6xl font-black text-gray-900">{plan.price}</span>
               </div>
               {plan.period && (
-                <div className="mb-6">
-                  <span
-                    className={`text-xs font-medium px-2 py-0.5 rounded-full ${
-                      plan.highlighted
-                        ? "bg-white/20 text-white"
-                        : "bg-red-50 text-red-600"
-                    }`}
-                  >
+                <div className="mb-10">
+                  <span className="text-sm font-medium px-3 py-1 rounded-full bg-red-50 text-red-500">
                     {plan.period}
                   </span>
                 </div>
               )}
-              {!plan.period && <div className="mb-6" />}
 
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-5 mb-12">
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-start gap-2 text-sm">
-                    <svg
-                      className={`w-5 h-5 shrink-0 ${
-                        plan.highlighted ? "text-yellow-300" : "text-primary-500"
-                      }`}
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
+                  <li key={feature} className="flex items-center gap-3 text-base">
+                    <svg className="w-6 h-6 shrink-0 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                       <path
                         fillRule="evenodd"
                         d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span
-                      className={
-                        plan.highlighted ? "text-white/90" : "text-gray-600"
-                      }
-                    >
-                      {feature}
-                    </span>
+                    <span className="text-gray-600">{feature}</span>
                   </li>
                 ))}
               </ul>
 
               <a
-                href={plan.cta === "혜택받고 시작하기" ? "#contact" : "#contact"}
-                onClick={
-                  plan.cta === "혜택받고 시작하기"
-                    ? () =>
-                        window.dispatchEvent(
-                          new Event("open-contact-widget")
-                        )
-                    : undefined
-                }
-                className={`block w-full py-3 rounded-xl text-center font-semibold text-sm transition-colors ${
-                  plan.highlighted
-                    ? "bg-white text-primary-600 hover:bg-gray-50"
-                    : "bg-primary-50 text-primary-600 hover:bg-primary-100"
-                }`}
+                href="#contact"
+                onClick={() => window.dispatchEvent(new Event("open-contact-widget"))}
+                className="block w-full py-5 rounded-2xl text-center font-bold text-base transition-colors bg-primary-600 text-white hover:bg-primary-700"
               >
                 {plan.cta}
               </a>
@@ -214,9 +155,8 @@ export default function PricingSection() {
                           <h4 className="font-bold text-gray-900 text-sm mb-1">{item.title}</h4>
                           <p className="text-xs text-gray-500 mb-2">{item.description}</p>
                           <div className="flex items-center gap-2 text-xs">
-                            <span className="font-bold text-primary-600">{item.ourPrice}만원</span>
-                            <span className="text-gray-300">vs</span>
-                            <span className="text-gray-400 line-through">외주 {item.outsourcePrice}만원</span>
+                            <span className="font-bold text-primary-600">{item.priceDisplay}</span>
+                            <span className="text-gray-400">· {item.period}</span>
                           </div>
                         </div>
                       </div>

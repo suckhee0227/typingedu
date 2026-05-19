@@ -56,10 +56,10 @@ export default function PortfolioSection() {
             Portfolio
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4">
-            완성된 교구를 직접 체험해 보세요
+            완성된 콘텐츠를 직접 체험해 보세요.
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            카드를 클릭하면 실제 교구가 바로 실행됩니다.
+            카드를 클릭하면 실제 콘텐츠가 바로 실행됩니다.
           </p>
         </motion.div>
 
@@ -77,7 +77,7 @@ export default function PortfolioSection() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
                 onClick={() => handleCardClick(item.id, hasDemo)}
-                className={`rounded-2xl border-2 transition-all overflow-hidden ${
+                className={`rounded-2xl border-2 transition-all overflow-hidden flex flex-col ${
                   hasDemo ? "cursor-pointer" : "cursor-default opacity-60"
                 } ${
                   isActive
@@ -86,7 +86,7 @@ export default function PortfolioSection() {
                 }`}
               >
                 {/* 썸네일 */}
-                <div className="aspect-video bg-gradient-to-br from-primary-100 to-accent-100 relative overflow-hidden">
+                <div className="aspect-[4/3] bg-gradient-to-br from-primary-100 to-accent-100 relative overflow-hidden">
                   {item.thumbnail ? (
                     <img
                       src={item.thumbnail}
@@ -131,21 +131,26 @@ export default function PortfolioSection() {
                 </div>
 
                 {/* 카드 내용 */}
-                <div className="p-5">
-                  <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-sm text-gray-500 mb-3">{item.description}</p>
+                <div className="p-4 flex flex-col flex-1">
+                  <h3 className="font-bold text-gray-900 mb-0.5 flex items-center gap-2">
+                    {item.title}
+                    {item.tags.includes("프리미엄") && (
+                      <span className="px-2 py-0.5 bg-gradient-to-r from-primary-500 to-primary-700 text-white text-[10px] font-bold rounded-md tracking-wide">
+                        Premium
+                      </span>
+                    )}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-2 flex-1">{item.description}</p>
 
-                  {/* 가격 비교 */}
-                  <div className="rounded-xl overflow-hidden border border-gray-100 mb-3">
-                    <div className="grid grid-cols-3 text-center text-xs font-semibold bg-gray-50 py-1.5 border-b border-gray-100">
-                      <span className="text-gray-400">구분</span>
-                      <span className="text-primary-600">타이핑에듀</span>
-                      <span className="text-gray-400">일반 외주</span>
+                  {/* 가격 / 기간 */}
+                  <div className="rounded-xl overflow-hidden border border-gray-100 mb-2">
+                    <div className="grid grid-cols-2 text-center text-xs font-semibold bg-gray-50 py-1 border-b border-gray-100">
+                      <span className="text-gray-400">가격</span>
+                      <span className="text-gray-400">기간</span>
                     </div>
-                    <div className="grid grid-cols-3 text-center py-2.5 bg-white">
-                      <span className="text-xs text-gray-400 self-center">제작비</span>
-                      <span className="text-base font-black text-primary-600">{item.ourPrice}<span className="text-xs font-medium">만원</span></span>
-                      <span className="text-base font-bold text-gray-300 line-through">{item.outsourcePrice}<span className="text-xs font-medium">만원</span></span>
+                    <div className="grid grid-cols-2 text-center py-2 bg-white">
+                      <span className="text-sm font-black text-primary-600 self-center">{item.priceDisplay}</span>
+                      <span className="text-sm font-bold text-gray-700 self-center">{item.period}</span>
                     </div>
                   </div>
 
