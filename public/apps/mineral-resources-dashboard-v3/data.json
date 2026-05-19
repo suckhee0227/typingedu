@@ -1,0 +1,5792 @@
+{
+  "appData": {
+    "logicalWidth": 1280,
+    "logicalHeight": 720,
+    "globeRadius": 260,
+    "rotationSpeed": 0.003,
+    "resources": [
+      {
+        "id": "tungsten",
+        "color": "#ff6b6b",
+        "unit": "톤",
+        "applications": [
+          "초경합금 절삭공구 및 드릴 비트 제조",
+          "군사용 관통탄 및 방탄 장갑 소재",
+          "반도체 배선용 스퍼터링 타겟",
+          "항공기 엔진 터빈 블레이드",
+          "용접봉 전극 (TIG 용접)",
+          "X선 장비 차폐 소재",
+          "고온 내열 부품 (로켓 노즐 등)"
+        ],
+        "valueDescription": "텅스텐은 모든 금속 중 가장 높은 녹는점(3,422°C)을 가지며, 극한 환경에서 사용 가능합니다. 경도가 다이아몬드에 버금가는 초경합금의 핵심 소재로, 군사·산업·반도체 분야에서 대체 불가능한 전략 자원입니다. 중국이 전 세계 생산량의 약 80%를 장악하고 있어 공급망 리스크가 큰 자원입니다.",
+        "strategicImportance": 9,
+        "topProducts": [
+          "초경합금 절삭공구",
+          "반도체 스퍼터링 타겟",
+          "항공기 엔진 터빈",
+          "방산용 관통탄 및 장갑",
+          "의료/산업용 X선 차폐 소재"
+        ],
+        "vulnerableCountries": [
+          "미국",
+          "독일",
+          "일본",
+          "한국",
+          "스웨덴"
+        ],
+        "vulnerableCompanies": [
+          "Kennametal (미국)",
+          "Lockheed Martin (미국)",
+          "H.C. Starck (독일)",
+          "Sumitomo Electric (일본)",
+          "삼성전자 (한국)",
+          "Sandvik (스웨덴)"
+        ]
+      },
+      {
+        "id": "rare_earth",
+        "color": "#4ecdc4",
+        "unit": "톤",
+        "applications": [
+          "네오디뮴 영구자석 (전기차 모터, 풍력 발전기)",
+          "스마트폰·LED·레이저 장치의 핵심 소재",
+          "석유 정제 촉매 (세륨, 란탄)",
+          "하이브리드·전기차 배터리 소재",
+          "군사용 유도미사일 정밀 센서",
+          "MRI 의료 장비 초전도 자석",
+          "광섬유 통신 증폭기 (에르븀)"
+        ],
+        "valueDescription": "희토류는 17종의 원소 그룹으로, '산업의 비타민'이라 불립니다. 소량으로도 제품 성능을 획기적으로 향상시키는 특성이 있어 첨단 기술 산업의 필수 소재입니다. 전기차, 풍력 발전, 5G 통신, 국방 등 미래 산업 전반에 걸쳐 수요가 급증하고 있으며, 중국이 가공·정제 분야에서 압도적 시장 지배력을 보유합니다.",
+        "strategicImportance": 10,
+        "topProducts": [
+          "전기차 구동 모터",
+          "풍력 발전기 터빈",
+          "스마트폰 카메라 모듈",
+          "유도미사일 정밀 센서",
+          "의료용 MRI 장비"
+        ],
+        "vulnerableCountries": [
+          "미국",
+          "일본",
+          "독일",
+          "한국",
+          "프랑스"
+        ],
+        "vulnerableCompanies": [
+          "Tesla (미국)",
+          "Apple (미국)",
+          "Toyota (일본)",
+          "Siemens (독일)",
+          "현대자동차 (한국)",
+          "Renault (프랑스)"
+        ]
+      },
+      {
+        "id": "lithium",
+        "color": "#ffe66d",
+        "unit": "톤",
+        "applications": [
+          "리튬이온 배터리 (전기차, 스마트폰, 노트북)",
+          "에너지 저장 시스템 (ESS)",
+          "항공우주용 경량 합금",
+          "정신과 치료제 (조울증 약물)",
+          "유리·세라믹 산업 첨가제",
+          "원자력 발전 냉각재 (리튬-7)",
+          "윤활유 그리스 제조"
+        ],
+        "valueDescription": "리튬은 '하얀 석유'라고 불리는 미래 에너지 핵심 자원입니다. 전기차 배터리에 필수적인 소재로, 글로벌 전기차 전환 정책에 따라 수요가 폭발적으로 증가하고 있습니다. 리튬삼각지대(칠레, 아르헨티나, 볼리비아)에 전 세계 매장량의 약 60%가 집중되어 있습니다.",
+        "strategicImportance": 10,
+        "topProducts": [
+          "전기차 리튬이온 배터리",
+          "스마트폰/IT 기기 배터리",
+          "대규모 에너지 저장 장치 (ESS)",
+          "항공우주 경량 합금",
+          "특수 세라믹 및 내열 유리"
+        ],
+        "vulnerableCountries": [
+          "중국",
+          "한국",
+          "일본",
+          "미국",
+          "독일"
+        ],
+        "vulnerableCompanies": [
+          "CATL (중국)",
+          "BYD (중국)",
+          "LG에너지솔루션 (한국)",
+          "Panasonic (일본)",
+          "Tesla (미국)",
+          "Volkswagen (독일)"
+        ]
+      },
+      {
+        "id": "cobalt",
+        "color": "#a28cff",
+        "unit": "톤",
+        "applications": [
+          "리튬이온 배터리 양극재 (NMC, NCA)",
+          "초합금 (항공기 제트 엔진)",
+          "자기 기록 매체",
+          "촉매 (석유화학 공정)",
+          "안료 (코발트 블루)",
+          "방사선 치료 (코발트-60)",
+          "경질 합금 바인더"
+        ],
+        "valueDescription": "코발트는 전기차 배터리의 안정성과 에너지 밀도를 높이는 핵심 소재입니다. 전 세계 생산량의 약 70%가 콩고민주공화국에서 나오며, 아동 노동과 분쟁 광물 이슈로 윤리적 공급망 관리가 중요한 자원입니다. 코발트 프리 배터리 기술이 연구되고 있으나, 당분간 대체가 어렵습니다.",
+        "strategicImportance": 9,
+        "topProducts": [
+          "전기차 배터리 양극재 (NCM/NCA)",
+          "스마트폰 및 노트북 배터리",
+          "항공기 제트 엔진 초합금",
+          "정밀 의료 기기 및 임플란트",
+          "고성능 영구 자석"
+        ],
+        "vulnerableCountries": [
+          "한국",
+          "일본",
+          "미국",
+          "독일",
+          "프랑스"
+        ],
+        "vulnerableCompanies": [
+          "LG에너지솔루션 (한국)",
+          "삼성SDI (한국)",
+          "Panasonic (일본)",
+          "Boeing (미국)",
+          "BMW (독일)",
+          "Airbus (프랑스)"
+        ]
+      },
+      {
+        "id": "copper",
+        "color": "#ff9a76",
+        "unit": "천톤",
+        "applications": [
+          "전선·케이블 (전기 전도체)",
+          "건축 배관·지붕재",
+          "전기차 와이어링 하네스",
+          "PCB 기판 (전자회로)",
+          "발전기·모터 코일",
+          "해수 담수화 설비",
+          "항균 소재 (의료시설 표면)"
+        ],
+        "valueDescription": "구리는 인류가 가장 먼저 사용한 금속 중 하나로, '닥터 코퍼'라는 별명처럼 경기 지표 역할을 합니다. 뛰어난 전기 전도성으로 전기화 시대의 핵심 소재이며, 전기차 1대에 기존 내연기관 차량 대비 약 4배의 구리가 사용됩니다. 재활용률이 높아 순환경제에서도 중요한 자원입니다.",
+        "strategicImportance": 8,
+        "topProducts": [
+          "전기차 구동 모터 및 전장 배선",
+          "건설 및 전력망 케이블",
+          "IT 기기 및 가전제품 PCB",
+          "태양광 및 풍력 발전 설비",
+          "산업용 고효율 열교환기"
+        ],
+        "vulnerableCountries": [
+          "중국",
+          "미국",
+          "독일",
+          "일본",
+          "한국"
+        ],
+        "vulnerableCompanies": [
+          "State Grid (중국)",
+          "General Electric (미국)",
+          "Siemens (독일)",
+          "Mitsubishi Electric (일본)",
+          "LS전선 (한국)"
+        ]
+      },
+      {
+        "id": "nickel",
+        "color": "#6bcf7f",
+        "unit": "천톤",
+        "applications": [
+          "스테인리스강 제조 (전체 수요의 ~65%)",
+          "전기차 배터리 양극재 (고니켈 NMC)",
+          "항공우주 초합금",
+          "수소 연료전지 촉매",
+          "전자도금 (크롬-니켈 도금)",
+          "동전 제조",
+          "화학 공장 내식성 설비"
+        ],
+        "valueDescription": "니켈은 스테인리스강과 전기차 배터리의 핵심 소재입니다. 특히 고니켈 배터리(NMC 811)는 주행거리를 늘리는 핵심 기술로, 배터리 등급 니켈(Class 1) 수요가 급증하고 있습니다. 인도네시아가 세계 최대 생산국으로 부상했으며, 니켈 광석 수출 금지 정책으로 글로벌 시장에 큰 영향을 미치고 있습니다.",
+        "strategicImportance": 8,
+        "topProducts": [
+          "전기차 하이니켈 배터리",
+          "고급 스테인리스강 제품",
+          "우주항공용 초내열 합금",
+          "수소 연료전지 및 전해조",
+          "특수 화학 플랜트 설비"
+        ],
+        "vulnerableCountries": [
+          "중국",
+          "한국",
+          "일본",
+          "미국",
+          "독일"
+        ],
+        "vulnerableCompanies": [
+          "Tsingshan (중국)",
+          "POSCO (한국)",
+          "LG에너지솔루션 (한국)",
+          "Panasonic (일본)",
+          "Tesla (미국)",
+          "ThyssenKrupp (독일)"
+        ]
+      },
+      {
+        "id": "graphite",
+        "color": "#b0b0b0",
+        "unit": "천톤",
+        "applications": [
+          "리튬이온 배터리 음극재 (전체 수요의 ~30%)",
+          "내화물 (제철소 도가니·용광로 라이닝)",
+          "원자로 감속재 (핵분열 제어)",
+          "연필심·윤활제",
+          "그래핀 제조 원료",
+          "전극봉 (전기로 제강)",
+          "방열 소재 (전자기기 히트싱크)"
+        ],
+        "valueDescription": "흑연은 리튬이온 배터리 음극재의 핵심 소재로, 배터리 1개당 양극재보다 더 많은 양의 흑연이 사용됩니다. 천연흑연과 인조흑연으로 구분되며, 중국이 천연흑연 생산 및 가공에서 압도적 위치를 차지합니다. 2023년 중국의 흑연 수출 통제 조치로 공급망 다변화가 시급한 상황입니다.",
+        "strategicImportance": 7,
+        "topProducts": [
+          "전기차 배터리 음극재",
+          "제철소 내화물 및 전극봉",
+          "원자로 감속재 및 핵심 부품",
+          "고온용 고급 윤활제",
+          "차세대 그래핀 방열 소재"
+        ],
+        "vulnerableCountries": [
+          "한국",
+          "일본",
+          "미국",
+          "독일",
+          "인도"
+        ],
+        "vulnerableCompanies": [
+          "LG에너지솔루션 (한국)",
+          "SK온 (한국)",
+          "Panasonic (일본)",
+          "Tesla (미국)",
+          "SGL Carbon (독일)",
+          "Tata Motors (인도)"
+        ]
+      },
+      {
+        "id": "titanium",
+        "color": "#66d9ef",
+        "unit": "천톤",
+        "applications": [
+          "항공기 기체 구조재 (보잉 787의 15%)",
+          "인공관절·치과 임플란트 (생체적합성)",
+          "해군 함정·잠수함 선체",
+          "화학 플랜트 내식성 배관",
+          "페인트·코팅 안료 (이산화티타늄)",
+          "골프 클럽·안경테 등 고급 소비재",
+          "우주 발사체 부품"
+        ],
+        "valueDescription": "티타늄은 강철의 절반 무게에 동등한 강도를 가진 '꿈의 금속'입니다. 뛰어난 내식성과 생체적합성으로 항공우주, 의료, 해양 분야에서 필수적입니다. 가공이 어려워 제조 비용이 높지만, 경량화 트렌드와 우주 산업 성장으로 수요가 지속 증가하고 있습니다.",
+        "strategicImportance": 7,
+        "topProducts": [
+          "상업용 및 군용 항공기 기체",
+          "인공관절 및 치과 임플란트",
+          "해군 함정 및 심해 잠수함",
+          "프리미엄 스포츠 용품",
+          "해수 담수화 및 화학 플랜트"
+        ],
+        "vulnerableCountries": [
+          "미국",
+          "프랑스",
+          "영국",
+          "독일",
+          "일본"
+        ],
+        "vulnerableCompanies": [
+          "Boeing (미국)",
+          "Lockheed Martin (미국)",
+          "Airbus (프랑스)",
+          "Rolls-Royce (영국)",
+          "MTU Aero Engines (독일)",
+          "Kawasaki Heavy Industries (일본)"
+        ]
+      },
+      {
+        "id": "vanadium",
+        "color": "#f472b6",
+        "unit": "톤",
+        "applications": [
+          "고강도 철강 합금 (건설용 철근, 교량)",
+          "바나듐 레독스 플로우 배터리 (대규모 ESS)",
+          "항공기 티타늄 합금 첨가제",
+          "원자력 발전 구조재",
+          "촉매 (황산 제조 공정)",
+          "우주 발사체 내열 합금",
+          "초전도체 연구 소재"
+        ],
+        "valueDescription": "바나듐은 소량 첨가로 철강의 강도를 획기적으로 높이는 합금 원소입니다. 최근에는 바나듐 레독스 플로우 배터리(VRFB)가 대규모 에너지 저장 시스템으로 주목받으면서, 리튬 대안 에너지 저장 소재로서의 가치가 급부상하고 있습니다. 중국, 러시아, 남아공 3국이 전 세계 생산의 90% 이상을 차지합니다.",
+        "strategicImportance": 7,
+        "topProducts": [
+          "초고강도 건설용 특수 철근",
+          "항공우주용 특수 티타늄 합금",
+          "차세대 대규모 ESS (VRFB)",
+          "원자력 발전소 구조재",
+          "고성능 정밀 수공구"
+        ],
+        "vulnerableCountries": [
+          "미국",
+          "일본",
+          "독일",
+          "한국",
+          "인도"
+        ],
+        "vulnerableCompanies": [
+          "Nucor (미국)",
+          "Sumitomo Electric (일본)",
+          "ThyssenKrupp (독일)",
+          "POSCO (한국)",
+          "Tata Steel (인도)"
+        ]
+      },
+      {
+        "id": "platinum",
+        "color": "#e2e8f0",
+        "unit": "톤",
+        "applications": [
+          "자동차 배기가스 촉매 변환장치",
+          "수소 연료전지 촉매 (PEM)",
+          "보석·귀금속 장신구",
+          "석유 정제 촉매",
+          "항암제 (시스플라틴)",
+          "유리 제조용 도가니",
+          "투자용 귀금속 (현물·ETF)"
+        ],
+        "valueDescription": "백금은 금보다 희귀한 귀금속으로, 연간 생산량이 금의 약 1/15 수준입니다. 뛰어난 촉매 특성으로 자동차 배기가스 정화와 수소 경제의 핵심 소재입니다. 남아프리카공화국에 전 세계 매장량의 약 90%가 집중되어 있어, 지정학적 공급 리스크가 매우 높은 자원입니다.",
+        "strategicImportance": 8,
+        "topProducts": [
+          "자동차 배기가스 정화 촉매",
+          "수소 연료전지 자동차 (FCEV)",
+          "항암제 등 특수 의료 소재",
+          "프리미엄 장신구",
+          "석유화학 및 정유 정제 촉매"
+        ],
+        "vulnerableCountries": [
+          "독일",
+          "일본",
+          "미국",
+          "한국",
+          "영국"
+        ],
+        "vulnerableCompanies": [
+          "Toyota (일본)",
+          "Hyundai (한국)",
+          "BASF (독일)",
+          "Johnson Matthey (영국)",
+          "Plug Power (미국)"
+        ]
+      }
+    ],
+    "countries": [
+      {
+        "id": "china",
+        "lat": 35,
+        "lng": 105,
+        "resources": [
+          {
+            "resourceId": "tungsten",
+            "production": 71000,
+            "reserves": 1900000,
+            "mining": 68000,
+            "consumption": 48000
+          },
+          {
+            "resourceId": "rare_earth",
+            "production": 240000,
+            "reserves": 44000000,
+            "mining": 230000,
+            "consumption": 160000
+          },
+          {
+            "resourceId": "lithium",
+            "production": 48000,
+            "reserves": 6800000,
+            "mining": 44000,
+            "consumption": 52000
+          },
+          {
+            "resourceId": "graphite",
+            "production": 1100,
+            "reserves": 78000,
+            "mining": 1050,
+            "consumption": 800
+          },
+          {
+            "resourceId": "vanadium",
+            "production": 70000,
+            "reserves": 9500000,
+            "mining": 66000,
+            "consumption": 50000
+          },
+          {
+            "resourceId": "titanium",
+            "production": 380,
+            "reserves": 29000,
+            "mining": 360,
+            "consumption": 200
+          },
+          {
+            "resourceId": "copper",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 14000
+          },
+          {
+            "resourceId": "nickel",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 1600
+          },
+          {
+            "resourceId": "cobalt",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 110000
+          },
+          {
+            "resourceId": "platinum",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 70
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "lat": -25,
+        "lng": 135,
+        "resources": [
+          {
+            "resourceId": "lithium",
+            "production": 86000,
+            "reserves": 7900000,
+            "mining": 82000,
+            "consumption": 1500
+          },
+          {
+            "resourceId": "rare_earth",
+            "production": 24000,
+            "reserves": 4100000,
+            "mining": 22000,
+            "consumption": 1200
+          },
+          {
+            "resourceId": "nickel",
+            "production": 150,
+            "reserves": 21000,
+            "mining": 140,
+            "consumption": 10
+          },
+          {
+            "resourceId": "copper",
+            "production": 820,
+            "reserves": 93000,
+            "mining": 790,
+            "consumption": 200
+          },
+          {
+            "resourceId": "titanium",
+            "production": 210,
+            "reserves": 31000,
+            "mining": 200,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "usa",
+        "lat": 38,
+        "lng": -97,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 43000,
+            "reserves": 2300000,
+            "mining": 40000,
+            "consumption": 15000
+          },
+          {
+            "resourceId": "copper",
+            "production": 1200,
+            "reserves": 48000,
+            "mining": 1150,
+            "consumption": 1800
+          },
+          {
+            "resourceId": "lithium",
+            "production": 12000,
+            "reserves": 1000000,
+            "mining": 10000,
+            "consumption": 14000
+          },
+          {
+            "resourceId": "tungsten",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 10000
+          },
+          {
+            "resourceId": "cobalt",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 12000
+          },
+          {
+            "resourceId": "nickel",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 220
+          },
+          {
+            "resourceId": "platinum",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 45
+          },
+          {
+            "resourceId": "titanium",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 110
+          },
+          {
+            "resourceId": "vanadium",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 9000
+          },
+          {
+            "resourceId": "graphite",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "russia",
+        "lat": 60,
+        "lng": 100,
+        "resources": [
+          {
+            "resourceId": "tungsten",
+            "production": 2200,
+            "reserves": 400000,
+            "mining": 2000,
+            "consumption": 2500
+          },
+          {
+            "resourceId": "nickel",
+            "production": 210,
+            "reserves": 7500,
+            "mining": 195,
+            "consumption": 110
+          },
+          {
+            "resourceId": "platinum",
+            "production": 38,
+            "reserves": 3900,
+            "mining": 35,
+            "consumption": 15
+          },
+          {
+            "resourceId": "vanadium",
+            "production": 18000,
+            "reserves": 5000000,
+            "mining": 16500,
+            "consumption": 8000
+          },
+          {
+            "resourceId": "copper",
+            "production": 820,
+            "reserves": 62000,
+            "mining": 780,
+            "consumption": 700
+          },
+          {
+            "resourceId": "titanium",
+            "production": 150,
+            "reserves": 12000,
+            "mining": 140,
+            "consumption": 85
+          },
+          {
+            "resourceId": "rare_earth",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 2000
+          }
+        ]
+      },
+      {
+        "id": "drc",
+        "lat": -4,
+        "lng": 22,
+        "resources": [
+          {
+            "resourceId": "cobalt",
+            "production": 170000,
+            "reserves": 4000000,
+            "mining": 160000,
+            "consumption": 100
+          },
+          {
+            "resourceId": "copper",
+            "production": 2500,
+            "reserves": 31000,
+            "mining": 2300,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "chile",
+        "lat": -35,
+        "lng": -71.5,
+        "resources": [
+          {
+            "resourceId": "lithium",
+            "production": 44000,
+            "reserves": 9300000,
+            "mining": 41000,
+            "consumption": 500
+          },
+          {
+            "resourceId": "copper",
+            "production": 5200,
+            "reserves": 190000,
+            "mining": 5000,
+            "consumption": 250
+          }
+        ]
+      },
+      {
+        "id": "south_africa",
+        "lat": -29,
+        "lng": 24,
+        "resources": [
+          {
+            "resourceId": "platinum",
+            "production": 130,
+            "reserves": 63000,
+            "mining": 120,
+            "consumption": 20
+          },
+          {
+            "resourceId": "vanadium",
+            "production": 8000,
+            "reserves": 3500000,
+            "mining": 7500,
+            "consumption": 1000
+          },
+          {
+            "resourceId": "titanium",
+            "production": 200,
+            "reserves": 18000,
+            "mining": 185,
+            "consumption": 30
+          },
+          {
+            "resourceId": "nickel",
+            "production": 40,
+            "reserves": 3700,
+            "mining": 38,
+            "consumption": 15
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "lat": 56,
+        "lng": -106,
+        "resources": [
+          {
+            "resourceId": "nickel",
+            "production": 130,
+            "reserves": 2600,
+            "mining": 120,
+            "consumption": 60
+          },
+          {
+            "resourceId": "copper",
+            "production": 530,
+            "reserves": 11000,
+            "mining": 510,
+            "consumption": 300
+          },
+          {
+            "resourceId": "tungsten",
+            "production": 1800,
+            "reserves": 290000,
+            "mining": 1700,
+            "consumption": 500
+          },
+          {
+            "resourceId": "graphite",
+            "production": 18,
+            "reserves": 1600,
+            "mining": 16,
+            "consumption": 10
+          }
+        ]
+      },
+      {
+        "id": "indonesia",
+        "lat": -2,
+        "lng": 114,
+        "resources": [
+          {
+            "resourceId": "nickel",
+            "production": 1800,
+            "reserves": 21000,
+            "mining": 1700,
+            "consumption": 350
+          },
+          {
+            "resourceId": "copper",
+            "production": 780,
+            "reserves": 28000,
+            "mining": 740,
+            "consumption": 400
+          },
+          {
+            "resourceId": "cobalt",
+            "production": 12000,
+            "reserves": 600000,
+            "mining": 11000,
+            "consumption": 500
+          }
+        ]
+      },
+      {
+        "id": "brazil",
+        "lat": -14,
+        "lng": -51,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 8000,
+            "reserves": 21000000,
+            "mining": 7000,
+            "consumption": 1500
+          },
+          {
+            "resourceId": "nickel",
+            "production": 72,
+            "reserves": 16000,
+            "mining": 68,
+            "consumption": 40
+          },
+          {
+            "resourceId": "graphite",
+            "production": 68,
+            "reserves": 74000,
+            "mining": 62,
+            "consumption": 30
+          },
+          {
+            "resourceId": "lithium",
+            "production": 4500,
+            "reserves": 250000,
+            "mining": 4000,
+            "consumption": 800
+          }
+        ]
+      },
+      {
+        "id": "vietnam",
+        "lat": 16,
+        "lng": 106,
+        "resources": [
+          {
+            "resourceId": "tungsten",
+            "production": 5200,
+            "reserves": 95000,
+            "mining": 4800,
+            "consumption": 1200
+          },
+          {
+            "resourceId": "rare_earth",
+            "production": 7000,
+            "reserves": 22000000,
+            "mining": 6500,
+            "consumption": 800
+          }
+        ]
+      },
+      {
+        "id": "myanmar",
+        "lat": 21,
+        "lng": 95,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 38000,
+            "reserves": 0,
+            "mining": 35000,
+            "consumption": 100
+          },
+          {
+            "resourceId": "tungsten",
+            "production": 1500,
+            "reserves": 45000,
+            "mining": 1400,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "peru",
+        "lat": -10,
+        "lng": -75,
+        "resources": [
+          {
+            "resourceId": "copper",
+            "production": 2700,
+            "reserves": 77000,
+            "mining": 2550,
+            "consumption": 120
+          }
+        ]
+      },
+      {
+        "id": "philippines",
+        "lat": 13,
+        "lng": 121,
+        "resources": [
+          {
+            "resourceId": "nickel",
+            "production": 330,
+            "reserves": 4800,
+            "mining": 310,
+            "consumption": 50
+          },
+          {
+            "resourceId": "copper",
+            "production": 92,
+            "reserves": 6400,
+            "mining": 85,
+            "consumption": 80
+          }
+        ]
+      },
+      {
+        "id": "india",
+        "lat": 21,
+        "lng": 78,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 14000,
+            "reserves": 6900000,
+            "mining": 12500,
+            "consumption": 8000
+          },
+          {
+            "resourceId": "graphite",
+            "production": 85,
+            "reserves": 8000,
+            "mining": 78,
+            "consumption": 65
+          },
+          {
+            "resourceId": "titanium",
+            "production": 240,
+            "reserves": 85000,
+            "mining": 220,
+            "consumption": 80
+          },
+          {
+            "resourceId": "copper",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 650
+          },
+          {
+            "resourceId": "lithium",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 2000
+          }
+        ]
+      },
+      {
+        "id": "argentina",
+        "lat": -35,
+        "lng": -65,
+        "resources": [
+          {
+            "resourceId": "lithium",
+            "production": 35000,
+            "reserves": 20000000,
+            "mining": 32000,
+            "consumption": 800
+          }
+        ]
+      },
+      {
+        "id": "mozambique",
+        "lat": -18,
+        "lng": 34,
+        "resources": [
+          {
+            "resourceId": "graphite",
+            "production": 170,
+            "reserves": 25000,
+            "mining": 155,
+            "consumption": 10
+          },
+          {
+            "resourceId": "titanium",
+            "production": 95,
+            "reserves": 16000,
+            "mining": 88,
+            "consumption": 5
+          }
+        ]
+      },
+      {
+        "id": "madagascar",
+        "lat": -19,
+        "lng": 47,
+        "resources": [
+          {
+            "resourceId": "graphite",
+            "production": 105,
+            "reserves": 1600,
+            "mining": 95,
+            "consumption": 5
+          },
+          {
+            "resourceId": "nickel",
+            "production": 38,
+            "reserves": 1600,
+            "mining": 35,
+            "consumption": 2
+          }
+        ]
+      },
+      {
+        "id": "zambia",
+        "lat": -15,
+        "lng": 28,
+        "resources": [
+          {
+            "resourceId": "copper",
+            "production": 770,
+            "reserves": 21000,
+            "mining": 730,
+            "consumption": 80
+          },
+          {
+            "resourceId": "cobalt",
+            "production": 5500,
+            "reserves": 880000,
+            "mining": 5000,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "japan",
+        "lat": 36,
+        "lng": 138,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 600,
+            "reserves": 0,
+            "mining": 500,
+            "consumption": 28000
+          },
+          {
+            "resourceId": "copper",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 950
+          },
+          {
+            "resourceId": "lithium",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 9000
+          },
+          {
+            "resourceId": "tungsten",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 6500
+          },
+          {
+            "resourceId": "cobalt",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 15000
+          },
+          {
+            "resourceId": "nickel",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 160
+          },
+          {
+            "resourceId": "platinum",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 35
+          },
+          {
+            "resourceId": "titanium",
+            "production": 0,
+            "reserves": 0,
+            "mining": 0,
+            "consumption": 45
+          }
+        ]
+      },
+      {
+        "id": "mongolia",
+        "lat": 47,
+        "lng": 105,
+        "resources": [
+          {
+            "resourceId": "copper",
+            "production": 450,
+            "reserves": 45000,
+            "mining": 420,
+            "consumption": 50
+          },
+          {
+            "resourceId": "tungsten",
+            "production": 1800,
+            "reserves": 120000,
+            "mining": 1650,
+            "consumption": 50
+          }
+        ]
+      },
+      {
+        "id": "mexico",
+        "lat": 23,
+        "lng": -102,
+        "resources": [
+          {
+            "resourceId": "copper",
+            "production": 710,
+            "reserves": 53000,
+            "mining": 680,
+            "consumption": 450
+          },
+          {
+            "resourceId": "graphite",
+            "production": 22,
+            "reserves": 3100,
+            "mining": 20,
+            "consumption": 15
+          }
+        ]
+      },
+      {
+        "id": "zimbabwe",
+        "lat": -20,
+        "lng": 30,
+        "resources": [
+          {
+            "resourceId": "lithium",
+            "production": 6000,
+            "reserves": 310000,
+            "mining": 5500,
+            "consumption": 50
+          },
+          {
+            "resourceId": "platinum",
+            "production": 15,
+            "reserves": 1200,
+            "mining": 14,
+            "consumption": 2
+          }
+        ]
+      },
+      {
+        "id": "sweden",
+        "lat": 60,
+        "lng": 15,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 2800,
+            "reserves": 1500000,
+            "mining": 2500,
+            "consumption": 1800
+          },
+          {
+            "resourceId": "copper",
+            "production": 95,
+            "reserves": 1400,
+            "mining": 88,
+            "consumption": 120
+          }
+        ]
+      },
+      {
+        "id": "greenland",
+        "lat": 72,
+        "lng": -40,
+        "resources": [
+          {
+            "resourceId": "rare_earth",
+            "production": 1200,
+            "reserves": 1500000,
+            "mining": 1000,
+            "consumption": 50
+          }
+        ]
+      }
+    ],
+    "priceHistory": [
+      {
+        "resourceId": "tungsten",
+        "priceUnit": "USD/MTU (텅스텐 정광 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 90
+          },
+          {
+            "year": 2006,
+            "price": 120
+          },
+          {
+            "year": 2007,
+            "price": 180
+          },
+          {
+            "year": 2008,
+            "price": 250
+          },
+          {
+            "year": 2009,
+            "price": 150
+          },
+          {
+            "year": 2010,
+            "price": 220
+          },
+          {
+            "year": 2011,
+            "price": 450
+          },
+          {
+            "year": 2012,
+            "price": 380
+          },
+          {
+            "year": 2013,
+            "price": 350
+          },
+          {
+            "year": 2014,
+            "price": 370
+          },
+          {
+            "year": 2015,
+            "price": 210
+          },
+          {
+            "year": 2016,
+            "price": 195
+          },
+          {
+            "year": 2017,
+            "price": 280
+          },
+          {
+            "year": 2018,
+            "price": 320
+          },
+          {
+            "year": 2019,
+            "price": 260
+          },
+          {
+            "year": 2020,
+            "price": 230
+          },
+          {
+            "year": 2021,
+            "price": 300
+          },
+          {
+            "year": 2022,
+            "price": 355
+          },
+          {
+            "year": 2023,
+            "price": 340
+          },
+          {
+            "year": 2024,
+            "price": 365
+          }
+        ]
+      },
+      {
+        "resourceId": "rare_earth",
+        "priceUnit": "USD/kg (산화네오디뮴 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 18
+          },
+          {
+            "year": 2006,
+            "price": 22
+          },
+          {
+            "year": 2007,
+            "price": 30
+          },
+          {
+            "year": 2008,
+            "price": 28
+          },
+          {
+            "year": 2009,
+            "price": 25
+          },
+          {
+            "year": 2010,
+            "price": 85
+          },
+          {
+            "year": 2011,
+            "price": 340
+          },
+          {
+            "year": 2012,
+            "price": 110
+          },
+          {
+            "year": 2013,
+            "price": 75
+          },
+          {
+            "year": 2014,
+            "price": 62
+          },
+          {
+            "year": 2015,
+            "price": 48
+          },
+          {
+            "year": 2016,
+            "price": 42
+          },
+          {
+            "year": 2017,
+            "price": 58
+          },
+          {
+            "year": 2018,
+            "price": 45
+          },
+          {
+            "year": 2019,
+            "price": 52
+          },
+          {
+            "year": 2020,
+            "price": 48
+          },
+          {
+            "year": 2021,
+            "price": 145
+          },
+          {
+            "year": 2022,
+            "price": 190
+          },
+          {
+            "year": 2023,
+            "price": 85
+          },
+          {
+            "year": 2024,
+            "price": 72
+          }
+        ]
+      },
+      {
+        "resourceId": "lithium",
+        "priceUnit": "USD/톤 (탄산리튬 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 2500
+          },
+          {
+            "year": 2006,
+            "price": 3000
+          },
+          {
+            "year": 2007,
+            "price": 4500
+          },
+          {
+            "year": 2008,
+            "price": 5800
+          },
+          {
+            "year": 2009,
+            "price": 4200
+          },
+          {
+            "year": 2010,
+            "price": 5000
+          },
+          {
+            "year": 2011,
+            "price": 5500
+          },
+          {
+            "year": 2012,
+            "price": 4800
+          },
+          {
+            "year": 2013,
+            "price": 5200
+          },
+          {
+            "year": 2014,
+            "price": 5500
+          },
+          {
+            "year": 2015,
+            "price": 6000
+          },
+          {
+            "year": 2016,
+            "price": 9000
+          },
+          {
+            "year": 2017,
+            "price": 14000
+          },
+          {
+            "year": 2018,
+            "price": 16500
+          },
+          {
+            "year": 2019,
+            "price": 8500
+          },
+          {
+            "year": 2020,
+            "price": 7000
+          },
+          {
+            "year": 2021,
+            "price": 25000
+          },
+          {
+            "year": 2022,
+            "price": 78000
+          },
+          {
+            "year": 2023,
+            "price": 22000
+          },
+          {
+            "year": 2024,
+            "price": 13500
+          }
+        ]
+      },
+      {
+        "resourceId": "cobalt",
+        "priceUnit": "USD/톤",
+        "data": [
+          {
+            "year": 2005,
+            "price": 18000
+          },
+          {
+            "year": 2006,
+            "price": 25000
+          },
+          {
+            "year": 2007,
+            "price": 52000
+          },
+          {
+            "year": 2008,
+            "price": 80000
+          },
+          {
+            "year": 2009,
+            "price": 30000
+          },
+          {
+            "year": 2010,
+            "price": 40000
+          },
+          {
+            "year": 2011,
+            "price": 35000
+          },
+          {
+            "year": 2012,
+            "price": 28000
+          },
+          {
+            "year": 2013,
+            "price": 26000
+          },
+          {
+            "year": 2014,
+            "price": 30000
+          },
+          {
+            "year": 2015,
+            "price": 27000
+          },
+          {
+            "year": 2016,
+            "price": 25000
+          },
+          {
+            "year": 2017,
+            "price": 55000
+          },
+          {
+            "year": 2018,
+            "price": 94000
+          },
+          {
+            "year": 2019,
+            "price": 35000
+          },
+          {
+            "year": 2020,
+            "price": 33000
+          },
+          {
+            "year": 2021,
+            "price": 52000
+          },
+          {
+            "year": 2022,
+            "price": 72000
+          },
+          {
+            "year": 2023,
+            "price": 35000
+          },
+          {
+            "year": 2024,
+            "price": 28000
+          }
+        ]
+      },
+      {
+        "resourceId": "copper",
+        "priceUnit": "USD/톤 (LME 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 3600
+          },
+          {
+            "year": 2006,
+            "price": 6700
+          },
+          {
+            "year": 2007,
+            "price": 7100
+          },
+          {
+            "year": 2008,
+            "price": 6900
+          },
+          {
+            "year": 2009,
+            "price": 5100
+          },
+          {
+            "year": 2010,
+            "price": 7500
+          },
+          {
+            "year": 2011,
+            "price": 8800
+          },
+          {
+            "year": 2012,
+            "price": 7950
+          },
+          {
+            "year": 2013,
+            "price": 7300
+          },
+          {
+            "year": 2014,
+            "price": 6800
+          },
+          {
+            "year": 2015,
+            "price": 5500
+          },
+          {
+            "year": 2016,
+            "price": 4860
+          },
+          {
+            "year": 2017,
+            "price": 6200
+          },
+          {
+            "year": 2018,
+            "price": 6500
+          },
+          {
+            "year": 2019,
+            "price": 6000
+          },
+          {
+            "year": 2020,
+            "price": 6200
+          },
+          {
+            "year": 2021,
+            "price": 9300
+          },
+          {
+            "year": 2022,
+            "price": 8800
+          },
+          {
+            "year": 2023,
+            "price": 8500
+          },
+          {
+            "year": 2024,
+            "price": 9800
+          }
+        ]
+      },
+      {
+        "resourceId": "nickel",
+        "priceUnit": "USD/톤 (LME 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 14700
+          },
+          {
+            "year": 2006,
+            "price": 24100
+          },
+          {
+            "year": 2007,
+            "price": 37200
+          },
+          {
+            "year": 2008,
+            "price": 21100
+          },
+          {
+            "year": 2009,
+            "price": 14600
+          },
+          {
+            "year": 2010,
+            "price": 21800
+          },
+          {
+            "year": 2011,
+            "price": 22900
+          },
+          {
+            "year": 2012,
+            "price": 17500
+          },
+          {
+            "year": 2013,
+            "price": 15000
+          },
+          {
+            "year": 2014,
+            "price": 16900
+          },
+          {
+            "year": 2015,
+            "price": 11800
+          },
+          {
+            "year": 2016,
+            "price": 9600
+          },
+          {
+            "year": 2017,
+            "price": 10400
+          },
+          {
+            "year": 2018,
+            "price": 13100
+          },
+          {
+            "year": 2019,
+            "price": 14000
+          },
+          {
+            "year": 2020,
+            "price": 13800
+          },
+          {
+            "year": 2021,
+            "price": 18500
+          },
+          {
+            "year": 2022,
+            "price": 26000
+          },
+          {
+            "year": 2023,
+            "price": 21500
+          },
+          {
+            "year": 2024,
+            "price": 17000
+          }
+        ]
+      },
+      {
+        "resourceId": "graphite",
+        "priceUnit": "USD/톤 (인상흑연 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 500
+          },
+          {
+            "year": 2006,
+            "price": 550
+          },
+          {
+            "year": 2007,
+            "price": 650
+          },
+          {
+            "year": 2008,
+            "price": 900
+          },
+          {
+            "year": 2009,
+            "price": 700
+          },
+          {
+            "year": 2010,
+            "price": 1100
+          },
+          {
+            "year": 2011,
+            "price": 2500
+          },
+          {
+            "year": 2012,
+            "price": 1800
+          },
+          {
+            "year": 2013,
+            "price": 1200
+          },
+          {
+            "year": 2014,
+            "price": 950
+          },
+          {
+            "year": 2015,
+            "price": 800
+          },
+          {
+            "year": 2016,
+            "price": 750
+          },
+          {
+            "year": 2017,
+            "price": 850
+          },
+          {
+            "year": 2018,
+            "price": 1050
+          },
+          {
+            "year": 2019,
+            "price": 900
+          },
+          {
+            "year": 2020,
+            "price": 700
+          },
+          {
+            "year": 2021,
+            "price": 850
+          },
+          {
+            "year": 2022,
+            "price": 1200
+          },
+          {
+            "year": 2023,
+            "price": 1500
+          },
+          {
+            "year": 2024,
+            "price": 1100
+          }
+        ]
+      },
+      {
+        "resourceId": "titanium",
+        "priceUnit": "USD/톤 (스폰지 티타늄 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 7500
+          },
+          {
+            "year": 2006,
+            "price": 12000
+          },
+          {
+            "year": 2007,
+            "price": 24000
+          },
+          {
+            "year": 2008,
+            "price": 20000
+          },
+          {
+            "year": 2009,
+            "price": 12000
+          },
+          {
+            "year": 2010,
+            "price": 10000
+          },
+          {
+            "year": 2011,
+            "price": 11000
+          },
+          {
+            "year": 2012,
+            "price": 10500
+          },
+          {
+            "year": 2013,
+            "price": 9500
+          },
+          {
+            "year": 2014,
+            "price": 8500
+          },
+          {
+            "year": 2015,
+            "price": 7800
+          },
+          {
+            "year": 2016,
+            "price": 7000
+          },
+          {
+            "year": 2017,
+            "price": 7500
+          },
+          {
+            "year": 2018,
+            "price": 8500
+          },
+          {
+            "year": 2019,
+            "price": 8000
+          },
+          {
+            "year": 2020,
+            "price": 7200
+          },
+          {
+            "year": 2021,
+            "price": 9000
+          },
+          {
+            "year": 2022,
+            "price": 14000
+          },
+          {
+            "year": 2023,
+            "price": 13000
+          },
+          {
+            "year": 2024,
+            "price": 12500
+          }
+        ]
+      },
+      {
+        "resourceId": "vanadium",
+        "priceUnit": "USD/lb (V2O5 기준)",
+        "data": [
+          {
+            "year": 2005,
+            "price": 5
+          },
+          {
+            "year": 2006,
+            "price": 8
+          },
+          {
+            "year": 2007,
+            "price": 12
+          },
+          {
+            "year": 2008,
+            "price": 18
+          },
+          {
+            "year": 2009,
+            "price": 6
+          },
+          {
+            "year": 2010,
+            "price": 8
+          },
+          {
+            "year": 2011,
+            "price": 13
+          },
+          {
+            "year": 2012,
+            "price": 10
+          },
+          {
+            "year": 2013,
+            "price": 8
+          },
+          {
+            "year": 2014,
+            "price": 7
+          },
+          {
+            "year": 2015,
+            "price": 4
+          },
+          {
+            "year": 2016,
+            "price": 5
+          },
+          {
+            "year": 2017,
+            "price": 9
+          },
+          {
+            "year": 2018,
+            "price": 33
+          },
+          {
+            "year": 2019,
+            "price": 12
+          },
+          {
+            "year": 2020,
+            "price": 7
+          },
+          {
+            "year": 2021,
+            "price": 12
+          },
+          {
+            "year": 2022,
+            "price": 15
+          },
+          {
+            "year": 2023,
+            "price": 9
+          },
+          {
+            "year": 2024,
+            "price": 10
+          }
+        ]
+      },
+      {
+        "resourceId": "platinum",
+        "priceUnit": "USD/oz",
+        "data": [
+          {
+            "year": 2005,
+            "price": 895
+          },
+          {
+            "year": 2006,
+            "price": 1140
+          },
+          {
+            "year": 2007,
+            "price": 1305
+          },
+          {
+            "year": 2008,
+            "price": 1575
+          },
+          {
+            "year": 2009,
+            "price": 1200
+          },
+          {
+            "year": 2010,
+            "price": 1610
+          },
+          {
+            "year": 2011,
+            "price": 1720
+          },
+          {
+            "year": 2012,
+            "price": 1550
+          },
+          {
+            "year": 2013,
+            "price": 1485
+          },
+          {
+            "year": 2014,
+            "price": 1380
+          },
+          {
+            "year": 2015,
+            "price": 1050
+          },
+          {
+            "year": 2016,
+            "price": 985
+          },
+          {
+            "year": 2017,
+            "price": 950
+          },
+          {
+            "year": 2018,
+            "price": 880
+          },
+          {
+            "year": 2019,
+            "price": 895
+          },
+          {
+            "year": 2020,
+            "price": 880
+          },
+          {
+            "year": 2021,
+            "price": 1090
+          },
+          {
+            "year": 2022,
+            "price": 960
+          },
+          {
+            "year": 2023,
+            "price": 1000
+          },
+          {
+            "year": 2024,
+            "price": 980
+          }
+        ]
+      }
+    ],
+    "majorEvents": [
+      {
+        "id": 1,
+        "year": 2005,
+        "resourceIds": [
+          "copper",
+          "nickel"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 2,
+        "year": 2006,
+        "resourceIds": [
+          "copper",
+          "nickel"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 3,
+        "year": 2007,
+        "resourceIds": [
+          "nickel",
+          "titanium"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 4,
+        "year": 2008,
+        "resourceIds": [
+          "copper",
+          "nickel",
+          "cobalt",
+          "platinum"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 5,
+        "year": 2009,
+        "resourceIds": [
+          "lithium",
+          "copper",
+          "nickel"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 6,
+        "year": 2010,
+        "resourceIds": [
+          "rare_earth"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 7,
+        "year": 2011,
+        "resourceIds": [
+          "rare_earth"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 8,
+        "year": 2011,
+        "resourceIds": [
+          "tungsten",
+          "graphite"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 9,
+        "year": 2012,
+        "resourceIds": [
+          "rare_earth"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 10,
+        "year": 2014,
+        "resourceIds": [
+          "nickel"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 11,
+        "year": 2015,
+        "resourceIds": [
+          "copper",
+          "nickel",
+          "platinum"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 12,
+        "year": 2016,
+        "resourceIds": [
+          "lithium"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 13,
+        "year": 2017,
+        "resourceIds": [
+          "cobalt"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 14,
+        "year": 2018,
+        "resourceIds": [
+          "cobalt"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 15,
+        "year": 2018,
+        "resourceIds": [
+          "vanadium"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 16,
+        "year": 2019,
+        "resourceIds": [
+          "cobalt",
+          "lithium"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 17,
+        "year": 2019,
+        "resourceIds": [
+          "rare_earth"
+        ],
+        "impact": "volatile"
+      },
+      {
+        "id": 18,
+        "year": 2020,
+        "resourceIds": [
+          "copper",
+          "nickel",
+          "cobalt",
+          "lithium"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 19,
+        "year": 2020,
+        "resourceIds": [
+          "platinum"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 20,
+        "year": 2021,
+        "resourceIds": [
+          "lithium",
+          "nickel",
+          "copper"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 21,
+        "year": 2021,
+        "resourceIds": [
+          "rare_earth"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 22,
+        "year": 2022,
+        "resourceIds": [
+          "lithium"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 23,
+        "year": 2022,
+        "resourceIds": [
+          "nickel"
+        ],
+        "impact": "volatile"
+      },
+      {
+        "id": 24,
+        "year": 2022,
+        "resourceIds": [
+          "cobalt",
+          "copper",
+          "titanium"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 25,
+        "year": 2022,
+        "resourceIds": [
+          "tungsten",
+          "rare_earth"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 26,
+        "year": 2023,
+        "resourceIds": [
+          "lithium"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 27,
+        "year": 2023,
+        "resourceIds": [
+          "graphite"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 28,
+        "year": 2023,
+        "resourceIds": [
+          "nickel"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 29,
+        "year": 2023,
+        "resourceIds": [
+          "cobalt"
+        ],
+        "impact": "down"
+      },
+      {
+        "id": 30,
+        "year": 2024,
+        "resourceIds": [
+          "copper"
+        ],
+        "impact": "up"
+      },
+      {
+        "id": 31,
+        "year": 2024,
+        "resourceIds": [
+          "rare_earth",
+          "tungsten"
+        ],
+        "impact": "volatile"
+      },
+      {
+        "id": 32,
+        "year": 2024,
+        "resourceIds": [
+          "lithium",
+          "cobalt"
+        ],
+        "impact": "down"
+      }
+    ],
+    "currencyValueHistory": [
+      {
+        "currencyId": "usd",
+        "compareLabel": "가치 지수(2005=100)",
+        "data": [
+          {
+            "year": 2005,
+            "valueIndex": 100
+          },
+          {
+            "year": 2006,
+            "valueIndex": 98
+          },
+          {
+            "year": 2007,
+            "valueIndex": 95
+          },
+          {
+            "year": 2008,
+            "valueIndex": 102
+          },
+          {
+            "year": 2009,
+            "valueIndex": 106
+          },
+          {
+            "year": 2010,
+            "valueIndex": 101
+          },
+          {
+            "year": 2011,
+            "valueIndex": 99
+          },
+          {
+            "year": 2012,
+            "valueIndex": 101
+          },
+          {
+            "year": 2013,
+            "valueIndex": 104
+          },
+          {
+            "year": 2014,
+            "valueIndex": 110
+          },
+          {
+            "year": 2015,
+            "valueIndex": 118
+          },
+          {
+            "year": 2016,
+            "valueIndex": 116
+          },
+          {
+            "year": 2017,
+            "valueIndex": 112
+          },
+          {
+            "year": 2018,
+            "valueIndex": 115
+          },
+          {
+            "year": 2019,
+            "valueIndex": 117
+          },
+          {
+            "year": 2020,
+            "valueIndex": 121
+          },
+          {
+            "year": 2021,
+            "valueIndex": 114
+          },
+          {
+            "year": 2022,
+            "valueIndex": 128
+          },
+          {
+            "year": 2023,
+            "valueIndex": 124
+          },
+          {
+            "year": 2024,
+            "valueIndex": 126
+          }
+        ]
+      },
+      {
+        "currencyId": "eur",
+        "compareLabel": "가치 지수(2005=100)",
+        "data": [
+          {
+            "year": 2005,
+            "valueIndex": 100
+          },
+          {
+            "year": 2006,
+            "valueIndex": 103
+          },
+          {
+            "year": 2007,
+            "valueIndex": 108
+          },
+          {
+            "year": 2008,
+            "valueIndex": 111
+          },
+          {
+            "year": 2009,
+            "valueIndex": 105
+          },
+          {
+            "year": 2010,
+            "valueIndex": 99
+          },
+          {
+            "year": 2011,
+            "valueIndex": 101
+          },
+          {
+            "year": 2012,
+            "valueIndex": 96
+          },
+          {
+            "year": 2013,
+            "valueIndex": 98
+          },
+          {
+            "year": 2014,
+            "valueIndex": 94
+          },
+          {
+            "year": 2015,
+            "valueIndex": 88
+          },
+          {
+            "year": 2016,
+            "valueIndex": 90
+          },
+          {
+            "year": 2017,
+            "valueIndex": 96
+          },
+          {
+            "year": 2018,
+            "valueIndex": 93
+          },
+          {
+            "year": 2019,
+            "valueIndex": 92
+          },
+          {
+            "year": 2020,
+            "valueIndex": 95
+          },
+          {
+            "year": 2021,
+            "valueIndex": 97
+          },
+          {
+            "year": 2022,
+            "valueIndex": 84
+          },
+          {
+            "year": 2023,
+            "valueIndex": 89
+          },
+          {
+            "year": 2024,
+            "valueIndex": 91
+          }
+        ]
+      },
+      {
+        "currencyId": "jpy",
+        "compareLabel": "가치 지수(2005=100)",
+        "data": [
+          {
+            "year": 2005,
+            "valueIndex": 100
+          },
+          {
+            "year": 2006,
+            "valueIndex": 96
+          },
+          {
+            "year": 2007,
+            "valueIndex": 94
+          },
+          {
+            "year": 2008,
+            "valueIndex": 102
+          },
+          {
+            "year": 2009,
+            "valueIndex": 110
+          },
+          {
+            "year": 2010,
+            "valueIndex": 115
+          },
+          {
+            "year": 2011,
+            "valueIndex": 119
+          },
+          {
+            "year": 2012,
+            "valueIndex": 112
+          },
+          {
+            "year": 2013,
+            "valueIndex": 94
+          },
+          {
+            "year": 2014,
+            "valueIndex": 88
+          },
+          {
+            "year": 2015,
+            "valueIndex": 86
+          },
+          {
+            "year": 2016,
+            "valueIndex": 92
+          },
+          {
+            "year": 2017,
+            "valueIndex": 89
+          },
+          {
+            "year": 2018,
+            "valueIndex": 87
+          },
+          {
+            "year": 2019,
+            "valueIndex": 90
+          },
+          {
+            "year": 2020,
+            "valueIndex": 94
+          },
+          {
+            "year": 2021,
+            "valueIndex": 90
+          },
+          {
+            "year": 2022,
+            "valueIndex": 72
+          },
+          {
+            "year": 2023,
+            "valueIndex": 70
+          },
+          {
+            "year": 2024,
+            "valueIndex": 68
+          }
+        ]
+      },
+      {
+        "currencyId": "gbp",
+        "compareLabel": "가치 지수(2005=100)",
+        "data": [
+          {
+            "year": 2005,
+            "valueIndex": 100
+          },
+          {
+            "year": 2006,
+            "valueIndex": 104
+          },
+          {
+            "year": 2007,
+            "valueIndex": 109
+          },
+          {
+            "year": 2008,
+            "valueIndex": 96
+          },
+          {
+            "year": 2009,
+            "valueIndex": 88
+          },
+          {
+            "year": 2010,
+            "valueIndex": 91
+          },
+          {
+            "year": 2011,
+            "valueIndex": 93
+          },
+          {
+            "year": 2012,
+            "valueIndex": 95
+          },
+          {
+            "year": 2013,
+            "valueIndex": 97
+          },
+          {
+            "year": 2014,
+            "valueIndex": 101
+          },
+          {
+            "year": 2015,
+            "valueIndex": 99
+          },
+          {
+            "year": 2016,
+            "valueIndex": 86
+          },
+          {
+            "year": 2017,
+            "valueIndex": 90
+          },
+          {
+            "year": 2018,
+            "valueIndex": 92
+          },
+          {
+            "year": 2019,
+            "valueIndex": 94
+          },
+          {
+            "year": 2020,
+            "valueIndex": 89
+          },
+          {
+            "year": 2021,
+            "valueIndex": 93
+          },
+          {
+            "year": 2022,
+            "valueIndex": 85
+          },
+          {
+            "year": 2023,
+            "valueIndex": 88
+          },
+          {
+            "year": 2024,
+            "valueIndex": 90
+          }
+        ]
+      },
+      {
+        "currencyId": "cny",
+        "compareLabel": "가치 지수(2005=100)",
+        "data": [
+          {
+            "year": 2005,
+            "valueIndex": 100
+          },
+          {
+            "year": 2006,
+            "valueIndex": 101
+          },
+          {
+            "year": 2007,
+            "valueIndex": 103
+          },
+          {
+            "year": 2008,
+            "valueIndex": 104
+          },
+          {
+            "year": 2009,
+            "valueIndex": 103
+          },
+          {
+            "year": 2010,
+            "valueIndex": 102
+          },
+          {
+            "year": 2011,
+            "valueIndex": 101
+          },
+          {
+            "year": 2012,
+            "valueIndex": 100
+          },
+          {
+            "year": 2013,
+            "valueIndex": 99
+          },
+          {
+            "year": 2014,
+            "valueIndex": 98
+          },
+          {
+            "year": 2015,
+            "valueIndex": 97
+          },
+          {
+            "year": 2016,
+            "valueIndex": 96
+          },
+          {
+            "year": 2017,
+            "valueIndex": 96
+          },
+          {
+            "year": 2018,
+            "valueIndex": 95
+          },
+          {
+            "year": 2019,
+            "valueIndex": 94
+          },
+          {
+            "year": 2020,
+            "valueIndex": 93
+          },
+          {
+            "year": 2021,
+            "valueIndex": 92
+          },
+          {
+            "year": 2022,
+            "valueIndex": 90
+          },
+          {
+            "year": 2023,
+            "valueIndex": 89
+          },
+          {
+            "year": 2024,
+            "valueIndex": 88
+          }
+        ]
+      }
+    ],
+    "currencyReasonEvents": [
+      {
+        "id": "usd_2008_safehaven",
+        "currencyId": "usd",
+        "startYear": 2008,
+        "endYear": 2009,
+        "title": "글로벌 금융위기 속 안전자산 선호",
+        "direction": "up",
+        "reason": "2008년 금융위기 때 세계 자금이 가장 유동성이 큰 달러 자산으로 몰리면서 달러 가치가 강해졌습니다.",
+        "categories": [
+          "economic_crisis",
+          "safe_haven"
+        ]
+      },
+      {
+        "id": "usd_2014_rate_expectation",
+        "currencyId": "usd",
+        "startYear": 2014,
+        "endYear": 2016,
+        "title": "미국 금리 인상 기대와 실제 인상",
+        "direction": "up",
+        "reason": "미국이 다른 주요국보다 먼저 금리를 올릴 가능성이 커지면서 달러 자산의 매력이 높아졌고, 실제 인상도 달러 강세를 뒷받침했습니다.",
+        "categories": [
+          "interest_rate",
+          "policy_change"
+        ]
+      },
+      {
+        "id": "usd_2020_pandemic",
+        "currencyId": "usd",
+        "startYear": 2020,
+        "endYear": 2020,
+        "title": "팬데믹 초기 달러 수요 급증",
+        "direction": "up",
+        "reason": "코로나 충격 초기에는 세계 금융시장이 불안해지며 기업과 투자자들이 현금성 달러를 확보하려 했습니다.",
+        "categories": [
+          "economic_crisis",
+          "safe_haven"
+        ]
+      },
+      {
+        "id": "usd_2022_aggressive_hikes",
+        "currencyId": "usd",
+        "startYear": 2022,
+        "endYear": 2024,
+        "title": "고물가 대응을 위한 공격적 금리 인상",
+        "direction": "up",
+        "reason": "미국이 높은 물가를 잡기 위해 빠르게 금리를 올리면서 다른 통화보다 달러의 수익성이 높아졌습니다.",
+        "categories": [
+          "interest_rate",
+          "inflation"
+        ]
+      },
+      {
+        "id": "eur_2006_growth",
+        "currencyId": "eur",
+        "startYear": 2006,
+        "endYear": 2008,
+        "title": "유로존 경기 확장과 상대적 강세",
+        "direction": "up",
+        "reason": "유로존 성장세와 미국의 약달러 흐름이 맞물리며 유로 가치가 상대적으로 높아졌습니다.",
+        "categories": [
+          "growth",
+          "interest_rate"
+        ]
+      },
+      {
+        "id": "eur_2010_debt_crisis",
+        "currencyId": "eur",
+        "startYear": 2010,
+        "endYear": 2012,
+        "title": "유로존 재정위기",
+        "direction": "down",
+        "reason": "그리스 등 남유럽 재정 문제가 커지면서 유로존의 안정성에 대한 의심이 커졌고 유로 가치가 약해졌습니다.",
+        "categories": [
+          "economic_crisis",
+          "sovereign_debt"
+        ]
+      },
+      {
+        "id": "eur_2014_ecb_easing",
+        "currencyId": "eur",
+        "startYear": 2014,
+        "endYear": 2016,
+        "title": "유럽중앙은행의 완화 정책",
+        "direction": "down",
+        "reason": "경기 부양을 위해 금리를 낮추고 자산 매입을 확대하면서 유로 공급이 늘어나 가치가 눌렸습니다.",
+        "categories": [
+          "interest_rate",
+          "policy_change"
+        ]
+      },
+      {
+        "id": "eur_2022_energy_shock",
+        "currencyId": "eur",
+        "startYear": 2022,
+        "endYear": 2022,
+        "title": "에너지 위기와 경기 둔화 우려",
+        "direction": "down",
+        "reason": "러시아-우크라이나 전쟁 이후 에너지 가격 급등이 유럽 경제를 압박하며 유로가 약세를 보였습니다.",
+        "categories": [
+          "economic_crisis",
+          "energy_shock",
+          "inflation"
+        ]
+      },
+      {
+        "id": "eur_2023_recovery",
+        "currencyId": "eur",
+        "startYear": 2023,
+        "endYear": 2024,
+        "title": "긴축 전환과 약한 회복",
+        "direction": "up",
+        "reason": "유럽중앙은행이 물가 대응을 위해 금리를 올리며 유로가 일부 회복됐지만, 성장 둔화 우려가 상승 폭을 제한했습니다.",
+        "categories": [
+          "interest_rate",
+          "inflation"
+        ]
+      },
+      {
+        "id": "jpy_2008_safehaven",
+        "currencyId": "jpy",
+        "startYear": 2008,
+        "endYear": 2011,
+        "title": "위기 국면의 엔화 강세",
+        "direction": "up",
+        "reason": "세계 금융 불안 시기에 투자자들이 위험자산을 줄이면서 엔화가 대표적인 안전 통화로 평가받아 강세를 보였습니다.",
+        "categories": [
+          "safe_haven",
+          "economic_crisis"
+        ]
+      },
+      {
+        "id": "jpy_2013_abenomics",
+        "currencyId": "jpy",
+        "startYear": 2013,
+        "endYear": 2015,
+        "title": "아베노믹스와 대규모 통화완화",
+        "direction": "down",
+        "reason": "일본은행의 강한 완화 정책으로 시중 엔화가 늘어나면서 엔화 가치가 빠르게 떨어졌습니다.",
+        "categories": [
+          "policy_change",
+          "interest_rate"
+        ]
+      },
+      {
+        "id": "jpy_2022_yield_gap",
+        "currencyId": "jpy",
+        "startYear": 2022,
+        "endYear": 2024,
+        "title": "미국과의 금리 격차 확대",
+        "direction": "down",
+        "reason": "미국은 금리를 크게 올린 반면 일본은 초저금리를 유지해, 자금이 더 높은 금리를 주는 달러로 이동했습니다.",
+        "categories": [
+          "interest_rate",
+          "policy_change"
+        ]
+      },
+      {
+        "id": "gbp_2006_strength",
+        "currencyId": "gbp",
+        "startYear": 2006,
+        "endYear": 2007,
+        "title": "영국 경기 확장과 파운드 강세",
+        "direction": "up",
+        "reason": "영국 경제와 금융업이 강했던 시기에는 파운드가 주요 통화 중 하나로 높은 평가를 받았습니다.",
+        "categories": [
+          "growth",
+          "finance"
+        ]
+      },
+      {
+        "id": "gbp_2008_crisis",
+        "currencyId": "gbp",
+        "startYear": 2008,
+        "endYear": 2009,
+        "title": "금융위기와 영국 경기 충격",
+        "direction": "down",
+        "reason": "글로벌 금융위기로 영국 금융 부문이 크게 흔들리며 파운드 가치도 빠르게 하락했습니다.",
+        "categories": [
+          "economic_crisis",
+          "finance"
+        ]
+      },
+      {
+        "id": "gbp_2016_brexit",
+        "currencyId": "gbp",
+        "startYear": 2016,
+        "endYear": 2017,
+        "title": "브렉시트 충격",
+        "direction": "down",
+        "reason": "영국의 유럽연합 탈퇴 결정은 무역과 성장 전망에 대한 불확실성을 키우며 파운드 약세를 만들었습니다.",
+        "categories": [
+          "policy_change",
+          "political_uncertainty"
+        ]
+      },
+      {
+        "id": "gbp_2020_pandemic",
+        "currencyId": "gbp",
+        "startYear": 2020,
+        "endYear": 2020,
+        "title": "팬데믹과 경기 침체 우려",
+        "direction": "down",
+        "reason": "코로나로 경제 활동이 위축되고 영국 경제의 회복 전망이 약해지며 파운드가 흔들렸습니다.",
+        "categories": [
+          "economic_crisis",
+          "growth"
+        ]
+      },
+      {
+        "id": "gbp_2022_policy_trust",
+        "currencyId": "gbp",
+        "startYear": 2022,
+        "endYear": 2022,
+        "title": "정책 신뢰 약화와 금융시장 불안",
+        "direction": "down",
+        "reason": "대규모 감세안 발표로 재정 신뢰에 대한 우려가 커지며 파운드가 급락하고 영국 금융시장도 불안해졌습니다.",
+        "categories": [
+          "policy_change",
+          "political_uncertainty",
+          "bond_market"
+        ]
+      },
+      {
+        "id": "gbp_2023_stabilization",
+        "currencyId": "gbp",
+        "startYear": 2023,
+        "endYear": 2024,
+        "title": "정책 안정화와 부분 회복",
+        "direction": "up",
+        "reason": "재정정책 혼란이 진정되고 중앙은행의 긴축이 이어지면서 파운드는 일부 안정을 되찾았습니다.",
+        "categories": [
+          "interest_rate",
+          "policy_change"
+        ]
+      },
+      {
+        "id": "cny_2005_2013_export_growth",
+        "currencyId": "cny",
+        "startYear": 2005,
+        "endYear": 2013,
+        "title": "수출 성장과 점진적 국제 사용 확대",
+        "direction": "up",
+        "reason": "중국의 수출 경쟁력과 무역 규모가 커지면서 위안화의 국제 결제 사용도 점진적으로 늘어났습니다. 다만 위안화는 기축통화가 아니며, 국제적 사용 확대가 곧 기축통화 지위를 뜻하는 것은 아닙니다.",
+        "categories": [
+          "growth",
+          "policy_change"
+        ]
+      },
+      {
+        "id": "cny_2015_fx_reform",
+        "currencyId": "cny",
+        "startYear": 2015,
+        "endYear": 2016,
+        "title": "환율 제도 조정과 변동성 확대",
+        "direction": "volatile",
+        "reason": "2015년 환율 산정 방식 조정 이후 시장은 중국 경기 둔화와 자본 유출 가능성을 함께 반영하며 위안화 변동성을 크게 키웠습니다. 사용자에게 분명히 알리면, 위안화는 국제적으로 중요한 통화이지만 기축통화는 아닙니다.",
+        "categories": [
+          "policy_change",
+          "political_uncertainty",
+          "growth"
+        ]
+      },
+      {
+        "id": "cny_2018_trade_tension",
+        "currencyId": "cny",
+        "startYear": 2018,
+        "endYear": 2019,
+        "title": "미중 무역 갈등과 약세 압력",
+        "direction": "down",
+        "reason": "미중 무역 갈등 심화로 중국 성장 전망이 약해지고 수출 둔화 우려가 커지면서 위안화에 약세 압력이 가해졌습니다. 위안화는 주요 비교 대상에 포함될 수 있으나, 기축통화가 아니라는 점을 명시적으로 안내해야 합니다.",
+        "categories": [
+          "growth",
+          "political_uncertainty",
+          "economic_crisis"
+        ]
+      },
+      {
+        "id": "cny_2020_2022_policy_gap",
+        "currencyId": "cny",
+        "startYear": 2020,
+        "endYear": 2022,
+        "title": "팬데믹 이후 경기 대응과 미중 금리 격차",
+        "direction": "down",
+        "reason": "팬데믹 이후 중국 경기 둔화 대응과 미국의 공격적 금리 인상이 겹치면서 자금 흐름이 달러 쪽으로 기울어 위안화가 상대적으로 약세를 보였습니다. 다시 한번, 위안화는 기축통화가 아닙니다.",
+        "categories": [
+          "economic_crisis",
+          "interest_rate",
+          "growth"
+        ]
+      }
+    ]
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": true,
+    "need_update": false,
+    "ko": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    },
+    "en": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    },
+    "zh": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    },
+    "ja": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    },
+    "es": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    },
+    "fr": {
+      "title": "🌍 세계 지하자원 현황 2026",
+      "subtitle": "텅스텐, 희토류, 리튬 등 주요 광물자원 글로벌 생산량 시각화",
+      "startPrompt": "화면을 클릭하여 시작하세요",
+      "instructionTitle": "📋 사용 안내",
+      "instructions": [
+        "🌐 3D 지구본을 드래그하여 회전할 수 있습니다",
+        "🔍 마우스 휠 또는 핀치 제스처로 확대/축소가 가능합니다",
+        "📍 국가별 자원 점을 클릭하면 상세 정보를 확인할 수 있습니다",
+        "🎨 상단 자원 필터를 사용하면 특정 자원만 표시됩니다",
+        "📊 좌측 패널에서 생산량 순위를 확인하고 클릭하면 해당 국가로 이동합니다",
+        "ℹ️ 자원 옆 ℹ 버튼을 클릭하면 활용처, 가치, 가격 추이, 주요 사건을 확인할 수 있습니다"
+      ],
+      "startButton": "▶ 시작하기",
+      "resourceLabel": "자원",
+      "productionLabel": "생산량",
+      "unitLabel": "단위",
+      "allResources": "전체 자원",
+      "countryNames": {
+        "china": "중국",
+        "australia": "호주",
+        "usa": "미국",
+        "russia": "러시아",
+        "drc": "콩고민주공화국",
+        "chile": "칠레",
+        "south_africa": "남아프리카공화국",
+        "canada": "캐나다",
+        "indonesia": "인도네시아",
+        "brazil": "브라질",
+        "vietnam": "베트남",
+        "myanmar": "미얀마",
+        "peru": "페루",
+        "philippines": "필리핀",
+        "india": "인도",
+        "argentina": "아르헨티나",
+        "mozambique": "모잠비크",
+        "madagascar": "마다가스카르",
+        "zambia": "잠비아",
+        "japan": "일본",
+        "mongolia": "몽골",
+        "mexico": "멕시코",
+        "zimbabwe": "짐바브웨",
+        "sweden": "스웨덴",
+        "greenland": "그린란드"
+      },
+      "resourceNames": {
+        "tungsten": "텅스텐",
+        "rare_earth": "희토류",
+        "lithium": "리튬",
+        "cobalt": "코발트",
+        "copper": "구리",
+        "nickel": "니켈",
+        "graphite": "흑연",
+        "titanium": "티타늄",
+        "vanadium": "바나듐",
+        "platinum": "백금"
+      },
+      "topProducers": "생산량 순위",
+      "rank": "위",
+      "noData": "데이터 없음",
+      "backButton": "닫기",
+      "dragToRotate": "드래그로 회전",
+      "scrollToZoom": "스크롤로 확대/축소",
+      "tapCountry": "국가를 탭하여 상세 정보 확인",
+      "tabProduction": "생산량",
+      "tabReserves": "매장량",
+      "tabMining": "채굴량",
+      "reservesUnit": "톤",
+      "miningUnit": "톤",
+      "applicationsTitle": "활용 분야",
+      "valueTitle": "자원의 가치",
+      "priceChartTitle": "20년간 가격 추이",
+      "eventsTitle": "가격 변동 주요 사건",
+      "strategicImportance": "전략적 중요도",
+      "priceUnit": "가격",
+      "yearLabel": "연도",
+      "eventDescriptions": {
+        "1": "중국 경제 고성장으로 원자재 수퍼사이클 시작, 구리·니켈 수요 급증",
+        "2": "BRICs 경제 붐 지속, 글로벌 인프라 건설 수요 폭증으로 비철금속 가격 급등",
+        "3": "니켈 가격 사상 최고치 ($51,000/톤) 기록, 스테인리스강 수요 급증과 투기 자금 유입",
+        "4": "글로벌 금융위기 발생, 리먼브라더스 파산으로 원자재 가격 전반 대폭락",
+        "5": "금융위기 여파 지속, 글로벌 제조업 침체로 리튬·구리·니켈 수요 급감",
+        "6": "중국 희토류 수출 쿼터 40% 삭감, 센카쿠 열도 분쟁으로 일본향 수출 사실상 중단",
+        "7": "희토류 가격 10배 폭등, 산화네오디뮴 kg당 $340 사상 최고치, 글로벌 공급망 충격",
+        "8": "중국 자원 수출 통제 강화, 텅스텐·흑연 가격 동반 상승",
+        "9": "WTO 중국 희토류 수출 제한 위반 판결, 가격 급락 시작",
+        "10": "인도네시아 니켈 원광 수출 금지 정책 시행, 글로벌 니켈 시장 공급 우려",
+        "11": "중국 경기 둔화와 원자재 수퍼사이클 종료, 구리·니켈·백금 가격 하락",
+        "12": "전기차 시장 급성장 시작, 테슬라 모델3 예약 40만대 돌파로 리튬 수요 전망 급등",
+        "13": "콩고 코발트 공급 불안 + 전기차 배터리 수요 급증, 코발트 가격 2배 상승",
+        "14": "코발트 가격 $94,000/톤 기록, 콩고 광산 아동노동 이슈로 ESG 압력 가중",
+        "15": "중국 철근 강도 기준 강화로 바나듐 수요 폭증, 가격 4배 급등 ($33/lb)",
+        "16": "코발트·리튬 과잉 공급 우려, 배터리 기술 변화(NMC→LFP)로 수요 전망 하향",
+        "17": "미중 무역전쟁 격화, 중국 희토류 수출 통제 카드 위협으로 가격 변동성 확대",
+        "18": "코로나19 팬데믹 발생, 글로벌 봉쇄로 광산 가동 중단 및 수요 급감",
+        "19": "코로나19로 자동차 생산 급감, 촉매용 백금 수요 하락",
+        "20": "코로나 이후 경기 회복 + 전기차 판매 급증, 리튬·니켈·구리 가격 동반 상승",
+        "21": "전기차·풍력 발전 정책 강화로 희토류 수요 급증, 산화네오디뮴 가격 3배 상승",
+        "22": "리튬 가격 사상 최고치 ($80,000/톤 이상), 전기차 폭발적 성장과 공급 부족",
+        "23": "LME 니켈 숏스퀴즈 사태, 가격 $100,000/톤 돌파 후 거래 중단, 시장 신뢰도 훼손",
+        "24": "러시아-우크라이나 전쟁으로 러시아산 코발트·구리·티타늄 공급 불안",
+        "25": "러시아 제재로 텅스텐 공급 우려 + 전기차 수요로 희토류 가격 상승",
+        "26": "리튬 가격 80% 이상 폭락, 중국 LFP 배터리 전환과 과잉 생산 영향",
+        "27": "중국 흑연 수출 허가제 시행, 배터리 음극재 공급망 재편 불가피",
+        "28": "인도네시아 니켈 과잉 생산으로 글로벌 가격 하락, 호주 광산 감산",
+        "29": "콩고 코발트 과잉 공급 + 배터리 탈코발트 기술 확산으로 가격 하락",
+        "30": "AI 데이터센터 건설 붐으로 구리 수요 급증, 가격 $10,000/톤 돌파 임박",
+        "31": "중국 희토류·텅스텐 수출 통제 강화, 미중 기술 패권 경쟁 격화로 가격 변동성",
+        "32": "전기차 판매 성장 둔화와 리튬·코발트 과잉 공급으로 가격 하락세 지속"
+      },
+      "impactUp": "가격 상승 ↑",
+      "impactDown": "가격 하락 ↓",
+      "impactVolatile": "변동성 확대 ↕",
+      "detailTabInfo": "자원 정보",
+      "detailTabChart": "가격 추이",
+      "detailTabEvents": "주요 사건",
+      "resourceInfoBtn": "상세 정보",
+      "closeBtn": "닫기",
+      "eventImpactLabels": {
+        "up": "📈 가격 상승",
+        "down": "📉 가격 하락",
+        "volatile": "📊 변동성 확대"
+      },
+      "viewMoreEvents": "전체 사건 목록",
+      "priceLabel": "가격",
+      "eventYearPrefix": "📅",
+      "simTitle": "🔬 생산량 변동 시뮬레이션",
+      "simButton": "🔬 시뮬레이션",
+      "simSelectCountry": "🏳 국가 선택",
+      "simSelectResource": "💎 자원 선택",
+      "simProductionChange": "⚙ 생산량 변동 조절",
+      "simRunButton": "🚀 시뮬레이션 실행",
+      "simResultTitle": "📊 시뮬레이션 결과",
+      "simProdLabel": "생산량 변화",
+      "simPriceLabel": "예상 가격 변화",
+      "simShareLabel": "글로벌 공급 점유율",
+      "simGlobalEffects": "🌍 세계 정세 변화 예측",
+      "simPriceProjection": "📈 가격 변동 예측 차트",
+      "simSeverity": "영향 수준",
+      "simSevLow": "📗 영향 미미",
+      "simSevMedium": "📙 보통 영향",
+      "simSevHigh": "📕 높은 영향",
+      "simSevCritical": "🚨 매우 심각",
+      "simEffectDominant": "{country}은(는) {resource}의 글로벌 점유율 {share}%를 차지하는 독점적 생산국입니다. 생산 감소 시 대체 공급원 확보가 극히 어려워 글로벌 산업계에 심각한 충격이 예상됩니다.",
+      "simEffectPriceSpike": "공급 부족으로 자원 가격이 약 {percent}% 급등할 것으로 예상됩니다. 관련 산업체의 원가 상승과 소비자 가격 인상이 불가피합니다.",
+      "simEffectSupplyChain": "{resource} 의존도가 높은 반도체, 전기차, 방산 등 첨단 산업의 공급망에 병목 현상이 발생할 수 있습니다.",
+      "simEffectStrategic": "{resource}은(는) 전략적 중요도가 극히 높은 자원으로, 각국의 비축 전략 및 외교적 긴장이 고조될 가능성이 있습니다.",
+      "simEffectAlternative": "극심한 공급 부족으로 {resource} 대체 기술 및 재활용 산업에 대한 투자가 급증할 것으로 예상됩니다.",
+      "simEffectGeopolitical": "{country}의 자원 무기화 가능성에 대한 국제 사회의 우려가 높아지며, 자원 동맹 재편 움직임이 가속화될 수 있습니다.",
+      "simEffectPriceDrop": "공급 과잉으로 자원 가격이 약 {percent}% 하락할 것으로 예상됩니다. 소규모 광산업체들의 수익성 악화가 우려됩니다.",
+      "simEffectOversupply": "{resource}의 과잉 공급이 발생하여 글로벌 재고가 증가하고, 다른 생산국들의 감산 압력이 높아질 수 있습니다.",
+      "simEffectCompetitors": "{country}의 생산 확대로 경쟁국 광산 업체들의 시장 점유율이 축소되며, 일부 고비용 광산의 폐쇄가 예상됩니다.",
+      "simEffectMarketPower": "{country}의 시장 점유율이 {share}%로 확대되어, 글로벌 가격 결정력이 더욱 강화될 전망입니다.",
+      "simEffectStockpile": "{resource} 가격 하락을 기회로 주요 수입국들의 전략적 비축량 확대가 예상됩니다.",
+      "simEffectMinimal": "생산량 변화가 미미하여 세계 시장에 큰 영향이 없을 것으로 예상됩니다.",
+      "resRankTitle": "🏆 자원별 수입국 및 비축량 순위",
+      "resRankButton": "🏆 자원별 순위",
+      "resRankTopImporter": "최대 생산국 순위",
+      "resRankReservesRank": "비축량 순위",
+      "resRankSelectPrompt": "위에서 자원을 선택하면 상세 순위를 확인할 수 있습니다",
+      "resRankTopProducer": "최대 생산국",
+      "resRankTopReserves": "최대 비축국",
+      "resRankGlobalShare": "글로벌 점유율",
+      "resRankProdDesc": "생산량이 많은 국가일수록 해당 자원의 글로벌 공급에 큰 영향을 미칩니다. 아래 순위는 연간 생산량 기준이며, 글로벌 점유율을 함께 표시합니다.",
+      "resRankReservesDesc": "매장량(비축량)은 경제적으로 채굴 가능한 자원의 총량을 의미합니다. 매장량이 많을수록 장기적 공급 안정성이 높으며, 향후 자원 패권에 중요한 지표입니다.",
+      "simFullscreenBtn": "🔍 결과 크게 보기",
+      "simFsCloseBtn": "닫기",
+      "simScenarioDesc": "시나리오",
+      "simStockImpactTitle": "📉 글로벌 기업 주가 영향 분석",
+      "simStockImpactDesc": "시뮬레이션 결과를 바탕으로 관련 글로벌 기업들의 주가 변동을 예측합니다. 실제 투자 조언이 아닌 참고용 시나리오 분석입니다.",
+      "simStockUp": "주가 상승 예상 기업",
+      "simStockDown": "주가 하락 예상 기업",
+      "simStockVolatile": "변동성 확대 예상 기업",
+      "simStockCompanyUnit": "개 기업",
+      "simStockDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 예측이며, 실제 주가 변동과 다를 수 있습니다. 투자 판단의 근거로 사용하지 마세요.",
+      "stockReasonProducerUp": "{resource} 가격 상승으로 매출 및 이익률 증가 기대",
+      "stockReasonProducerDown": "{resource} 가격 하락으로 수익성 악화 및 감산 압력 우려",
+      "stockReasonConsumerDown": "원자재 비용 상승으로 제조 원가 부담 증가, 마진 압박 예상",
+      "stockReasonConsumerUp": "원자재 비용 하락으로 제조 원가 절감, 수익성 개선 기대",
+      "stockReasonProcessor": "원자재 가격 변동으로 가공·정제 마진 변동성 확대 예상",
+      "stockReasonAlternativeUp": "{resource} 공급난으로 대체 기술·소재 수요 급증 기대",
+      "stockReasonAlternativeDown": "{resource} 안정적 공급으로 대체 기술 투자 매력 감소",
+      "stockSectorMining": "광업",
+      "stockSectorTooling": "절삭공구",
+      "stockSectorDefense": "방산",
+      "stockSectorEV": "전기차",
+      "stockSectorRenewable": "재생에너지",
+      "stockSectorChemical": "화학",
+      "stockSectorBattery": "배터리",
+      "stockSectorAlternative": "대체기술",
+      "stockSectorRecycling": "재활용",
+      "stockSectorCable": "전선/케이블",
+      "stockSectorElectric": "전기장비",
+      "stockSectorSteel": "철강",
+      "stockSectorMaterial": "소재",
+      "stockSectorMetal": "금속",
+      "stockSectorAerospace": "항공우주",
+      "stockSectorESS": "에너지저장",
+      "stockSectorHydrogen": "수소",
+      "stockCountryChina": "중국",
+      "stockCountryUSA": "미국",
+      "stockCountrySweden": "스웨덴",
+      "stockCountryAustralia": "호주",
+      "stockCountryDenmark": "덴마크",
+      "stockCountryJapan": "일본",
+      "stockCountryChile": "칠레",
+      "stockCountryKorea": "한국",
+      "stockCountrySwitzerland": "스위스",
+      "stockCountryKazakhstan": "카자흐스탄",
+      "stockCountryBelgium": "벨기에",
+      "stockCountryMexico": "멕시코",
+      "stockCountryItaly": "이탈리아",
+      "stockCountryFrance": "프랑스",
+      "stockCountryBrazil": "브라질",
+      "stockCountryRussia": "러시아",
+      "stockCountryIndonesia": "인도네시아",
+      "stockCountrySouthAfrica": "남아공",
+      "stockCountryCanada": "캐나다",
+      "stockCountryGermany": "독일",
+      "stockCountryUK": "영국",
+      "analogySectionTitle": "💡 쉽게 이해하기",
+      "analogySectionDesc": "숫자만 보면 어려울 수 있어요. 일상적인 비유로 이 자원의 규모와 중요성을 직관적으로 느껴보세요!",
+      "analogyLabelWeight": "생산량 규모",
+      "analogyLabelPrice": "가격 비교",
+      "analogyLabelUsage": "일상 속 사용",
+      "analogyLabelScarcity": "희소성",
+      "analogyLabelReserve": "매장량 전망",
+      "analogyLabelDominance": "독점 현황",
+      "impEasyDescCritical": "⚠️ 이 자원이 없으면 스마트폰, 전기차, 미사일 같은 첨단 제품을 만들 수 없습니다. 국가 안보와 직결되는 최고 수준의 전략 자원이에요.",
+      "impEasyDescHigh": "🔶 산업 전반에 널리 쓰이며, 공급이 불안정해지면 자동차·건설·에너지 산업에 큰 파급 효과를 줍니다.",
+      "impEasyDescMedium": "🔵 중요한 산업용 소재이지만, 대체재가 일부 존재하여 공급 리스크가 상대적으로 관리 가능합니다.",
+      "rankDisplayRaw": "🔢 수치",
+      "rankDisplayPercent": "📊 비율(%)",
+      "rankDisplayRawLabel": "수치",
+      "rankDisplayPercentLabel": "점유율 %",
+      "rankGlobalTotal": "🌐 전체 합계",
+      "resTopProductsTitle": "주요 생산 분야 및 제품 Top 5",
+      "resVulnerableCountriesTitle": "수급 문제 시 타격 입는 국가 Top 5",
+      "resVulnerableCompaniesTitle": "수급 문제 시 타격 입는 기업 Top 5",
+      "resSumInfoTitle": "주요 타격 대상 정보",
+      "vulnerableReasons": {
+        "tungsten": "중국에 생산이 집중되어 있어, 수출 통제 시 서방의 방산 및 반도체 기업들이 대체 공급선을 찾기 어렵습니다.",
+        "rare_earth": "전기차 모터와 스마트폰 핵심 부품에 필수적이지만, 정제 기술을 중국이 독점하고 있어 서방 주요 기술 기업들이 타격을 입습니다.",
+        "lithium": "배터리 생산의 핵심 원료로, 리튬 확보에 실패하면 배터리 및 전기차 제조사의 원가 경쟁력과 생산에 직격탄이 됩니다.",
+        "cobalt": "주로 콩고에서 채굴되어 지정학적 리스크가 큽니다. 배터리 양극재 생산에 차질이 생기면 주요 배터리 셀 제조사들이 타격을 받습니다.",
+        "copper": "전기차와 전력망의 필수 소재로, 수요 급증 시 공급 부족이 발생하면 전선업체와 전장 부품사들의 원가 부담이 가중됩니다.",
+        "nickel": "하이니켈 배터리의 필수 원료입니다. 인도네시아 정책 등 공급 충격 시 주요 배터리 제조사와 스테인리스강 기업들이 타격을 입습니다.",
+        "graphite": "배터리 음극재의 주원료이며, 중국 의존도가 절대적이어서 수출 통제 시 글로벌 배터리 공급망에 치명적입니다.",
+        "titanium": "항공우주와 방산 구조재에 필수적이며, 러시아 VSMPO 의존도가 높아 제재 시 글로벌 항공기 제조사들이 타격을 입습니다.",
+        "vanadium": "건설용 특수 철강 및 차세대 ESS의 핵심 소재로, 공급망이 중국과 러시아 등에 집중되어 있어 수급 불균형 시 철강사들이 타격을 입습니다.",
+        "platinum": "남아공 등 일부 국가에 매장량이 편중되어 있어, 공급 차질 시 주요 자동차 기업의 배기가스 저감장치 생산 및 수소 경제에 타격을 입힙니다."
+      },
+      "moonHoverText": "🌕 달 탐사 (클릭)",
+      "moonSimTitle": "🌕 달 자원(헬륨-3) 채굴 및 개발 시뮬레이션",
+      "moonSimDesc": "달 표면에 풍부하게 매장된 헬륨-3는 방사능 발생이 없는 차세대 핵융합 발전의 완벽한 청정 연료입니다. 지구에는 수백 kg밖에 존재하지 않지만, 달에는 약 110만 톤의 헬륨-3가 매장되어 있습니다. 단 1톤으로 지구 전체가 며칠간 사용할 에너지를 생산할 수 있어, 미래 에너지 패권의 핵심으로 떠오르고 있습니다.",
+      "moonStatTitle": "📊 헬륨-3 자원 가치 및 특징",
+      "moonStatsDetails": [
+        {
+          "label": "달 매장량 추정치",
+          "value": "약 110만 톤",
+          "icon": "📦"
+        },
+        {
+          "label": "지구 매장량",
+          "value": "수백 kg 수준 (극희귀)",
+          "icon": "🌍"
+        },
+        {
+          "label": "에너지 효율",
+          "value": "우라늄의 10배 (석탄의 천만 배 이상)",
+          "icon": "⚡"
+        },
+        {
+          "label": "친환경성",
+          "value": "방사성 폐기물 배출 제로",
+          "icon": "🌱"
+        },
+        {
+          "label": "잠재적 경제 가치",
+          "value": "톤당 약 30억 달러 이상",
+          "icon": "💰"
+        }
+      ],
+      "moonCountryStatusTitle": "🚀 국가별 달 자원 확보 경쟁 현황",
+      "moonCountryStatus": [
+        {
+          "country": "미국 (아르테미스 계획)",
+          "status": "2025년 이후 유인 착륙 목표. 동맹국들과 아르테미스 협정을 맺고, 달 남극에서 물과 자원을 채굴할 전초기지 건설 주도 중."
+        },
+        {
+          "country": "중국 (창어 계획)",
+          "status": "창어 5호로 달 샘플 귀환 성공, 헬륨-3 추출 연구 본격 진행. 러시아와 협력하여 국제 달 연구기지(ILRS) 건설 추진."
+        },
+        {
+          "country": "러시아 (루나 계획)",
+          "status": "과거 우주 강국의 위상을 위해 달 남극 착륙 재도전 중. 중국과 협력하여 독자적인 우주 정거장 및 달 자원 채굴망 구축 목표."
+        },
+        {
+          "country": "인도 (찬드라얀 계획)",
+          "status": "찬드라얀 3호로 세계 최초 달 남극 근처 착륙 성공. 저비용 고효율 탐사 기술로 달 수자원 및 광물 탐사 적극 추진."
+        }
+      ],
+      "moonActionBtnLabel": "🚀 달 표면 가상 채굴 기지 건설",
+      "moonActionBtnComplete": "✅ 기지 건설 완료! (채굴 데이터 분석 중...)",
+      "moonBackBtnLabel": "지구로 귀환하기",
+      "moonHe3Title": "💡 헬륨-3, 왜 그렇게 비싸고 중요할까요?",
+      "moonHe3Details": [
+        {
+          "title": "🌍 지구상의 극단적 희소성",
+          "desc": "태양풍을 통해 우주로 퍼지는 헬륨-3는 지구의 두꺼운 대기와 자기장에 막혀 지표면에 거의 도달하지 못합니다. 지구 전체를 통틀어도 수십~수백 kg밖에 존재하지 않는 초희귀 물질입니다."
+        },
+        {
+          "title": "⚛️ 방사능 없는 '꿈의 핵융합'",
+          "desc": "기존 원자력 발전과 달리 헬륨-3 기반의 핵융합 발전은 고준위 방사성 폐기물이 전혀 발생하지 않습니다. 폭발 위험도 없어 인류의 완벽한 청정 에너지원이 될 수 있습니다."
+        },
+        {
+          "title": "⚡ 압도적인 에너지 효율",
+          "desc": "단 1g의 헬륨-3로 석탄 40톤이 내는 에너지를 만들 수 있습니다. 우주왕복선 한 대 분량인 약 100톤만 지구로 가져오면 인류 전체가 1년간 사용할 에너지를 충당할 수 있습니다."
+        },
+        {
+          "title": "⛏️ 천문학적인 채굴 및 운송 비용",
+          "desc": "달 표면의 흙(레골리스) 150톤을 채굴해 섭씨 600도 이상으로 가열해야 겨우 1g의 헬륨-3를 얻을 수 있습니다. 극한의 우주 환경에서 정제하고 지구로 귀환하는 막대한 비용이 가격을 천정부지로 만듭니다."
+        }
+      ],
+      "tabConsumption": "소비량",
+      "prodVsMiningBtn": "💡 용어 설명 (생산량 vs 채굴량)",
+      "prodVsMiningTitle": "💡 생산량과 채굴량의 차이",
+      "prodVsMiningDesc": "• 채굴량(Mining): 광산에서 자연 상태의 광물을 캐낸 원광의 양입니다.\n• 생산량(Production): 채굴된 광물을 제련 및 정제하여 실제 산업에 사용할 수 있는 상태로 가공한 양입니다.\n\n※ 글로벌 공급망의 핵심 특징: 많은 자원들이 실제로 채굴되는 국가와, 이를 정제/가공(생산)하는 국가가 다릅니다.",
+      "chinaConsumptionBtn": "🇨🇳 중국 자원 소비 분석",
+      "chinaModalTitle": "🇨🇳 중국은 왜 '자원 블랙홀'이 되었을까?",
+      "chinaModalDesc": "전 세계 주요 자원의 엄청난 양이 중국으로 빨려 들어갑니다. 그 경제적, 산업적 이유를 알기 쉽게 설명해 드립니다.",
+      "chinaReasons": [
+        {
+          "icon": "🏭",
+          "title": "압도적인 '세계의 공장'",
+          "desc": "전 세계 제조업의 약 30%를 담당합니다. 외국에서 원자재를 수입해 스마트폰, 가전제품, 자동차 등 완제품으로 조립하여 다시 전 세계로 수출하기 때문에 막대한 자원이 필요합니다."
+        },
+        {
+          "icon": "🔋",
+          "title": "미래 첨단산업의 지배 야망",
+          "desc": "전기차, 2차 전지(배터리), 태양광 패널 등 친환경 미래 산업을 국가 주도로 집중 육성 중입니다. 배터리 생산을 위해 전 세계 리튬, 코발트, 희토류를 싹쓸이하고 있습니다."
+        },
+        {
+          "icon": "🏗️",
+          "title": "초거대 인프라 투자 지속",
+          "desc": "매년 대규모 신도시가 개발되고, 고속철도망을 세계 최장으로 구축하는 등 건설 및 인프라 사업에 철강, 구리, 바나듐 같은 기초 금속을 엄청나게 쏟아붓고 있습니다."
+        }
+      ],
+      "chinaStats": [
+        {
+          "resourceId": "tungsten",
+          "statTitle": "텅스텐 : 세계 생산 80%, 소비 60% 이상",
+          "explanation": "중국은 전 세계 텅스텐 생산을 거의 독점하고 있습니다. 하지만 자국 내 첨단 공구 및 방산 수요가 급증하면서, 자기가 생산한 자원을 수출하기보다 내부에서 대부분 소비하고 있습니다. 오히려 수급 안정을 위해 다른 나라에서 텅스텐 스크랩(고철)을 수입할 정도입니다."
+        },
+        {
+          "resourceId": "cobalt",
+          "statTitle": "코발트 : 채굴 0%, 가공 및 소비 70% 이상",
+          "explanation": "중국 내에는 경제성 있는 코발트 광산이 거의 없습니다. 하지만 콩고민주공화국 등지에서 채굴된 원광을 블랙홀처럼 수입해, 세계 코발트 화합물의 70% 이상을 직접 가공(정제)하고 자국 내 거대한 배터리 공장(CATL 등)에서 소비합니다."
+        },
+        {
+          "resourceId": "copper",
+          "statTitle": "구리 : 전 세계 소비의 절반을 혼자 쓴다",
+          "explanation": "중국이 전 세계 구리의 50% 이상을 소비합니다. 에어컨, 전선, 전기차, 송전탑 등 전기가 통하는 모든 것에 구리가 대량으로 필요하기 때문입니다. 중국의 경제 성장률 지표가 발표될 때마다 전 세계 구리 가격이 함께 출렁이는 이유가 바로 이 때문입니다."
+        }
+      ],
+      "issHoverText": "🛰️ 국제우주정거장 (클릭)",
+      "issModalTitle": "🛰️ 국제우주정거장(ISS)과 우주 자원 연구",
+      "issModalDesc": "국제우주정거장은 지구 저궤도에서 미세중력 환경을 이용해 첨단 신소재 개발과 우주 자원 탐사를 위한 전초기지 역할을 하고 있습니다.",
+      "issDetails": [
+        {
+          "title": "🔬 미세중력 환경의 고순도 신소재",
+          "desc": "중력의 간섭이 없는 상태에서는 광물이나 단백질 결정이 지구에서보다 훨씬 크고 순수하게 자랍니다. 차세대 반도체 및 광케이블 소재 연구가 활발히 진행 중입니다."
+        },
+        {
+          "title": "☄️ 소행성 채굴을 위한 로봇 테스트",
+          "desc": "우주 공간에서 자율적으로 움직이며 소행성이나 달의 표면에서 광물을 채굴할 수 있는 로봇 기술이 ISS에서 테스트되고 있습니다."
+        },
+        {
+          "title": "♻️ 우주 쓰레기 및 자원 재활용",
+          "desc": "지구에서 부품과 자원을 계속 가져오기 어렵기 때문에, 우주 쓰레기를 수거해 플라즈마로 분해한 뒤 3D 프린터 원료로 재활용하는 연구가 추진 중입니다."
+        }
+      ],
+      "nationSimTitle": "🌍 국가 자원 감산 파급 시뮬레이션",
+      "nationSimDesc": "특정 국가가 특정 자원의 생산을 줄였을 때, 해당 자원을 수입하여 사용하는 전 세계 주요 국가·산업·기업에 발생하는 연쇄 파급 효과(공급 차질 피해)를 분석합니다.",
+      "nationSimButton": "🌍 국가 파급 분석",
+      "nationSimSelectCountry": "감산 국가 선택",
+      "nationSimSelectResource": "감산 자원 선택",
+      "nationSimReduction": "생산 감축 비율 (%)",
+      "nationSimRunBtn": "🚀 파급 효과 분석",
+      "nationSimResultTitle": "📊 파급 효과 분석 결과",
+      "nationSimTotalLoss": "글로벌 경제 예상 손실액",
+      "nationSimCountryLoss": "예상 경제 피해:",
+      "nationSimSectorLoss": "산업 피해 추정:",
+      "nationSimCompDamage": "예상 피해액:",
+      "nationSimCompUsage": "자원 사용량:",
+      "unitBillion": "억 달러",
+      "unitMillion": "백만 달러",
+      "unitTon": "톤",
+      "nationSimExplTitle": "분석 결과 읽는 법",
+      "nationSimExplDesc": "아래 결과는 {country}이(가) {resource} 생산을 {percent}% 줄였을 때, 해당 자원을 수입·사용하는 다른 국가·산업·기업에 발생하는 '공급 차질로 인한 피해'를 추정한 것입니다. 각 기업의 피해액은 해당 기업이 {resource}을(를) 핵심 원자재로 사용하고 있어, 조달 비용 상승 및 생산 차질로 인해 입게 되는 예상 손실 금액입니다.",
+      "nationSimCountryContext": "{resource} 수입 의존국 — 공급 차질 시 예상 피해",
+      "nationSimSectorContext": "{resource}을(를) 핵심 원자재로 사용하는 산업 분야",
+      "nationSimCompContext": "{resource} 조달 차질에 따른 생산 비용 상승 피해",
+      "nationSimDisclaimer": "⚠ 본 분석은 시뮬레이션 기반의 가상 시나리오 예측이며, 실제 경제 피해와 다를 수 있습니다. 참고용으로만 활용해 주세요.",
+      "compClickHint": "클릭하여 상세보기",
+      "compDetailTitle": "상세 분석",
+      "compBizTitle": "주요 사업 분야",
+      "compWhyDamageTitle": "피해 발생 원인",
+      "compResourceUsageTitle": "자원 활용 방식",
+      "currencyFeatureButton": "💱 기축통화 가치 비교",
+      "currencyFeatureTitle": "💱 기축통화별 연도별 가치 변화 비교",
+      "currencyFeatureDesc": "주요 국제 통화(USD, EUR, JPY, GBP, CNY 등)를 선택해 연도별 가치 흐름을 한 화면에서 비교할 수 있습니다. 그래프에서 특정 연도를 선택하면, 그 시점에 왜 상승하거나 하락했는지도 함께 확인할 수 있습니다. 단, 중국 위안화(CNY)는 비교용으로 포함되지만 기축통화가 아니며, 달러와 같은 지위를 가진 통화로 이해하면 안 됩니다.",
+      "currencyFeatureSelectPrompt": "비교할 통화를 선택하세요",
+      "currencyFeatureCompareLabel": "가치 지수",
+      "currencyFeatureReasonTitle": "📖 등락 원인 설명",
+      "currencyFeatureReasonDesc": "금리 변화, 인플레이션, 경제 위기, 정책 변화 같은 요인이 통화 가치에 어떤 영향을 주었는지 설명 형태로 보여줍니다.",
+      "currencyFeatureNoReason": "그래프에서 연도를 선택하면 해당 시점 또는 기간의 등락 원인을 확인할 수 있습니다.",
+      "currencyFeatureAllCurrencies": "전체 통화",
+      "currencyNames": {
+        "usd": "미국 달러 (USD)",
+        "eur": "유로 (EUR)",
+        "jpy": "일본 엔 (JPY)",
+        "gbp": "영국 파운드 (GBP)",
+        "chf": "스위스 프랑 (CHF)",
+        "cny": "중국 위안화 (CNY, 기축통화 아님)"
+      },
+      "currencyCategoryLabels": {
+        "interest_rate": "금리 변화",
+        "inflation": "인플레이션",
+        "economic_crisis": "경제 위기",
+        "policy_change": "정책 변화",
+        "safe_haven": "안전자산 선호",
+        "growth": "경기 성장",
+        "sovereign_debt": "재정 불안",
+        "energy_shock": "에너지 충격",
+        "finance": "금융시장 영향",
+        "political_uncertainty": "정치 불확실성",
+        "bond_market": "채권시장 불안"
+      },
+      "currencyFeatureChartHint": "마우스를 움직이면 연도가 미리 강조되고, 클릭하면 해당 연도의 원인 설명이 오른쪽 패널에 고정됩니다.",
+      "currencyFeatureSelectedYearLabel": "선택된 시점",
+      "currencyFeatureSelectedYearEmpty": "아직 선택된 시점이 없습니다",
+      "currencyFeatureClearSelection": "선택 해제",
+      "currencyFeaturePinnedStateDesc": "현재 선택한 연도의 설명이 고정되어 있어 마우스를 옮겨도 내용이 유지됩니다.",
+      "currencyFeatureHoverStateDesc": "그래프를 클릭하면 해당 연도의 설명이 고정됩니다. 클릭 전에는 마우스를 올린 위치가 미리보기로 표시됩니다.",
+      "currencyFeaturePinnedReasonDesc": "선택한 연도의 주요 등락 배경이 아래에 고정되어 표시됩니다. 필요한 경우 펼쳐서 자세한 내용을 더 볼 수 있습니다.",
+      "currencyFeatureCollapse": "간단히 보기",
+      "currencyFeatureExpand": "자세히 보기",
+      "currencyFeatureSummaryTitle": "빠른 요약",
+      "currencyFeatureReasonCountSuffix": "건",
+      "currencyFeatureMoreReasonHint": "추가 설명 {count}건은 '자세히 보기'에서 확인할 수 있습니다.",
+      "currencyFeatureImportantNoticeTitle": "중요 안내",
+      "currencyFeatureImportantNotice": "※ 명시적 고지: 중국 위안화(CNY)는 이 화면의 비교 대상에 포함되지만, 기축통화가 아닙니다. 국제 결제나 외환보유에서 의미 있는 비중이 있더라도, 달러처럼 세계 기축통화로 분류되지 않는다는 점을 분명히 안내합니다."
+    }
+  },
+  "assetList": {
+    "images": [],
+    "sounds": [
+      {
+        "id": "bgm",
+        "file_path": "assets/bgm.mp3",
+        "duration_seconds": 120,
+        "volume": 0.3,
+        "isBackgroundMusic": true,
+        "isNewAsset": false,
+        "description": "Calm, ambient electronic background music with soft pads and gentle percussion, suitable for a data visualization dashboard. Spacey and modern feel."
+      },
+      {
+        "id": "click",
+        "file_path": "assets/click.mp3",
+        "duration_seconds": 0.3,
+        "volume": 0.5,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "A clean, soft UI click sound effect. Brief and subtle, suitable for button interactions in a modern dashboard application."
+      }
+    ]
+  }
+}
