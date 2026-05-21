@@ -8,7 +8,7 @@ export default function Footer() {
               Typing<span className="font-medium text-primary-300">Edu</span>
             </h3>
             <p className="text-sm leading-relaxed">
-              자체 엔진 기반 맞춤형 스마트 교구 제작 전문
+              특허 출원 자체 엔진 기반 맞춤형 스마트 교구 제작 전문
               <br />
               교육 기관의 철학을 디지털로 구현합니다.
             </p>
@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <h4 className="text-white font-medium mb-3">연락처</h4>
             <ul className="space-y-2 text-sm">
-              <li>이메일: ceo@vibeedu.ai</li>
+              <li>이메일: help@vibeedu.ai</li>
             </ul>
           </div>
           <div>
