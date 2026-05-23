@@ -87,9 +87,9 @@ export default function HeroSection() {
             transition={{ delay: 0.6 }}
             className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed"
           >
-            "특허 출원한" 자체 개발 엔진으로 외주대비 비용 90% 절감.
+            특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감.
             <br />
-            "콘텐츠" 시각화를 통한 몰입도 향상.
+            콘텐츠 시각화를 통한 몰입도 향상.
           </motion.p>
 
           <motion.div
