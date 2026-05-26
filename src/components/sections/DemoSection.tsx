@@ -10,24 +10,36 @@ interface DemoApp {
   tag: string;
 }
 
+// 그리드에 보여줄 총 슬롯 수 (실제 앱 + '곧 추가됩니다' 플레이스홀더)
+const TOTAL_SLOTS = 6;
+
 const DEMO_APPS: DemoApp[] = [
   {
     id: "mineral-resources-dashboard-v3",
     title: "지하자원 대시보드",
     description:
       "세계 각국의 지하·천연자원 생산 현황과 시뮬레이션을 직접 조작해보세요.",
-    thumbnail: "/apps/mineral-resources-dashboard-v3/assets/thumbnail.webp",
+    thumbnail: "/apps/mineral-resources-dashboard-v3/assets/thumbnail_512.webp",
     appPath: "/apps/mineral-resources-dashboard-v3/index.html",
     tag: "지리 · 사회",
   },
   {
-    id: "functions-and-graphs",
-    title: "함수와 그래프",
+    id: "arithmetic-playground",
+    title: "딩동댕 사칙연산",
     description:
-      "함수식을 입력하면 그래프가 실시간으로 그려지는 인터랙티브 수학 도구입니다.",
-    thumbnail: "/apps/functions-and-graphs/assets/thumbnail.webp",
-    appPath: "/apps/functions-and-graphs/index.html",
+      "6~10세 어린이를 위한 사칙연산 연습 게임. 직접 풀어보며 익혀요.",
+    thumbnail: "/apps/arithmetic-playground/assets/thumbnail.png",
+    appPath: "/apps/arithmetic-playground/index.html",
     tag: "수학",
+  },
+  {
+    id: "history-of-it-and-ai",
+    title: "금쪽같은 내 AI 역사",
+    description:
+      "IT와 AI의 발전 과정을 인터랙티브하게 따라가 보는 학습 콘텐츠입니다.",
+    thumbnail: "/apps/history-of-it-and-ai/assets/thumbnail_512.webp",
+    appPath: "/apps/history-of-it-and-ai/index.html",
+    tag: "사회 · IT",
   },
 ];
 
@@ -197,19 +209,22 @@ export default function DemoSection() {
             </motion.div>
           ))}
 
-          {/* 추가 예정 슬롯 */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: DEMO_APPS.length * 0.08 }}
-            className="rounded-2xl border-2 border-dashed border-gray-200 aspect-video flex flex-col items-center justify-center text-gray-300 gap-2 hover:border-indigo-200 hover:text-indigo-300 transition-colors duration-200"
-          >
-            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
-            </svg>
-            <span className="text-sm font-medium">곧 추가됩니다</span>
-          </motion.div>
+          {/* 추가 예정 슬롯 — 총 6칸이 되도록 채움 */}
+          {Array.from({ length: Math.max(0, TOTAL_SLOTS - DEMO_APPS.length) }).map((_, i) => (
+            <motion.div
+              key={`placeholder-${i}`}
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: (DEMO_APPS.length + i) * 0.08 }}
+              className="rounded-2xl border-2 border-dashed border-gray-200 aspect-video flex flex-col items-center justify-center text-gray-300 gap-2 hover:border-indigo-200 hover:text-indigo-300 transition-colors duration-200"
+            >
+              <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
+              </svg>
+              <span className="text-sm font-medium">곧 추가됩니다</span>
+            </motion.div>
+          ))}
         </div>
 
         {/* 앱 실행 패널 */}
