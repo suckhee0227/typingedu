@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PORTFOLIO_ITEMS } from "../../lib/constants";
 import type { Tier } from "../../types";
 
@@ -15,18 +15,42 @@ const TIER_LABEL: Record<Tier, string> = {
   프리미엄: "PREMIUM",
 };
 
+// 제목이 슬롯/잭팟처럼 글자별로 아래에서 튀어 올라 제자리에 맞춰짐
+const slotContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.035 } } };
+const slotChar: Variants = {
+  hidden: { y: "110%", opacity: 0 },
+  visible: { y: 0, opacity: 1, transition: { type: "spring", stiffness: 480, damping: 20 } },
+};
+function SlotHeading({ text, className }: { text: string; className?: string }) {
+  return (
+    <motion.h3
+      variants={slotContainer}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: "-40px" }}
+      className={`inline-flex overflow-hidden ${className ?? ""}`}
+    >
+      {Array.from(text).map((c, i) => (
+        <motion.span key={i} variants={slotChar} className="inline-block" style={{ whiteSpace: "pre" }}>
+          {c}
+        </motion.span>
+      ))}
+    </motion.h3>
+  );
+}
+
 export default function PortfolioSection() {
   const [activeId, setActiveId] = useState<string | null>(null);
+  const [openDone, setOpenDone] = useState(false); // 열림(왜곡) 애니메이션 끝나면 iframe 로드
   const [iframeLoaded, setIframeLoaded] = useState(false);
-  const [morphDone, setMorphDone] = useState(false); // 지니 모핑이 끝나면 iframe 로드
   const [interacting, setInteracting] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     function onOpenDemo(e: Event) {
+      setOpenDone(false);
       setIframeLoaded(false);
-      setMorphDone(false);
       setInteracting(false);
       setActiveId((e as CustomEvent<string>).detail);
     }
@@ -40,11 +64,15 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
+  // 열림 애니메이션이 끝난 뒤 iframe 로드 + 패널을 부드럽게 화면 중앙으로
   useEffect(() => {
-    if (activeId && panelRef.current) {
-      const t = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 160);
-      return () => clearTimeout(t);
-    }
+    if (!activeId) return;
+    const t1 = setTimeout(() => setOpenDone(true), 580);
+    const t2 = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 640);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, [activeId]);
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
@@ -53,14 +81,10 @@ export default function PortfolioSection() {
 
   function openDemo(id: string, hasDemo: boolean) {
     if (!hasDemo) return;
-    if (activeId === id) {
-      setActiveId(null);
-      return;
-    }
+    setActiveId((prev) => (prev === id ? null : id));
+    setOpenDone(false);
     setIframeLoaded(false);
-    setMorphDone(false);
     setInteracting(false);
-    setActiveId(id);
   }
 
   function renderCard(item: (typeof PORTFOLIO_ITEMS)[number], i: number) {
@@ -69,7 +93,7 @@ export default function PortfolioSection() {
     return (
       <motion.div
         key={item.id}
-        // 루션식 등장: 옆에서 살짝 찌그러지며(skew) 올라옴 — 미세하게
+        // 루션식 등장: 옆에서 살짝 찌그러지며(skew) 올라옴
         initial={{ opacity: 0, x: 48, skewX: -5, scale: 0.96 }}
         whileInView={{ opacity: 1, x: 0, skewX: 0, scale: 1 }}
         viewport={{ once: true, margin: "-60px" }}
@@ -82,32 +106,41 @@ export default function PortfolioSection() {
             isActive ? "ring-2 ring-primary-500 ring-offset-2" : ""
           }`}
         >
-          {/* 활성 시 썸네일은 패널로 모핑되어 빠지므로 여기엔 자리만 유지 */}
-          {!isActive && (
-            <motion.div layoutId={`demo-${item.id}`} className="absolute inset-0">
-              {item.thumbnail ? (
-                <img
-                  src={item.thumbnail}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
-                />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center">
-                  <span className="text-5xl">{item.id === "it-ai-history" ? "🤖" : "⌨️"}</span>
-                </div>
-              )}
-              {hasDemo && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/25">
-                  <div className="flex translate-y-1 items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 opacity-0 shadow-lg transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100">
+          {item.thumbnail ? (
+            <img
+              src={item.thumbnail}
+              alt={item.title}
+              className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center">
+              <span className="text-5xl">{item.id === "it-ai-history" ? "🤖" : "⌨️"}</span>
+            </div>
+          )}
+
+          {hasDemo && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/25">
+              <div
+                className={`flex items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 shadow-lg transition-all duration-200 ${
+                  isActive ? "opacity-100" : "translate-y-1 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
+                }`}
+              >
+                {isActive ? (
+                  <>
+                    <span className="h-2 w-2 animate-pulse rounded-full bg-primary-500" />
+                    실행 중
+                  </>
+                ) : (
+                  <>
                     <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     체험하기
-                  </div>
-                </div>
-              )}
-            </motion.div>
+                  </>
+                )}
+              </div>
+            </div>
           )}
 
           {!hasDemo && (
@@ -120,7 +153,7 @@ export default function PortfolioSection() {
         <div className="mt-4">
           <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gray-400">{item.tags.join(" · ")}</p>
           <div className="mt-1.5 flex items-center gap-2.5">
-            <h3 className="text-[clamp(1.15rem,1.6vw,1.6rem)] font-bold text-gray-900">{item.title}</h3>
+            <SlotHeading text={item.title} className="text-[clamp(1.15rem,1.6vw,1.6rem)] font-bold text-gray-900" />
             <span className={`rounded-md px-2 py-0.5 text-[10px] font-bold tracking-wider ${TIER_BADGE[item.tier]}`}>
               {TIER_LABEL[item.tier]}
             </span>
@@ -138,43 +171,46 @@ export default function PortfolioSection() {
 
   function renderRow(start: number, end: number) {
     return (
-      <motion.div layout className="grid gap-x-6 gap-y-12 md:grid-cols-3">
+      <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
         {PORTFOLIO_ITEMS.slice(start, end).map((item, i) => renderCard(item, start + i))}
-      </motion.div>
+      </div>
     );
   }
 
-  // 데모 창 — 썸네일이 layoutId로 이 창에 빨려가듯 모핑(맥북 지니)
+  // 데모 창 — 슬릿에서 빨려나오듯 왜곡되며 열림(height 0→full + 가로 스케일 워프 + object-fill 이미지 뭉개짐)
   const panel = (
     <AnimatePresence>
       {activeItem && (
         <motion.div
           ref={panelRef}
-          layoutId={`demo-${activeItem.id}`}
-          onLayoutAnimationComplete={() => setMorphDone(true)}
-          style={{ transformOrigin: activeFromBottom ? "bottom" : "top", height: "72vh", minHeight: 480 }}
+          key={activeItem.id}
+          initial={{ height: 0, scaleX: 0.82, opacity: 0 }}
+          animate={{ height: "72vh", scaleX: 1, opacity: 1 }}
+          exit={{ height: 0, scaleX: 0.82, opacity: 0 }}
+          transition={{ height: { duration: 0.5, ease: [0.22, 1, 0.36, 1] }, scaleX: { duration: 0.5, ease: [0.34, 1.4, 0.5, 1] }, opacity: { duration: 0.25 } }}
+          style={{ transformOrigin: activeFromBottom ? "center bottom" : "center top" }}
           className="relative my-8 overflow-hidden rounded-3xl bg-black shadow-2xl"
         >
-          {/* 모핑 동안 보일 썸네일 (로드되면 가려짐) */}
+          {/* 열리는 동안 보이는 썸네일 — object-fill로 늘어나며 뭉개짐(왜곡 연출) */}
           {activeItem.thumbnail && (
             <img
               src={activeItem.thumbnail}
               alt={activeItem.title}
-              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
+              className={`absolute inset-0 h-full w-full object-fill transition-opacity duration-300 ${
                 iframeLoaded ? "opacity-0" : "opacity-100"
               }`}
             />
           )}
 
-          {morphDone && !iframeLoaded && (
+          {openDone && !iframeLoaded && (
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-black/30">
               <div className="h-10 w-10 animate-spin rounded-full border-gray-600 border-t-primary-400" style={{ borderWidth: 3, borderStyle: "solid" }} />
               <span className="text-sm text-white/70">앱 불러오는 중...</span>
             </div>
           )}
 
-          {/* 지니 모핑이 끝난 뒤 iframe 로드 → 모핑이 또렷이 보임. 클릭 전엔 휠 통과(자유 스크롤) */}
-          {morphDone && (
+          {/* 왜곡 열림이 끝난 뒤 iframe 로드 → 또렷이 보임. 클릭 전엔 휠 통과(자유 스크롤) */}
+          {openDone && (
             <iframe
               src={activeItem.demoUrl}
               title={activeItem.title}
@@ -232,7 +268,7 @@ export default function PortfolioSection() {
 
         {renderRow(0, 3)}
 
-        {/* 두 줄 사이 공유 데모 창 (윗줄=아래로 / 아랫줄=위로) */}
+        {/* 두 줄 사이 데모 창 (윗줄=위에서 아래로 / 아랫줄=아래에서 위로 빨려나옴) */}
         {panel}
         {!activeItem && <div className="h-8" />}
 
