@@ -85,9 +85,10 @@ export default function PortfolioSection() {
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
   const activeIndex = PORTFOLIO_ITEMS.findIndex((p) => p.id === activeId);
-  // 지니가 클릭한 카드 방향(컬럼·줄)으로 빨려들도록 변형 기준점 설정
+  const activeFromBottom = activeIndex >= 3; // 아랫줄이면 창을 아랫줄 아래에 렌더
+  // 창은 항상 누른 카드 바로 아래에 열리므로, 지니는 카드(위)에서 빨려나오게 — 가로는 컬럼 방향
   const col = activeIndex % 3;
-  const genieOrigin = `${col === 0 ? "14%" : col === 2 ? "86%" : "50%"} ${activeIndex >= 3 ? "100%" : "0%"}`;
+  const genieOrigin = `${col === 0 ? "14%" : col === 2 ? "86%" : "50%"} 0%`;
   const genieSkewX = col === 2 ? -14 : 14;
 
   function openDemo(id: string, hasDemo: boolean) {
@@ -266,11 +267,14 @@ export default function PortfolioSection() {
 
         {renderRow(0, 3)}
 
-        {/* 두 줄 사이 데모 창 — 클릭한 카드 자리에서 모핑되어 펼쳐지고 닫으면 그 자리로 빨려들어감 */}
-        {panel}
+        {/* 윗줄 클릭 → 윗줄 바로 아래에서 열림 */}
+        {!activeFromBottom && panel}
         {!activeItem && <div className="h-8" />}
 
         {renderRow(3, 6)}
+
+        {/* 아랫줄 클릭 → 아랫줄 바로 아래에서 열림 */}
+        {activeFromBottom && panel}
       </div>
     </section>
   );
