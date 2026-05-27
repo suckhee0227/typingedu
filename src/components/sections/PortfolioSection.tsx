@@ -64,11 +64,15 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // 모핑이 자리잡은 뒤 패널을 부드럽게 화면 중앙으로 (아랫줄 클릭 자동 스크롤 정리)
+  // 지니 변형이 끝난 뒤 iframe 로드 + 패널을 부드럽게 중앙으로 (아랫줄 자동 스크롤 정리)
   useEffect(() => {
     if (!activeId) return;
-    const t = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 520);
-    return () => clearTimeout(t);
+    const t1 = setTimeout(() => setOpenDone(true), 640);
+    const t2 = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 700);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
   }, [activeId]);
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
@@ -100,32 +104,27 @@ export default function PortfolioSection() {
             isActive ? "ring-2 ring-primary-500 ring-offset-2" : ""
           }`}
         >
-          {/* 활성 시 썸네일은 데모 창으로 모핑되어 빠지고, 여기엔 자리만 유지 */}
-          {!isActive && (
-            <motion.div layoutId={`demo-${item.id}`} className="absolute inset-0">
-              {item.thumbnail ? (
-                <img
-                  src={item.thumbnail}
-                  alt={item.title}
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
-                />
-              ) : (
-                <div className="flex h-full w-full items-center justify-center">
-                  <span className="text-5xl">{item.id === "it-ai-history" ? "🤖" : "⌨️"}</span>
-                </div>
-              )}
-              {hasDemo && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/25">
-                  <div className="flex translate-y-1 items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 opacity-0 shadow-lg transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100">
-                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    체험하기
-                  </div>
-                </div>
-              )}
-            </motion.div>
+          {item.thumbnail ? (
+            <img
+              src={item.thumbnail}
+              alt={item.title}
+              className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center">
+              <span className="text-5xl">{item.id === "it-ai-history" ? "🤖" : "⌨️"}</span>
+            </div>
+          )}
+          {hasDemo && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/25">
+              <div className="flex translate-y-1 items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 opacity-0 shadow-lg transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                체험하기
+              </div>
+            </div>
           )}
 
           {!hasDemo && (
@@ -168,17 +167,21 @@ export default function PortfolioSection() {
       {activeItem && (
         <motion.div
           ref={panelRef}
-          layoutId={`demo-${activeItem.id}`}
-          onLayoutAnimationComplete={() => setOpenDone(true)}
-          style={{ height: "72vh" }}
+          key={activeItem.id}
+          // 맥북 지니: 왼쪽 하단으로 휘며(skew) 비대칭 축소되어 빨려듦/빨려나옴
+          initial={{ scaleX: 0.12, scaleY: 0.06, skewX: 14, skewY: 6, opacity: 0 }}
+          animate={{ scaleX: 1, scaleY: 1, skewX: 0, skewY: 0, opacity: 1 }}
+          exit={{ scaleX: 0.12, scaleY: 0.06, skewX: 14, skewY: 6, opacity: 0 }}
+          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
+          style={{ height: "72vh", transformOrigin: "0% 100%" }}
           className="relative my-8 overflow-hidden rounded-3xl bg-black shadow-2xl"
         >
-          {/* 모핑 동안 보이는 썸네일(검은화면 X) — 비율이 바뀌며 늘어나 뭉개짐. 로드되면 가려짐 */}
+          {/* 빨려드는 동안 보이는 썸네일 — object-fill로 휘며 뭉개짐(검은화면 X). 로드되면 가려짐 */}
           {activeItem.thumbnail && (
             <img
               src={activeItem.thumbnail}
               alt={activeItem.title}
-              className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
+              className={`absolute inset-0 h-full w-full object-fill transition-opacity duration-300 ${
                 iframeLoaded ? "opacity-0" : "opacity-100"
               }`}
             />
