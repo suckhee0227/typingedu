@@ -3,7 +3,7 @@ import { PROCESS_STEPS } from "../../lib/constants";
 
 export default function ProcessSection() {
   return (
-    <section id="process" className="py-24 bg-gray-50">
+    <section id="process" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

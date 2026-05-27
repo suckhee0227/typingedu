@@ -43,7 +43,7 @@ const fadeUp = {
 
 export default function ExpertiseSection() {
   return (
-    <section id="expertise" className="py-24 bg-gray-50">
+    <section id="expertise" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div

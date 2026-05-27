@@ -1,5 +1,5 @@
-import { motion, useScroll, useTransform, type Variants } from "framer-motion";
-import { lazy, Suspense, useRef } from "react";
+import { motion, useMotionValue, useTransform, type Variants } from "framer-motion";
+import { lazy, Suspense, useRef, useEffect } from "react";
 import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 const FluidCanvas = lazy(() => import("../three/FluidCanvas"));
@@ -42,19 +42,42 @@ function Word({ children }: { children: string }) {
 
 export default function HeroSection() {
   const isMobile = useMediaQuery("(max-width: 768px)");
-  const sectionRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLElement>(null);
 
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end end"],
-  });
+  // 스크롤 진행도를 직접 측정 (Lenis 부드러운 스크롤과 확실히 동기화)
+  const progress = useMotionValue(0);
+  useEffect(() => {
+    let ticking = false;
+    const compute = () => {
+      const el = sectionRef.current;
+      if (el) {
+        const travel = el.offsetHeight - window.innerHeight;
+        const p = travel > 0 ? -el.getBoundingClientRect().top / travel : 0;
+        progress.set(Math.min(1, Math.max(0, p)));
+      }
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(compute);
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    compute();
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onScroll);
+    };
+  }, [progress]);
 
-  // 기존 카피 → "대담한 교육, 살아 움직이게."로 교차 (유체는 계속 보임)
-  const h1Opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
-  const h1Y = useTransform(scrollYProgress, [0, 0.35], ["0%", "-25%"]);
-  const h2Opacity = useTransform(scrollYProgress, [0.4, 0.72], [0, 1]);
-  const h2Y = useTransform(scrollYProgress, [0.4, 0.72], ["25%", "0%"]);
-  const supportOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+  // 기존 카피 → "대담한 교육, 살아 움직이게."로 교차
+  const h1Opacity = useTransform(progress, [0, 0.32], [1, 0]);
+  const h1Y = useTransform(progress, [0, 0.4], ["0%", "-12%"]);
+  const h2Opacity = useTransform(progress, [0.42, 0.78], [0, 1]);
+  const h2Y = useTransform(progress, [0.42, 0.78], ["12%", "0%"]);
+  const supportOpacity = useTransform(progress, [0, 0.32], [1, 0]);
 
   return (
     <section ref={sectionRef} id="hero" className="relative h-[200vh]">
@@ -72,7 +95,7 @@ export default function HeroSection() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-black/30" />
 
         {/* 콘텐츠 (포인터 통과 → 유체 반응, 버튼만 클릭) */}
-        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-between px-6 pb-10 pt-24 sm:px-10 sm:pb-14">
+        <div className="pointer-events-none relative z-10 mx-auto flex h-full max-w-6xl flex-col justify-between px-6 pb-10 pt-24 sm:px-10 sm:pb-14">
           <div>
             <motion.div
               initial={{ opacity: 0, y: 16 }}
@@ -81,7 +104,7 @@ export default function HeroSection() {
               style={{ opacity: supportOpacity }}
               className="mb-5 inline-flex flex-wrap items-center gap-2"
             >
-              <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-sm font-semibold tracking-wide text-white backdrop-blur-sm">
+              <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-white backdrop-blur-sm">
                 맞춤형 스마트 교구 제작
               </span>
               {["#교구", "#학습용", "#기업 내부 교육용", "#개인 교습용", "#대형 학원용", "#Gamification", "#시각화"].map(
@@ -103,7 +126,7 @@ export default function HeroSection() {
                 initial="hidden"
                 animate="show"
                 style={{ opacity: h1Opacity, y: h1Y }}
-                className="col-start-1 row-start-1 text-[clamp(2.25rem,6vw,4.75rem)] font-bold leading-[1.1] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
+                className="col-start-1 row-start-1 text-[clamp(1.9rem,5vw,3.75rem)] font-bold leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
               >
                 <Word>우리</Word>
                 <Word>기관의</Word>
@@ -121,7 +144,7 @@ export default function HeroSection() {
 
               <motion.h2
                 style={{ opacity: h2Opacity, y: h2Y }}
-                className="col-start-1 row-start-1 text-[clamp(2.5rem,8vw,6.5rem)] font-bold leading-[1.04] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
+                className="col-start-1 row-start-1 text-[clamp(2.1rem,6.5vw,5rem)] font-bold leading-[1.06] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
               >
                 대담한 교육,
                 <br />
@@ -139,14 +162,14 @@ export default function HeroSection() {
                 { value: "0%", label: "소통 로스" },
               ].map((stat) => (
                 <div key={stat.label}>
-                  <div className="text-[clamp(1.4rem,2.4vw,2rem)] font-bold text-white">{stat.value}</div>
+                  <div className="text-[clamp(1.3rem,2.2vw,1.85rem)] font-bold text-white">{stat.value}</div>
                   <div className="mt-0.5 text-xs text-white/60 sm:text-sm">{stat.label}</div>
                 </div>
               ))}
             </div>
 
             <motion.div style={{ opacity: supportOpacity }} className="sm:max-w-sm sm:text-right">
-              <p className="text-sm leading-relaxed text-white/75 sm:text-base">
+              <p className="text-sm leading-relaxed text-white/75">
                 특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감. 콘텐츠 시각화를 통한 몰입도 향상.
               </p>
               <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
