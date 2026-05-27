@@ -138,7 +138,8 @@ export default function PortfolioSection() {
             </span>
           </div>
 
-          <p className="mt-1.5 text-sm leading-relaxed text-gray-500">{item.description}</p>
+          {/* 설명은 한 줄로 통일해 카드 높이 일관성 유지 */}
+          <p className="mt-1.5 line-clamp-1 text-sm leading-relaxed text-gray-500">{item.description}</p>
 
           <div className="mt-3 flex items-center gap-2 text-sm">
             <span className="font-black text-primary-600">{item.priceDisplay}</span>
@@ -160,7 +161,7 @@ export default function PortfolioSection() {
 
   return (
     <section id="portfolio" className="py-24" ref={sectionRef}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
 
         {/* 헤더 (lusion 'Featured Work' 스타일 — 좌측 정렬 큰 타이틀) */}
         <motion.div
