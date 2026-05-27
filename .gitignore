@@ -12,3 +12,4 @@ etc
 # 게임 원본 소스 (배포 사본은 public/apps/arithmetic-playground)
 /딩동댕 사칙연산(6~10세용)/
 /typingx-logo.png
+.vercel
