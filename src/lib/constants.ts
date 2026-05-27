@@ -30,8 +30,8 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     thumbnail: "/apps/tap-tap-3d/assets/thumbnail.png",
     tier: "스탠다드",
     tags: ["공간지각", "게임", "초등"],
-    priceDisplay: "협의",
-    period: "협의",
+    priceDisplay: "80 만 원 내외",
+    period: "3일",
   },
   {
     id: "it-ai-history",
