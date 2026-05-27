@@ -44,7 +44,6 @@ export default function PortfolioSection() {
   const [openDone, setOpenDone] = useState(false); // 열림(왜곡) 애니메이션 끝나면 iframe 로드
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [interacting, setInteracting] = useState(false);
-  const panelRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -64,32 +63,18 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // 열면 iframe 로드(지니 변형 후) + 열리는 창으로 자동 스크롤 (Lenis로 확실히)
+  // 지니 변형이 끝난 뒤 iframe 로드 (오버레이라 스크롤은 불필요)
   useEffect(() => {
     if (!activeId) return;
-    const t1 = setTimeout(() => setOpenDone(true), 640);
-    const t2 = setTimeout(() => {
-      const el = panelRef.current;
-      if (!el) return;
-      const lenis = (window as unknown as {
-        __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number }) => void };
-      }).__lenis;
-      // 창 위로 충분한 여백(누른 카드가 보이게) → 다음 섹션으로 안 넘어감
-      if (lenis) lenis.scrollTo(el, { offset: -320, duration: 0.9 });
-      else el.scrollIntoView({ behavior: "smooth", block: "nearest" });
-    }, 150);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
+    const t = setTimeout(() => setOpenDone(true), 600);
+    return () => clearTimeout(t);
   }, [activeId]);
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
   const activeIndex = PORTFOLIO_ITEMS.findIndex((p) => p.id === activeId);
-  const activeFromBottom = activeIndex >= 3; // 아랫줄이면 창을 아랫줄 아래에 렌더
-  // 창은 항상 누른 카드 바로 아래에 열리므로, 지니는 카드(위)에서 빨려나오게 — 가로는 컬럼 방향
+  // 지니 휨 방향: 누른 카드의 컬럼/줄 쪽에서 빨려나오게(중앙 오버레이 기준 transformOrigin)
   const col = activeIndex % 3;
-  const genieOrigin = `${col === 0 ? "14%" : col === 2 ? "86%" : "50%"} 0%`;
+  const genieOrigin = `${col === 0 ? "16%" : col === 2 ? "84%" : "50%"} ${activeIndex >= 3 ? "100%" : "0%"}`;
   const genieSkewX = col === 2 ? -14 : 14;
 
   function openDemo(id: string, hasDemo: boolean) {
@@ -176,23 +161,32 @@ export default function PortfolioSection() {
     );
   }
 
-  // 데모 창 — 카드 썸네일이 layoutId로 이 창에 빨려나오듯 모핑(맥북 지니), 닫으면 카드 자리로 빨려들어감
+  // 데모 창 — 화면 중앙 고정 오버레이(스크롤 불필요·항상 정확). 누른 카드 방향에서 휘며 빨려나옴/들어감
   const panel = (
     <AnimatePresence>
       {activeItem && (
-        <motion.div
-          ref={panelRef}
-          key={activeItem.id}
-          // 맥북 지니: 클릭한 카드 방향으로 휘며(skew) 비대칭 축소되어 빨려듦/빨려나옴
-          initial={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
-          animate={{ scaleX: 1, scaleY: 1, skewX: 0, skewY: 0, opacity: 1 }}
-          exit={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
-          transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-          style={{ height: "62vh", transformOrigin: genieOrigin }}
-          className="relative my-8 overflow-hidden rounded-3xl bg-black shadow-2xl"
-        >
-          {/* 빨려드는 동안 보이는 썸네일 — object-fill로 휘며 뭉개짐(검은화면 X). 로드되면 가려짐 */}
-          {activeItem.thumbnail && (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            onClick={() => setActiveId(null)}
+            className="fixed inset-0 z-[100] bg-black/70 backdrop-blur-sm"
+          />
+          <div className="pointer-events-none fixed inset-0 z-[101] flex items-center justify-center p-4 sm:p-8">
+            <motion.div
+              key={activeItem.id}
+              // 맥북 지니: 클릭한 카드 방향으로 휘며(skew) 비대칭 축소되어 빨려듦/빨려나옴
+              initial={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
+              animate={{ scaleX: 1, scaleY: 1, skewX: 0, skewY: 0, opacity: 1 }}
+              exit={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
+              transition={{ duration: 0.55, ease: [0.4, 0, 0.2, 1] }}
+              style={{ transformOrigin: genieOrigin }}
+              className="pointer-events-auto relative h-[84vh] w-full max-w-6xl overflow-hidden rounded-2xl bg-black shadow-2xl"
+            >
+              {/* 빨려드는 동안 보이는 썸네일 — object-fill로 휘며 뭉개짐(검은화면 X). 로드되면 가려짐 */}
+              {activeItem.thumbnail && (
             <img
               src={activeItem.thumbnail}
               alt={activeItem.title}
@@ -237,11 +231,13 @@ export default function PortfolioSection() {
             aria-label="닫기"
             className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/75"
           >
-            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </motion.div>
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            </motion.div>
+          </div>
+        </>
       )}
     </AnimatePresence>
   );
@@ -267,16 +263,12 @@ export default function PortfolioSection() {
         </motion.div>
 
         {renderRow(0, 3)}
-
-        {/* 윗줄 클릭 → 윗줄 바로 아래에서 열림 */}
-        {!activeFromBottom && panel}
-        {!activeItem && <div className="h-8" />}
-
+        <div className="h-12" />
         {renderRow(3, 6)}
-
-        {/* 아랫줄 클릭 → 아랫줄 바로 아래에서 열림 */}
-        {activeFromBottom && panel}
       </div>
+
+      {/* 데모는 화면 중앙 고정 오버레이로 열림 */}
+      {panel}
     </section>
   );
 }
