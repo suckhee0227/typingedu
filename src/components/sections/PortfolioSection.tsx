@@ -64,11 +64,19 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // 지니 변형이 끝난 뒤 iframe 로드 + 패널을 부드럽게 중앙으로 (아랫줄 자동 스크롤 정리)
+  // 열면 iframe 로드(지니 변형 후) + 열리는 창으로 자동 스크롤 (Lenis로 확실히)
   useEffect(() => {
     if (!activeId) return;
     const t1 = setTimeout(() => setOpenDone(true), 640);
-    const t2 = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "center" }), 700);
+    const t2 = setTimeout(() => {
+      const el = panelRef.current;
+      if (!el) return;
+      const lenis = (window as unknown as {
+        __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number }) => void };
+      }).__lenis;
+      if (lenis) lenis.scrollTo(el, { offset: -90, duration: 0.9 });
+      else el.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 150);
     return () => {
       clearTimeout(t1);
       clearTimeout(t2);
@@ -76,6 +84,11 @@ export default function PortfolioSection() {
   }, [activeId]);
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
+  const activeIndex = PORTFOLIO_ITEMS.findIndex((p) => p.id === activeId);
+  // 지니가 클릭한 카드 방향(컬럼·줄)으로 빨려들도록 변형 기준점 설정
+  const col = activeIndex % 3;
+  const genieOrigin = `${col === 0 ? "14%" : col === 2 ? "86%" : "50%"} ${activeIndex >= 3 ? "100%" : "0%"}`;
+  const genieSkewX = col === 2 ? -14 : 14;
 
   function openDemo(id: string, hasDemo: boolean) {
     if (!hasDemo) return;
@@ -168,12 +181,12 @@ export default function PortfolioSection() {
         <motion.div
           ref={panelRef}
           key={activeItem.id}
-          // 맥북 지니: 왼쪽 하단으로 휘며(skew) 비대칭 축소되어 빨려듦/빨려나옴
-          initial={{ scaleX: 0.12, scaleY: 0.06, skewX: 14, skewY: 6, opacity: 0 }}
+          // 맥북 지니: 클릭한 카드 방향으로 휘며(skew) 비대칭 축소되어 빨려듦/빨려나옴
+          initial={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
           animate={{ scaleX: 1, scaleY: 1, skewX: 0, skewY: 0, opacity: 1 }}
-          exit={{ scaleX: 0.12, scaleY: 0.06, skewX: 14, skewY: 6, opacity: 0 }}
+          exit={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
           transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-          style={{ height: "72vh", transformOrigin: "0% 100%" }}
+          style={{ height: "72vh", transformOrigin: genieOrigin }}
           className="relative my-8 overflow-hidden rounded-3xl bg-black shadow-2xl"
         >
           {/* 빨려드는 동안 보이는 썸네일 — object-fill로 휘며 뭉개짐(검은화면 X). 로드되면 가려짐 */}
