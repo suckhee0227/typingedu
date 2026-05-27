@@ -10,6 +10,13 @@ const TIER_BADGE: Record<Tier, string> = {
   프리미엄: "bg-gradient-to-r from-primary-500 to-primary-700 text-white",
 };
 
+// 배지 표시용 영문 라벨 (내부 데이터 키는 한글 유지)
+const TIER_LABEL: Record<Tier, string> = {
+  베이직: "BASIC",
+  스탠다드: "STANDARD",
+  프리미엄: "PREMIUM",
+};
+
 export default function PortfolioSection() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [iframeLoaded, setIframeLoaded] = useState(false);
@@ -121,8 +128,8 @@ export default function PortfolioSection() {
         <div className="p-4 flex flex-col flex-1">
           <h3 className="font-bold text-gray-900 mb-0.5 flex items-center gap-2">
             {item.title}
-            <span className={`px-2 py-0.5 text-[10px] font-bold rounded-md tracking-wide ${TIER_BADGE[item.tier]}`}>
-              {item.tier}
+            <span className={`px-2 py-0.5 text-[10px] font-bold rounded-md tracking-wider ${TIER_BADGE[item.tier]}`}>
+              {TIER_LABEL[item.tier]}
             </span>
           </h3>
           <p className="text-sm text-gray-500 mb-2 flex-1">{item.description}</p>

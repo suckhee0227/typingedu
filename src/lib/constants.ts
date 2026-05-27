@@ -31,7 +31,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tier: "스탠다드",
     tags: ["공간지각", "게임", "초등"],
     priceDisplay: "80 만 원 내외",
-    period: "3일",
+    period: "1주",
   },
   {
     id: "it-ai-history",
@@ -42,7 +42,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tier: "프리미엄",
     tags: ["IT", "AI", "역사"],
     priceDisplay: "300 만 원 내외",
-    period: "2주 이상",
+    period: "2주",
   },
   // 2줄 (베이직 · 스탠다드 · 프리미엄)
   {
@@ -65,7 +65,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tier: "스탠다드",
     tags: ["사회", "통계", "중등"],
     priceDisplay: "협의",
-    period: "협의",
+    period: "1주",
   },
   {
     id: "mineral-resources-dashboard-v3",
@@ -76,7 +76,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     tier: "프리미엄",
     tags: ["지리", "사회", "중등"],
     priceDisplay: "150 만 원 내외",
-    period: "1주",
+    period: "2주",
   },
 ];
 
