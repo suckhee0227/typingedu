@@ -62,10 +62,18 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // 열리면 필요한 만큼만 살짝 화면 안으로
+  // 펼침 애니메이션(0.4s)이 끝난 뒤 "딱 한 번" 부드럽게 패널 위치로 (자라는 중 스크롤 → 이중 점프 방지)
   useEffect(() => {
     if (!activeId) return;
-    const t = setTimeout(() => panelRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" }), 200);
+    const t = setTimeout(() => {
+      const el = panelRef.current;
+      if (!el) return;
+      const lenis = (window as unknown as {
+        __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number }) => void };
+      }).__lenis;
+      if (lenis) lenis.scrollTo(el, { offset: -100, duration: 0.8 });
+      else el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 480);
     return () => clearTimeout(t);
   }, [activeId]);
 
