@@ -74,8 +74,9 @@ export default function PortfolioSection() {
       const lenis = (window as unknown as {
         __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number }) => void };
       }).__lenis;
-      if (lenis) lenis.scrollTo(el, { offset: -90, duration: 0.9 });
-      else el.scrollIntoView({ behavior: "smooth", block: "center" });
+      // 창 위로 충분한 여백(누른 카드가 보이게) → 다음 섹션으로 안 넘어감
+      if (lenis) lenis.scrollTo(el, { offset: -320, duration: 0.9 });
+      else el.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }, 150);
     return () => {
       clearTimeout(t1);
@@ -187,7 +188,7 @@ export default function PortfolioSection() {
           animate={{ scaleX: 1, scaleY: 1, skewX: 0, skewY: 0, opacity: 1 }}
           exit={{ scaleX: 0.12, scaleY: 0.06, skewX: genieSkewX, skewY: 6, opacity: 0 }}
           transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
-          style={{ height: "72vh", transformOrigin: genieOrigin }}
+          style={{ height: "62vh", transformOrigin: genieOrigin }}
           className="relative my-8 overflow-hidden rounded-3xl bg-black shadow-2xl"
         >
           {/* 빨려드는 동안 보이는 썸네일 — object-fill로 휘며 뭉개짐(검은화면 X). 로드되면 가려짐 */}
