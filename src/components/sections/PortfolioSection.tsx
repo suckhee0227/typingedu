@@ -27,7 +27,7 @@ function SlotHeading({ text, className }: { text: string; className?: string }) 
       variants={slotContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-40px" }}
+      viewport={{ once: false, margin: "-40px" }}
       className={`inline-flex overflow-hidden ${className ?? ""}`}
     >
       {Array.from(text).map((c, i) => (
@@ -90,7 +90,7 @@ export default function PortfolioSection() {
         // 루션식 등장: 옆에서 살짝 찌그러지며(skew) 올라옴
         initial={{ opacity: 0, x: 48, skewX: -5, scale: 0.96 }}
         whileInView={{ opacity: 1, x: 0, skewX: 0, scale: 1 }}
-        viewport={{ once: true, margin: "-60px" }}
+        viewport={{ once: false, margin: "-60px" }}
         transition={{ duration: 0.6, delay: (i % 3) * 0.08, ease: [0.22, 1, 0.36, 1] }}
         onClick={() => openDemo(item.id, hasDemo)}
         className={`group flex flex-col ${hasDemo ? "cursor-pointer" : "cursor-default opacity-60"}`}
@@ -234,7 +234,7 @@ export default function PortfolioSection() {
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
           className="mb-12 text-center sm:mb-16"
         >

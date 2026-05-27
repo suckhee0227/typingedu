@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PRICING_PLANS, PORTFOLIO_ITEMS } from "../../lib/constants";
+import Typewriter from "../ui/Typewriter";
 
 // 기능 항목이 하나씩 순차로 등장
 const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
@@ -18,7 +19,7 @@ export default function PricingSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="text-center mb-16"
         >
           <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
@@ -28,7 +29,7 @@ export default function PricingSection() {
             합리적인 가격 정책
           </h2>
           <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
-            요구사항과 제작 기간에 따라 가격을 책정합니다.
+            <Typewriter text="요구사항과 제작 기간에 따라 가격을 책정합니다." />
           </p>
           <div className="mt-4 inline-block px-5 py-2 bg-yellow-50 border border-yellow-200 rounded-full">
             <span className="text-yellow-800 font-semibold text-sm">
@@ -43,7 +44,7 @@ export default function PricingSection() {
               key={plan.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               transition={{ delay: i * 0.1 }}
               className="relative rounded-3xl px-10 py-12 bg-white border border-gray-100 shadow-xl"
             >
@@ -69,7 +70,7 @@ export default function PricingSection() {
                 className="space-y-5 mb-12"
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: false }}
                 variants={listContainer}
               >
                 {plan.features.map((feature) => (
@@ -101,7 +102,7 @@ export default function PricingSection() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           className="mt-16 text-center"
         >
           <button

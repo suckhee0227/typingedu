@@ -17,7 +17,7 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6 }}
           >
             <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
@@ -36,7 +36,7 @@ export default function ContactSection() {
               className="space-y-4"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               variants={listContainer}
             >
               {[
@@ -69,7 +69,7 @@ export default function ContactSection() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8"
           >
