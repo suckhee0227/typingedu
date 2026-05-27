@@ -82,8 +82,8 @@ export default function HeroSection() {
     // 흰 배경(회색·경계선 없음) 위에 떠 있는 작은 유체 박스 — 메인1 스타일
     <section ref={sectionRef} id="hero" className="relative h-[300vh] bg-white">
       {/* items-end + 위쪽 공백 → 히어로가 살짝 아래로, 상단 브랜드(네비)와 간격 ↑ */}
-      <div className="sticky top-0 flex h-screen items-end justify-center px-2 pb-[4vh] sm:px-3">
-        <div className="relative h-[84vh] w-full max-w-[1760px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
+      <div className="sticky top-0 flex h-screen items-end justify-center px-3 pb-[4vh] sm:px-4">
+        <div className="relative h-[84vh] w-full max-w-[1600px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
           {isMobile ? (
             <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-600 to-accent-600" />
           ) : (
