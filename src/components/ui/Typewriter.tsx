@@ -8,7 +8,7 @@ import { useInView } from "framer-motion";
 export default function Typewriter({
   text,
   className,
-  speed = 38,
+  speed = 20,
 }: {
   text: string;
   className?: string;

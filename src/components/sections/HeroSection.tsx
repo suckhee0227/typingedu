@@ -4,26 +4,23 @@ import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 const FluidCanvas = lazy(() => import("../three/FluidCanvas"));
 
-// 첫 헤드라인("대담한 교육…")이 토큰 단위로 하나씩 등장
+// 첫 헤드라인("대담한 교육…")이 마스크 뒤에서 한 단어씩 솟아오름(세련된 등장)
 const headlineContainer: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.12, delayChildren: 0.3 } },
+  show: { transition: { staggerChildren: 0.09, delayChildren: 0.25 } },
 };
 const token: Variants = {
-  hidden: { opacity: 0, y: "0.6em", filter: "blur(8px)" },
-  show: {
-    opacity: 1,
-    y: 0,
-    filter: "blur(0px)",
-    transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
-  },
+  hidden: { y: "110%" },
+  show: { y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
 };
 
 function Word({ children }: { children: string }) {
   return (
-    <motion.span variants={token} className="mr-[0.25em] inline-block">
-      {children}
-    </motion.span>
+    <span className="mr-[0.25em] inline-block overflow-hidden pb-[0.14em] align-bottom">
+      <motion.span variants={token} className="inline-block">
+        {children}
+      </motion.span>
+    </span>
   );
 }
 
@@ -72,15 +69,18 @@ export default function HeroSection() {
     };
   }, [progress]);
 
-  // A(처음): "대담한 교육…"  →  B(스크롤): "우리 기관의 교육 철학…" + 통계
-  const aOpacity = useTransform(progress, [0, 0.38], [1, 0]);
-  const aY = useTransform(progress, [0, 0.42], ["0%", "-12%"]);
-  const bOpacity = useTransform(progress, [0.34, 0.72], [0, 1]);
-  const bY = useTransform(progress, [0.34, 0.72], ["12%", "0%"]);
+  // A(처음): "대담한 교육…" → B(스크롤, 더 중요): "우리 기관의 교육 철학…" + 통계 + CTA
+  // 두번째가 핵심이라 일찍 등장해 오래 머무름(0.5~1.0 구간 유지)
+  const aOpacity = useTransform(progress, [0, 0.26], [1, 0]);
+  const aY = useTransform(progress, [0, 0.3], ["0%", "-12%"]);
+  const bOpacity = useTransform(progress, [0.3, 0.5], [0, 1]);
+  const bY = useTransform(progress, [0.3, 0.5], ["12%", "0%"]);
+  // CTA는 두번째 상태에서만 보이고 클릭 가능
+  const ctaPointer = useTransform(progress, [0.28, 0.34], ["none", "auto"]);
 
   return (
     // 흰 배경(회색·경계선 없음) 위에 떠 있는 작은 유체 박스 — 메인1 스타일
-    <section ref={sectionRef} id="hero" className="relative h-[200vh] bg-white">
+    <section ref={sectionRef} id="hero" className="relative h-[300vh] bg-white">
       {/* items-end + 위쪽 공백 → 히어로가 살짝 아래로, 상단 브랜드(네비)와 간격 ↑ */}
       <div className="sticky top-0 flex h-screen items-end justify-center px-3 pb-[4vh] sm:px-5">
         <div className="relative h-[84vh] w-full max-w-[1400px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
@@ -171,21 +171,24 @@ export default function HeroSection() {
                   학습 경험을 만듭니다. 캠페인부터 몰입형 교구까지.
                 </motion.p>
 
-                {/* CTA는 항상 보이게 */}
-                <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
+                {/* CTA는 두번째 상태에서만 등장(+클릭 가능) */}
+                <motion.div
+                  style={{ opacity: bOpacity, pointerEvents: ctaPointer }}
+                  className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end"
+                >
                   <button
                     onClick={() => window.dispatchEvent(new Event("open-contact-widget"))}
-                    className="pointer-events-auto rounded-xl bg-white px-6 py-3 text-center text-base font-bold text-primary-600 transition-colors hover:bg-gray-100"
+                    className="rounded-xl bg-white px-6 py-3 text-center text-base font-bold text-primary-600 transition-colors hover:bg-gray-100"
                   >
                     무료 상담 신청
                   </button>
                   <a
                     href="#portfolio"
-                    className="pointer-events-auto rounded-xl border border-white/30 bg-white/10 px-6 py-3 text-center text-base font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                    className="rounded-xl border border-white/30 bg-white/10 px-6 py-3 text-center text-base font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
                   >
                     데모 체험하기
                   </a>
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>

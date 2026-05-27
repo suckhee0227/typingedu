@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PORTFOLIO_ITEMS } from "../../lib/constants";
 import type { Tier } from "../../types";
+import RevealText from "../ui/RevealText";
 
 const TIER_BADGE: Record<Tier, string> = {
   베이직: "bg-slate-100 text-slate-600",
@@ -234,8 +235,7 @@ export default function PortfolioSection() {
         >
           <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">Portfolio</span>
           <h2 className="mt-3 text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] tracking-tight text-gray-900">
-            완성된 콘텐츠를
-            <br className="hidden sm:block" /> 직접 체험해 보세요.
+            <RevealText text="완성된 콘텐츠를 직접 체험해 보세요." />
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             카드를 클릭하면 실제 콘텐츠가 바로 실행됩니다.

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from "../ui/Typewriter";
+import RevealText from "../ui/RevealText";
 
 
 const advantages = [
@@ -58,16 +59,10 @@ export default function ExpertiseSection() {
           <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
             Why 타이핑에듀?
           </span>
-          {/* 제목: 오른쪽에 살짝 치우쳐 있다가 가운데로 정렬 */}
-          <motion.h2
-            initial={{ opacity: 0, x: 44 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false, margin: "-80px" }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900"
-          >
-            외주개발, 왜 비싸고 느릴까요?
-          </motion.h2>
+          {/* 제목: 마스크 뒤에서 단어가 솟아오름(세련) */}
+          <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
+            <RevealText text="외주개발, 왜 비싸고 느릴까요?" />
+          </h2>
           {/* 부제: 타자기처럼 쳐짐 */}
           <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             <Typewriter text="특허 출원한 자체개발 엔진으로 비용과 시간을 획기적으로 줄입니다." />

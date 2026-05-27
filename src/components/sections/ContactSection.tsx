@@ -1,5 +1,6 @@
 import { motion, type Variants } from "framer-motion";
 import ContactForm from "../forms/ContactForm";
+import RevealText from "../ui/RevealText";
 
 // 항목이 하나씩 순차로 등장
 const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } } };
@@ -24,7 +25,7 @@ export default function ContactSection() {
               Contact
             </span>
             <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
-              무료 상담 신청
+              <RevealText text="무료 상담 신청" justify="start" />
             </h2>
             <p className="mb-8 text-[clamp(1rem,1.4vw,1.25rem)] leading-relaxed text-gray-600">
               교육 철학에 맞는 맞춤형 교구,

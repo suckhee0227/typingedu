@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useTransform, type MotionValue } from "framer-motion";
 import { useRef, useEffect } from "react";
 import { PROCESS_STEPS } from "../../lib/constants";
+import RevealText from "../ui/RevealText";
 
 // 스크롤 진행도에 맞춰 자기 구간에서 하나씩 등장하는 단계 카드
 function StepCard({
@@ -76,7 +77,7 @@ export default function ProcessSection() {
           <motion.div style={{ opacity: headerOpacity, y: headerY }} className="mb-16 text-center">
             <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">Process</span>
             <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
-              간단한 4단계로 완성
+              <RevealText text="간단한 4단계로 완성" />
             </h2>
             <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
               복잡한 절차 없이 빠르게 맞춤형 교구를 도입하세요.

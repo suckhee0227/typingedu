@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PRICING_PLANS, PORTFOLIO_ITEMS } from "../../lib/constants";
 import Typewriter from "../ui/Typewriter";
+import RevealText from "../ui/RevealText";
 
 // 기능 항목이 하나씩 순차로 등장
 const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
@@ -26,7 +27,7 @@ export default function PricingSection() {
             Pricing
           </span>
           <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
-            합리적인 가격 정책
+            <RevealText text="합리적인 가격 정책" />
           </h2>
           <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             <Typewriter text="요구사항과 제작 기간에 따라 가격을 책정합니다." />
