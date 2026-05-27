@@ -132,7 +132,7 @@ export default function PortfolioSection() {
           </p>
 
           <div className="mt-1.5 flex items-center gap-2.5">
-            <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">{item.title}</h3>
+            <h3 className="text-[clamp(1.15rem,1.6vw,1.6rem)] font-bold text-gray-900">{item.title}</h3>
             <span className={`rounded-md px-2 py-0.5 text-[10px] font-bold tracking-wider ${TIER_BADGE[item.tier]}`}>
               {TIER_LABEL[item.tier]}
             </span>
@@ -173,11 +173,11 @@ export default function PortfolioSection() {
           <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
             Portfolio
           </span>
-          <h2 className="mt-3 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+          <h2 className="mt-3 text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] tracking-tight text-gray-900">
             완성된 콘텐츠를
             <br className="hidden sm:block" /> 직접 체험해 보세요.
           </h2>
-          <p className="mt-4 max-w-2xl text-lg text-gray-600">
+          <p className="mt-4 max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             카드를 클릭하면 실제 콘텐츠가 바로 실행됩니다.
           </p>
         </motion.div>
