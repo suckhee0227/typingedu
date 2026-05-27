@@ -24,12 +24,15 @@ export interface ApiResponse<T> {
   errors?: string[];
 }
 
+export type Tier = "베이직" | "스탠다드" | "프리미엄";
+
 export interface PortfolioItem {
   id: string;
   title: string;
   description: string;
   demoUrl: string;
   thumbnail: string;
+  tier: Tier;
   tags: string[];
   priceDisplay: string;
   period: string;
