@@ -5,8 +5,6 @@ import Footer from "./components/layout/Footer";
 import FloatingWidget from "./components/layout/FloatingWidget";
 import EventPopup from "./components/layout/EventPopup";
 import HeroSection from "./components/sections/HeroSection";
-import ScrollVideoSection from "./components/sections/ScrollVideoSection";
-import ShowcaseSection from "./components/sections/ShowcaseSection";
 import ExpertiseSection from "./components/sections/ExpertiseSection";
 import PortfolioSection from "./components/sections/PortfolioSection";
 import ProcessSection from "./components/sections/ProcessSection";
@@ -37,8 +35,6 @@ export default function App() {
       <Navbar />
       <main>
         <HeroSection />
-        <ScrollVideoSection />
-        <ShowcaseSection />
         <ExpertiseSection />
         <PortfolioSection />
         <ProcessSection />
