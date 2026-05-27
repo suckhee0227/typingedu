@@ -1,5 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import ContactForm from "../forms/ContactForm";
+
+// 항목이 하나씩 순차로 등장
+const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.1, delayChildren: 0.2 } } };
+const listItem: Variants = {
+  hidden: { opacity: 0, y: 16 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1] } },
+};
 
 export default function ContactSection() {
   return (
@@ -25,13 +32,19 @@ export default function ContactSection() {
               부담 없이 문의해 주세요.
             </p>
 
-            <div className="space-y-4">
+            <motion.div
+              className="space-y-4"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={listContainer}
+            >
               {[
                 { label: "빠른 응답", desc: "24시간 이내 회신" },
                 { label: "무료 샘플", desc: "상담 후 맞춤 샘플 제작" },
                 { label: "부담 제로", desc: "상담만으로 비용 발생 없음" },
               ].map((item) => (
-                <div key={item.label} className="flex items-start gap-3">
+                <motion.div key={item.label} variants={listItem} className="flex items-start gap-3">
                   <div className="w-5 h-5 bg-primary-100 text-primary-600 rounded-full flex items-center justify-center mt-0.5 shrink-0">
                     <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                       <path
@@ -47,9 +60,9 @@ export default function ContactSection() {
                     </span>
                     <span className="text-gray-500 text-sm"> — {item.desc}</span>
                   </div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Right - Form */}

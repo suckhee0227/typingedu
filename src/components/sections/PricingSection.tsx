@@ -1,6 +1,13 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PRICING_PLANS, PORTFOLIO_ITEMS } from "../../lib/constants";
+
+// 기능 항목이 하나씩 순차로 등장
+const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
+const listItem: Variants = {
+  hidden: { opacity: 0, y: 14 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
+};
 
 export default function PricingSection() {
   const [showSamples, setShowSamples] = useState(false);
@@ -58,9 +65,15 @@ export default function PricingSection() {
                 </div>
               )}
 
-              <ul className="space-y-5 mb-12">
+              <motion.ul
+                className="space-y-5 mb-12"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={listContainer}
+              >
                 {plan.features.map((feature) => (
-                  <li key={feature} className="flex items-center gap-3 text-base">
+                  <motion.li key={feature} variants={listItem} className="flex items-center gap-3 text-base">
                     <svg className="w-6 h-6 shrink-0 text-primary-500" fill="currentColor" viewBox="0 0 20 20">
                       <path
                         fillRule="evenodd"
@@ -69,9 +82,9 @@ export default function PricingSection() {
                       />
                     </svg>
                     <span className="text-gray-600">{feature}</span>
-                  </li>
+                  </motion.li>
                 ))}
-              </ul>
+              </motion.ul>
 
               <a
                 href="#contact"
