@@ -70,18 +70,17 @@ export default function HeroSection() {
   }, [progress]);
 
   // A(처음): "대담한 교육…" → B(스크롤, 더 중요): "우리 기관의 교육 철학…" + 통계 + CTA
-  // 두번째가 핵심이라 일찍 등장해 오래 머무름(0.5~1.0 구간 유지)
-  const aOpacity = useTransform(progress, [0, 0.28], [1, 0]);
-  const aY = useTransform(progress, [0, 0.3], ["0%", "-10%"]);
-  // 딜레이(0.3)는 유지하되 빠르게(0.37) 또렷하게 "딱" 나타남 — 반투명 페이드(흐릿함) 최소화
-  const bOpacity = useTransform(progress, [0.3, 0.37], [0, 1]);
-  const bY = useTransform(progress, [0.3, 0.4], ["8%", "0%"]);
+  // 스크롤 초반에 빠르게 "딱" 교차 — 살짝만 스크롤해도 두번째가 바로 보이게(중간 빈 구간 없음)
+  const aOpacity = useTransform(progress, [0, 0.07], [1, 0]);
+  const aY = useTransform(progress, [0, 0.09], ["0%", "-8%"]);
+  const bOpacity = useTransform(progress, [0.07, 0.13], [0, 1]);
+  const bY = useTransform(progress, [0.07, 0.15], ["8%", "0%"]);
   // CTA는 두번째 상태에서만 보이고 클릭 가능
-  const ctaPointer = useTransform(progress, [0.3, 0.37], ["none", "auto"]);
+  const ctaPointer = useTransform(progress, [0.09, 0.13], ["none", "auto"]);
 
   return (
     // 흰 배경(회색·경계선 없음) 위에 떠 있는 작은 유체 박스 — 메인1 스타일
-    <section ref={sectionRef} id="hero" className="relative h-[300vh] bg-white">
+    <section ref={sectionRef} id="hero" className="relative h-[220vh] bg-white">
       {/* items-end + 위쪽 공백 → 히어로가 살짝 아래로, 상단 브랜드(네비)와 간격 ↑ */}
       <div className="sticky top-0 flex h-screen items-end justify-center px-3 pb-[4vh] sm:px-4">
         <div className="relative h-[84vh] w-full max-w-[1480px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
