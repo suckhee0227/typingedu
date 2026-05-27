@@ -20,49 +20,40 @@ const TIER_LABEL: Record<Tier, string> = {
 export default function PortfolioSection() {
   const [activeId, setActiveId] = useState<string | null>(null);
   const [iframeLoaded, setIframeLoaded] = useState(false);
-  const panelRef = useRef<HTMLDivElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
+  // 외부(플로팅 위젯 등)에서 데모 열기 요청
   useEffect(() => {
     function onOpenDemo(e: Event) {
-      const id = (e as CustomEvent<string>).detail;
       setIframeLoaded(false);
-      setActiveId(id);
-      setTimeout(() => {
-        sectionRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 80);
+      setActiveId((e as CustomEvent<string>).detail);
     }
     window.addEventListener("open-portfolio-demo", onOpenDemo);
     return () => window.removeEventListener("open-portfolio-demo", onOpenDemo);
   }, []);
 
-  const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
-
-  function handleCardClick(id: string, hasDemoUrl: boolean) {
-    if (!hasDemoUrl) return;
-    if (activeId === id) {
-      setActiveId(null);
-    } else {
-      setIframeLoaded(false);
-      setActiveId(id);
-    }
-  }
-
+  // 열려 있을 때 Esc로 닫기 + 배경 스크롤 잠금
   useEffect(() => {
-    if (activeId && panelRef.current) {
-      setTimeout(() => {
-        panelRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
-      }, 120);
-    }
+    if (!activeId) return;
+    const onKey = (e: KeyboardEvent) => e.key === "Escape" && setActiveId(null);
+    window.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [activeId]);
 
-  // 활성 카드가 아랫줄(인덱스 3~5)이면 패널이 위로 펼쳐지는 느낌
-  const activeIndex = PORTFOLIO_ITEMS.findIndex((p) => p.id === activeId);
-  const activeFromBottom = activeIndex >= 3;
+  const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
+
+  function openDemo(id: string, hasDemo: boolean) {
+    if (!hasDemo) return;
+    setIframeLoaded(false);
+    setActiveId(id);
+  }
 
   function renderCard(item: (typeof PORTFOLIO_ITEMS)[number], i: number) {
     const hasDemo = !!item.demoUrl;
-    const isActive = activeId === item.id;
     return (
       <motion.div
         key={item.id}
@@ -70,14 +61,13 @@ export default function PortfolioSection() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: (i % 3) * 0.1 }}
-        onClick={() => handleCardClick(item.id, hasDemo)}
+        onClick={() => openDemo(item.id, hasDemo)}
         className={`group flex flex-col ${hasDemo ? "cursor-pointer" : "cursor-default opacity-60"}`}
       >
-        {/* 사진틀 (테두리 없는 둥근 이미지 프레임) */}
-        <div
-          className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-100 to-accent-100 transition-all duration-300 ${
-            isActive ? "ring-2 ring-primary-500 ring-offset-2" : ""
-          }`}
+        {/* 사진틀 — 클릭하면 이 자리에서 빨려나오듯 모달로 확대 (layoutId 공유) */}
+        <motion.div
+          layoutId={`demo-${item.id}`}
+          className="relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-100 to-accent-100"
         >
           {item.thumbnail ? (
             <img
@@ -91,28 +81,14 @@ export default function PortfolioSection() {
             </div>
           )}
 
-          {/* 호버 오버레이 */}
           {hasDemo && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/25">
-              <div
-                className={`flex items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 shadow-lg transition-all duration-200 ${
-                  isActive ? "opacity-100" : "translate-y-1 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
-                }`}
-              >
-                {isActive ? (
-                  <>
-                    <span className="h-2 w-2 animate-pulse rounded-full bg-primary-500" />
-                    실행 중
-                  </>
-                ) : (
-                  <>
-                    <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    체험하기
-                  </>
-                )}
+              <div className="flex translate-y-1 items-center gap-2 rounded-full bg-white/95 px-5 py-2.5 text-sm font-semibold text-primary-600 opacity-0 shadow-lg transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100">
+                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                체험하기
               </div>
             </div>
           )}
@@ -122,25 +98,18 @@ export default function PortfolioSection() {
               준비 중
             </div>
           )}
-        </div>
+        </motion.div>
 
-        {/* 이미지 아래 정보 (박스 없이) */}
+        {/* 이미지 아래 정보 (반응형 텍스트) */}
         <div className="mt-4">
-          {/* 태그를 lusion식 점 구분 대문자 라인으로 */}
-          <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gray-400">
-            {item.tags.join(" · ")}
-          </p>
-
+          <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-gray-400">{item.tags.join(" · ")}</p>
           <div className="mt-1.5 flex items-center gap-2.5">
             <h3 className="text-[clamp(1.15rem,1.6vw,1.6rem)] font-bold text-gray-900">{item.title}</h3>
             <span className={`rounded-md px-2 py-0.5 text-[10px] font-bold tracking-wider ${TIER_BADGE[item.tier]}`}>
               {TIER_LABEL[item.tier]}
             </span>
           </div>
-
-          {/* 설명은 한 줄로 통일해 카드 높이 일관성 유지 */}
           <p className="mt-1.5 line-clamp-1 text-sm leading-relaxed text-gray-500">{item.description}</p>
-
           <div className="mt-3 flex items-center gap-2 text-sm">
             <span className="font-black text-primary-600">{item.priceDisplay}</span>
             <span className="text-gray-300">·</span>
@@ -151,28 +120,17 @@ export default function PortfolioSection() {
     );
   }
 
-  function renderRow(start: number, end: number) {
-    return (
-      <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
-        {PORTFOLIO_ITEMS.slice(start, end).map((item, i) => renderCard(item, start + i))}
-      </div>
-    );
-  }
-
   return (
     <section id="portfolio" className="py-24" ref={sectionRef}>
       <div className="mx-auto max-w-[1500px] px-4 sm:px-6 lg:px-8">
-
-        {/* 헤더 (lusion 'Featured Work' 스타일 — 좌측 정렬 큰 타이틀) */}
+        {/* 헤더 (lusion 'Featured Work' 스타일) */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="mb-12 sm:mb-16"
         >
-          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
-            Portfolio
-          </span>
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">Portfolio</span>
           <h2 className="mt-3 text-[clamp(2rem,5vw,4rem)] font-bold leading-[1.1] tracking-tight text-gray-900">
             완성된 콘텐츠를
             <br className="hidden sm:block" /> 직접 체험해 보세요.
@@ -182,85 +140,74 @@ export default function PortfolioSection() {
           </p>
         </motion.div>
 
-        {/* 윗줄 (베이직 · 스탠다드 · 프리미엄) — 누르면 아래 가운데 패널로 열림 */}
-        {renderRow(0, 3)}
-
-        {/* 가운데 공유 패널 — 윗줄/아랫줄 모두 동일한 위치에서 실행 */}
-        <AnimatePresence mode="wait">
-          {activeItem && (
-            <motion.div
-              ref={panelRef}
-              key={activeItem.id}
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.35, ease: [0.4, 0, 0.2, 1] }}
-              className="overflow-hidden my-8"
-              style={{ transformOrigin: activeFromBottom ? "bottom" : "top" }}
-            >
-              <div className="rounded-3xl border border-gray-200 overflow-hidden shadow-2xl">
-                {/* 브라우저 크롬 바 */}
-                <div className="flex items-center justify-between px-5 py-3 bg-[#f0f0f0] border-b border-gray-300">
-                  <div className="flex items-center gap-3">
-                    <div className="flex gap-1.5">
-                      <button
-                        onClick={() => setActiveId(null)}
-                        className="w-3 h-3 rounded-full bg-[#ff5f57] hover:brightness-90 transition-all"
-                      />
-                      <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
-                      <div className="w-3 h-3 rounded-full bg-[#28c840]" />
-                    </div>
-                    <div className="flex items-center gap-2 bg-white rounded-md px-3 py-1 border border-gray-300 text-[11px] text-gray-500">
-                      <svg className="w-3 h-3 text-gray-400 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                      </svg>
-                      typingedu.com/demo/{activeItem.id}
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500 font-medium hidden sm:block">{activeItem.title}</span>
-                    <button
-                      onClick={() => setActiveId(null)}
-                      className="w-7 h-7 rounded-lg flex items-center justify-center text-gray-400 hover:bg-gray-200 hover:text-gray-600 transition-all"
-                    >
-                      <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-
-                {/* iframe 영역 */}
-                <div className="relative bg-gray-900" style={{ height: "72vh", minHeight: 500 }}>
-                  {!iframeLoaded && (
-                    <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 bg-gray-900 z-10">
-                      <div
-                        className="w-10 h-10 rounded-full border-t-primary-500 border-gray-700 animate-spin"
-                        style={{ borderWidth: 3, borderStyle: "solid" }}
-                      />
-                      <span className="text-sm text-gray-400">앱 불러오는 중...</span>
-                    </div>
-                  )}
-                  <iframe
-                    key={activeItem.id}
-                    src={activeItem.demoUrl}
-                    title={activeItem.title}
-                    className="w-full h-full border-0"
-                    onLoad={() => setIframeLoaded(true)}
-                    allow="autoplay"
-                  />
-                </div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-
-        {/* 패널이 닫혀 있을 때 두 줄 간격 유지 */}
-        {!activeItem && <div className="h-8" />}
-
-        {/* 아랫줄 (베이직 · 스탠다드 · 프리미엄) — 누르면 위 가운데 패널로 열림 */}
-        {renderRow(3, 6)}
+        {/* 3개씩 2줄 그리드 */}
+        <div className="grid gap-x-6 gap-y-12 md:grid-cols-3">
+          {PORTFOLIO_ITEMS.map((item, i) => renderCard(item, i))}
+        </div>
       </div>
+
+      {/* macOS 스타일 데모 — 카드 자리에서 빨려나오듯 열리고, 닫으면 제자리로 빨려들어감 */}
+      <AnimatePresence>
+        {activeItem && (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setActiveId(null)}
+              className="fixed inset-0 z-[100] bg-black/75 backdrop-blur-sm"
+            />
+            <div className="pointer-events-none fixed inset-0 z-[101] flex items-center justify-center p-4 sm:p-8">
+              <motion.div
+                layoutId={`demo-${activeItem.id}`}
+                className="pointer-events-auto relative h-[82vh] w-[94vw] max-w-[1200px] overflow-hidden rounded-2xl bg-black shadow-2xl"
+              >
+                {/* 확대 애니메이션 동안 썸네일이 보이고, 로드되면 플레이 화면으로 */}
+                {activeItem.thumbnail && (
+                  <img
+                    src={activeItem.thumbnail}
+                    alt={activeItem.title}
+                    className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-300 ${
+                      iframeLoaded ? "opacity-0" : "opacity-100"
+                    }`}
+                  />
+                )}
+
+                {!iframeLoaded && (
+                  <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-black/40">
+                    <div
+                      className="h-10 w-10 animate-spin rounded-full border-gray-600 border-t-primary-400"
+                      style={{ borderWidth: 3, borderStyle: "solid" }}
+                    />
+                    <span className="text-sm text-white/70">앱 불러오는 중...</span>
+                  </div>
+                )}
+
+                {/* 딱 플레이 화면만 (브라우저 크롬 없음) */}
+                <iframe
+                  key={activeItem.id}
+                  src={activeItem.demoUrl}
+                  title={activeItem.title}
+                  className="absolute inset-0 h-full w-full border-0"
+                  onLoad={() => setIframeLoaded(true)}
+                  allow="autoplay"
+                />
+
+                {/* 닫기 */}
+                <button
+                  onClick={() => setActiveId(null)}
+                  aria-label="닫기"
+                  className="absolute right-3 top-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/70"
+                >
+                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </motion.div>
+            </div>
+          </>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
