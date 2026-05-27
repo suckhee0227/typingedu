@@ -27,13 +27,13 @@ function Word({ children }: { children: string }) {
   );
 }
 
-// 두번째 헤드라인의 노란 강조 — 마우스 올리면 커지고 하이라이트(밑줄 없음, 반응형은 부모 clamp 따라감)
+// 두번째 헤드라인의 노란 강조 — 마우스 올리면 글자만 커지고 더 빛남(박스/배경 없음, 반응형은 부모 clamp 따라감)
 function Hl({ children }: { children: string }) {
   return (
     <motion.span
-      whileHover={{ scale: 1.1 }}
-      transition={{ type: "spring", stiffness: 400, damping: 14 }}
-      className="pointer-events-auto inline-block cursor-default rounded-lg px-1.5 text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.5)] transition-colors duration-200 hover:bg-yellow-400/20 hover:text-yellow-200 hover:drop-shadow-[0_0_38px_rgba(253,224,71,0.9)]"
+      whileHover={{ scale: 1.14 }}
+      transition={{ type: "spring", stiffness: 400, damping: 13 }}
+      className="pointer-events-auto inline-block origin-center cursor-default text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.5)] transition-[filter,color] duration-200 hover:text-yellow-200 hover:drop-shadow-[0_0_42px_rgba(253,224,71,0.95)]"
     >
       {children}
     </motion.span>
