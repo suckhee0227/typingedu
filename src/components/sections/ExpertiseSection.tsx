@@ -54,13 +54,13 @@ export default function ExpertiseSection() {
           custom={0}
           className="text-center mb-16"
         >
-          <span className="text-primary-600 font-semibold text-sm tracking-wide uppercase">
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
             Why 타이핑에듀?
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4">
+          <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
             외주개발, 왜 비싸고 느릴까요?
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             특허 출원한 자체개발 엔진으로 비용과 시간을 획기적으로 줄입니다.
           </p>
         </motion.div>

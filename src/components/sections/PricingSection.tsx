@@ -14,13 +14,13 @@ export default function PricingSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="text-primary-600 font-semibold text-sm tracking-wide uppercase">
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
             Pricing
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mt-3 mb-4">
+          <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
             합리적인 가격 정책
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
             요구사항과 제작 기간에 따라 가격을 책정합니다.
           </p>
           <div className="mt-4 inline-block px-5 py-2 bg-yellow-50 border border-yellow-200 rounded-full">
