@@ -64,7 +64,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     thumbnail: "/apps/village-of-100-people/assets/thumbnail.png",
     tier: "스탠다드",
     tags: ["사회", "통계", "중등"],
-    priceDisplay: "협의",
+    priceDisplay: "80 만 원 내외",
     period: "1주",
   },
   {
