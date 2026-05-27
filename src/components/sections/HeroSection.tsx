@@ -4,10 +4,10 @@ import { useMediaQuery } from "../../hooks/useMediaQuery";
 
 const FluidCanvas = lazy(() => import("../three/FluidCanvas"));
 
-// 첫 헤드라인이 토큰 단위로 하나씩 "이뤄지다가" 완성되는 등장 애니메이션
+// 첫 헤드라인("대담한 교육…")이 토큰 단위로 하나씩 등장
 const headlineContainer: Variants = {
   hidden: {},
-  show: { transition: { staggerChildren: 0.1, delayChildren: 0.25 } },
+  show: { transition: { staggerChildren: 0.12, delayChildren: 0.3 } },
 };
 const token: Variants = {
   hidden: { opacity: 0, y: "0.6em", filter: "blur(8px)" },
@@ -19,25 +19,17 @@ const token: Variants = {
   },
 };
 
-// 강조 단어 (유체 위 — 노란색, 밑줄 없음, 반응형은 부모 clamp 폰트 따라감)
-function Highlight({ children }: { children: string }) {
-  return (
-    <motion.span
-      variants={token}
-      whileHover={{ scale: 1.05 }}
-      className="mr-[0.25em] inline-block cursor-default text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.45)]"
-    >
-      {children}
-    </motion.span>
-  );
-}
-
 function Word({ children }: { children: string }) {
   return (
     <motion.span variants={token} className="mr-[0.25em] inline-block">
       {children}
     </motion.span>
   );
+}
+
+// 두번째 헤드라인의 노란 강조 (밑줄 없음, 반응형은 부모 clamp 따라감)
+function Hl({ children }: { children: string }) {
+  return <span className="text-yellow-300 drop-shadow-[0_0_24px_rgba(253,224,71,0.45)]">{children}</span>;
 }
 
 export default function HeroSection() {
@@ -72,18 +64,16 @@ export default function HeroSection() {
     };
   }, [progress]);
 
-  // 기존 카피 → "대담한 교육, 살아 움직이게."로 교차
-  const h1Opacity = useTransform(progress, [0, 0.32], [1, 0]);
-  const h1Y = useTransform(progress, [0, 0.4], ["0%", "-12%"]);
-  const h2Opacity = useTransform(progress, [0.42, 0.78], [0, 1]);
-  const h2Y = useTransform(progress, [0.42, 0.78], ["12%", "0%"]);
-  const supportOpacity = useTransform(progress, [0, 0.32], [1, 0]);
+  // A(처음): "대담한 교육…"  →  B(스크롤): "우리 기관의 교육 철학…" + 통계
+  const aOpacity = useTransform(progress, [0, 0.38], [1, 0]);
+  const aY = useTransform(progress, [0, 0.42], ["0%", "-12%"]);
+  const bOpacity = useTransform(progress, [0.34, 0.72], [0, 1]);
+  const bY = useTransform(progress, [0.34, 0.72], ["12%", "0%"]);
 
   return (
     // 흰 배경(회색·경계선 없음) 위에 떠 있는 작은 유체 박스 — 메인1 스타일
     <section ref={sectionRef} id="hero" className="relative h-[200vh] bg-white">
       <div className="sticky top-0 h-screen px-3 pb-4 pt-[4.5rem] sm:px-5 sm:pb-5 sm:pt-20">
-        {/* 유체 "사진틀" (여백 있어 더 작게, 텍스트는 이 안에) */}
         <div className="relative mx-auto h-full w-full max-w-[1500px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
           {isMobile ? (
             <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-600 to-accent-600" />
@@ -98,66 +88,51 @@ export default function HeroSection() {
 
           {/* 박스 안 콘텐츠 (포인터 통과 → 유체 반응, 버튼만 클릭) */}
           <div className="pointer-events-none absolute inset-0 z-10 mx-auto flex max-w-6xl flex-col justify-between px-6 py-8 sm:px-10 sm:py-10">
-            <div>
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                style={{ opacity: supportOpacity }}
-                className="mb-4 inline-flex flex-wrap items-center gap-2"
+            {/* 상단 헤드라인 — A/B 겹쳐서 스크롤로 교차 */}
+            <div className="grid">
+              <motion.h1
+                variants={headlineContainer}
+                initial="hidden"
+                animate="show"
+                style={{ opacity: aOpacity, y: aY }}
+                className="col-start-1 row-start-1 text-[clamp(2rem,6vw,4.75rem)] font-bold leading-[1.06] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
               >
-                <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-white backdrop-blur-sm">
-                  맞춤형 스마트 교구 제작
-                </span>
-                {["#교구", "#학습용", "#기업 내부 교육용", "#개인 교습용", "#대형 학원용", "#Gamification", "#시각화"].map(
-                  (tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-md border border-yellow-300/40 bg-yellow-400/20 px-2.5 py-1 text-xs font-medium text-yellow-200"
-                    >
-                      {tag}
-                    </span>
-                  )
-                )}
+                <Word>대담한</Word>
+                <Word>교육,</Word>
+                <br />
+                <Word>살아</Word>
+                <Word>움직이게.</Word>
+              </motion.h1>
+
+              <motion.div style={{ opacity: bOpacity, y: bY }} className="col-start-1 row-start-1">
+                <div className="mb-4 inline-flex flex-wrap items-center gap-2">
+                  <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-white backdrop-blur-sm">
+                    맞춤형 스마트 교구 제작
+                  </span>
+                  {["#교구", "#학습용", "#기업 내부 교육용", "#개인 교습용", "#대형 학원용", "#Gamification", "#시각화"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-md border border-yellow-300/40 bg-yellow-400/20 px-2.5 py-1 text-xs font-medium text-yellow-200"
+                      >
+                        {tag}
+                      </span>
+                    )
+                  )}
+                </div>
+                <h2 className="text-[clamp(1.8rem,4.6vw,3.5rem)] font-bold leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+                  우리 기관의 교육 철학 그대로,
+                  <br />
+                  <Hl>1/10 비용</Hl> 으로
+                  <br />
+                  <Hl>단 1주</Hl> 만에 완성
+                </h2>
               </motion.div>
-
-              {/* 두 헤드라인을 같은 자리에 겹쳐 스크롤로 교차 */}
-              <div className="grid">
-                <motion.h1
-                  variants={headlineContainer}
-                  initial="hidden"
-                  animate="show"
-                  style={{ opacity: h1Opacity, y: h1Y }}
-                  className="col-start-1 row-start-1 text-[clamp(1.8rem,4.6vw,3.5rem)] font-bold leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
-                >
-                  <Word>우리</Word>
-                  <Word>기관의</Word>
-                  <Word>교육</Word>
-                  <Word>철학</Word>
-                  <Word>그대로,</Word>
-                  <br />
-                  <Highlight>1/10 비용</Highlight>
-                  <Word>으로</Word>
-                  <br />
-                  <Highlight>단 1주</Highlight>
-                  <Word>만에</Word>
-                  <Word>완성</Word>
-                </motion.h1>
-
-                <motion.h2
-                  style={{ opacity: h2Opacity, y: h2Y }}
-                  className="col-start-1 row-start-1 text-[clamp(2rem,6vw,4.75rem)] font-bold leading-[1.06] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
-                >
-                  대담한 교육,
-                  <br />
-                  살아 움직이게.
-                </motion.h2>
-              </div>
             </div>
 
-            {/* 하단: 통계(좌) + 설명·CTA(우) */}
+            {/* 하단: 통계(좌, B에서 등장) + 서브텍스트(우, 교차) + CTA(항상) */}
             <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-              <div className="grid grid-cols-3 gap-6 sm:gap-10">
+              <motion.div style={{ opacity: bOpacity }} className="grid grid-cols-3 gap-6 sm:gap-10">
                 {[
                   { value: "90%", label: "비용 절감" },
                   { value: "1주", label: "제작 기간" },
@@ -168,12 +143,27 @@ export default function HeroSection() {
                     <div className="mt-0.5 text-xs text-white/60">{stat.label}</div>
                   </div>
                 ))}
-              </div>
+              </motion.div>
 
-              <motion.div style={{ opacity: supportOpacity }} className="sm:max-w-sm sm:text-right">
-                <p className="text-sm leading-relaxed text-white/75">
-                  특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감. 콘텐츠 시각화를 통한 몰입도 향상.
-                </p>
+              <div className="sm:max-w-sm sm:text-right">
+                {/* 서브텍스트 교차: A=쇼케이스 문구 / B=원래 설명 */}
+                <div className="grid">
+                  <motion.p
+                    style={{ opacity: aOpacity }}
+                    className="col-start-1 row-start-1 text-sm leading-relaxed text-white/80"
+                  >
+                    기획·모션·3D·개발을 하나로 묶어, 보는 즉시 빠져들고 직접 만지고 싶어지는 학습 경험을 만듭니다.
+                    캠페인부터 몰입형 교구까지.
+                  </motion.p>
+                  <motion.p
+                    style={{ opacity: bOpacity }}
+                    className="col-start-1 row-start-1 text-sm leading-relaxed text-white/75"
+                  >
+                    특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감. 콘텐츠 시각화를 통한 몰입도 향상.
+                  </motion.p>
+                </div>
+
+                {/* CTA는 항상 보이게 */}
                 <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
                   <button
                     onClick={() => window.dispatchEvent(new Event("open-contact-widget"))}
@@ -188,7 +178,7 @@ export default function HeroSection() {
                     데모 체험하기
                   </a>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
