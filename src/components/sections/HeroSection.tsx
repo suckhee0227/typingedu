@@ -73,8 +73,8 @@ export default function HeroSection() {
   return (
     // 흰 배경(회색·경계선 없음) 위에 떠 있는 작은 유체 박스 — 메인1 스타일
     <section ref={sectionRef} id="hero" className="relative h-[200vh] bg-white">
-      <div className="sticky top-0 h-screen px-3 pb-4 pt-[4.5rem] sm:px-5 sm:pb-5 sm:pt-20">
-        <div className="relative mx-auto h-full w-full max-w-[1500px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
+      <div className="sticky top-0 flex h-screen items-center justify-center px-4 pt-14 sm:px-6">
+        <div className="relative h-[78vh] w-full max-w-[1280px] overflow-hidden rounded-[1.75rem] bg-[#0a1030] shadow-[0_30px_80px_-24px_rgba(30,30,80,0.4)]">
           {isMobile ? (
             <div className="absolute inset-0 bg-gradient-to-br from-primary-700 via-primary-600 to-accent-600" />
           ) : (
@@ -87,15 +87,15 @@ export default function HeroSection() {
           <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/55 via-black/15 to-black/30" />
 
           {/* 박스 안 콘텐츠 (포인터 통과 → 유체 반응, 버튼만 클릭) */}
-          <div className="pointer-events-none absolute inset-0 z-10 mx-auto flex max-w-6xl flex-col justify-between px-6 py-8 sm:px-10 sm:py-10">
-            {/* 상단 헤드라인 — A/B 겹쳐서 스크롤로 교차 */}
+          <div className="pointer-events-none absolute inset-0 z-10 mx-auto flex max-w-5xl flex-col justify-between px-6 py-7 sm:px-9 sm:py-9">
+            {/* 상단: 헤드라인 (A/B 겹쳐 교차). B는 헤드라인 밑에 설명까지 */}
             <div className="grid">
               <motion.h1
                 variants={headlineContainer}
                 initial="hidden"
                 animate="show"
                 style={{ opacity: aOpacity, y: aY }}
-                className="col-start-1 row-start-1 text-[clamp(2rem,6vw,4.75rem)] font-bold leading-[1.06] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
+                className="col-start-1 row-start-1 text-[clamp(1.9rem,5vw,4rem)] font-bold leading-[1.06] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)]"
               >
                 <Word>대담한</Word>
                 <Word>교육,</Word>
@@ -105,7 +105,7 @@ export default function HeroSection() {
               </motion.h1>
 
               <motion.div style={{ opacity: bOpacity, y: bY }} className="col-start-1 row-start-1">
-                <div className="mb-4 inline-flex flex-wrap items-center gap-2">
+                <div className="mb-3.5 inline-flex flex-wrap items-center gap-2">
                   <span className="rounded-lg border border-white/30 bg-white/10 px-3 py-1.5 text-xs font-semibold tracking-wide text-white backdrop-blur-sm">
                     맞춤형 스마트 교구 제작
                   </span>
@@ -120,17 +120,23 @@ export default function HeroSection() {
                     )
                   )}
                 </div>
-                <h2 className="text-[clamp(1.8rem,4.6vw,3.5rem)] font-bold leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
+                <h2 className="text-[clamp(1.55rem,3.8vw,2.9rem)] font-bold leading-[1.12] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.4)]">
                   우리 기관의 교육 철학 그대로,
                   <br />
                   <Hl>1/10 비용</Hl> 으로
                   <br />
                   <Hl>단 1주</Hl> 만에 완성
                 </h2>
+                {/* 특허 설명 — 메인 텍스트 바로 밑(원래 위치) */}
+                <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/75">
+                  특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감.
+                  <br className="hidden sm:block" />
+                  콘텐츠 시각화를 통한 몰입도 향상.
+                </p>
               </motion.div>
             </div>
 
-            {/* 하단: 통계(좌, B에서 등장) + 서브텍스트(우, 교차) + CTA(항상) */}
+            {/* 하단: 통계(좌, B에서 등장) + 서브텍스트(우, A에서만) + CTA(항상) */}
             <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
               <motion.div style={{ opacity: bOpacity }} className="grid grid-cols-3 gap-6 sm:gap-10">
                 {[
@@ -139,29 +145,20 @@ export default function HeroSection() {
                   { value: "0%", label: "소통 로스" },
                 ].map((stat) => (
                   <div key={stat.label}>
-                    <div className="text-[clamp(1.25rem,2vw,1.75rem)] font-bold text-white">{stat.value}</div>
+                    <div className="text-[clamp(1.15rem,1.8vw,1.55rem)] font-bold text-white">{stat.value}</div>
                     <div className="mt-0.5 text-xs text-white/60">{stat.label}</div>
                   </div>
                 ))}
               </motion.div>
 
-              <div className="sm:max-w-sm sm:text-right">
-                {/* 서브텍스트 교차: A=쇼케이스 문구 / B=원래 설명 */}
-                <div className="grid">
-                  <motion.p
-                    style={{ opacity: aOpacity }}
-                    className="col-start-1 row-start-1 text-sm leading-relaxed text-white/80"
-                  >
-                    기획·모션·3D·개발을 하나로 묶어, 보는 즉시 빠져들고 직접 만지고 싶어지는 학습 경험을 만듭니다.
-                    캠페인부터 몰입형 교구까지.
-                  </motion.p>
-                  <motion.p
-                    style={{ opacity: bOpacity }}
-                    className="col-start-1 row-start-1 text-sm leading-relaxed text-white/75"
-                  >
-                    특허 출원한 자체 개발 엔진으로 외주대비 비용 90% 절감. 콘텐츠 시각화를 통한 몰입도 향상.
-                  </motion.p>
-                </div>
+              <div className="sm:max-w-xs sm:text-right">
+                <motion.p
+                  style={{ opacity: aOpacity }}
+                  className="text-sm leading-relaxed text-white/80"
+                >
+                  기획·모션·3D·개발을 하나로 묶어, 보는 즉시 빠져들고 직접 만지고 싶어지는 학습 경험을 만듭니다.
+                  캠페인부터 몰입형 교구까지.
+                </motion.p>
 
                 {/* CTA는 항상 보이게 */}
                 <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:justify-end">
