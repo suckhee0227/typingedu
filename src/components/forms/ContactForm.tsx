@@ -1,4 +1,5 @@
 import { useContactForm } from "../../hooks/useContactForm";
+import { openLegal } from "../layout/LegalModal";
 
 export default function ContactForm() {
   const { form, onSubmit, submitStatus, setSubmitStatus } = useContactForm();
@@ -100,7 +101,14 @@ export default function ContactForm() {
           className="mt-1 w-4 h-4 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
         />
         <label htmlFor="privacyAgree" className="text-sm text-gray-600">
-          <a href="/privacy" className="text-primary-600 underline" target="_blank" rel="noopener noreferrer">개인정보보호방침</a>에 동의합니다. <span className="text-red-500">*</span>
+          <button
+            type="button"
+            onClick={() => openLegal("privacy")}
+            className="text-primary-600 underline"
+          >
+            개인정보보호방침
+          </button>
+          에 동의합니다. <span className="text-red-500">*</span>
         </label>
       </div>
       {errors.privacyAgree && (
