@@ -1,0 +1,238 @@
+{
+  "appData": {
+    "logicalWidth": 1280,
+    "logicalHeight": 720,
+    "titleDisplayTimeMs": 1500
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": true,
+    "ko": {
+      "title": "🌟 Fun English! 🌟",
+      "categories": {
+        "food": {
+          "label": "🍎 과일과 음식",
+          "items": [
+            {
+              "word": "Apple",
+              "emoji": "🍎",
+              "mean": "사과"
+            },
+            {
+              "word": "Banana",
+              "emoji": "🍌",
+              "mean": "바나나"
+            },
+            {
+              "word": "Grape",
+              "emoji": "🍇",
+              "mean": "포도"
+            },
+            {
+              "word": "Orange",
+              "emoji": "🍊",
+              "mean": "오렌지"
+            },
+            {
+              "word": "Bread",
+              "emoji": "🍞",
+              "mean": "빵"
+            },
+            {
+              "word": "Milk",
+              "emoji": "🥛",
+              "mean": "우유"
+            },
+            {
+              "word": "Egg",
+              "emoji": "🥚",
+              "mean": "계란"
+            },
+            {
+              "word": "Cake",
+              "emoji": "🍰",
+              "mean": "케이크"
+            },
+            {
+              "word": "Pizza",
+              "emoji": "🍕",
+              "mean": "피자"
+            },
+            {
+              "word": "Cookie",
+              "emoji": "🍪",
+              "mean": "쿠키"
+            }
+          ]
+        },
+        "animal": {
+          "label": "🐶 동물 친구들",
+          "items": [
+            {
+              "word": "Dog",
+              "emoji": "🐶",
+              "mean": "개"
+            },
+            {
+              "word": "Cat",
+              "emoji": "🐱",
+              "mean": "고양이"
+            },
+            {
+              "word": "Rabbit",
+              "emoji": "🐰",
+              "mean": "토끼"
+            },
+            {
+              "word": "Lion",
+              "emoji": "🦁",
+              "mean": "사자"
+            },
+            {
+              "word": "Tiger",
+              "emoji": "🐯",
+              "mean": "호랑이"
+            },
+            {
+              "word": "Elephant",
+              "emoji": "🐘",
+              "mean": "코끼리"
+            },
+            {
+              "word": "Bird",
+              "emoji": "🐦",
+              "mean": "새"
+            },
+            {
+              "word": "Monkey",
+              "emoji": "🐵",
+              "mean": "원숭이"
+            },
+            {
+              "word": "Pig",
+              "emoji": "🐷",
+              "mean": "돼지"
+            },
+            {
+              "word": "Cow",
+              "emoji": "🐮",
+              "mean": "소"
+            }
+          ]
+        },
+        "color_number": {
+          "label": "🎨 색깔과 숫자",
+          "items": [
+            {
+              "word": "Red",
+              "emoji": "🔴",
+              "mean": "빨강"
+            },
+            {
+              "word": "Blue",
+              "emoji": "🔵",
+              "mean": "파랑"
+            },
+            {
+              "word": "Green",
+              "emoji": "🟢",
+              "mean": "초록"
+            },
+            {
+              "word": "Yellow",
+              "emoji": "🟡",
+              "mean": "노랑"
+            },
+            {
+              "word": "Black",
+              "emoji": "⚫",
+              "mean": "검정"
+            },
+            {
+              "word": "One",
+              "emoji": "1️⃣",
+              "mean": "하나"
+            },
+            {
+              "word": "Two",
+              "emoji": "2️⃣",
+              "mean": "둘"
+            },
+            {
+              "word": "Three",
+              "emoji": "3️⃣",
+              "mean": "셋"
+            },
+            {
+              "word": "Four",
+              "emoji": "4️⃣",
+              "mean": "넷"
+            },
+            {
+              "word": "Five",
+              "emoji": "5️⃣",
+              "mean": "다섯"
+            }
+          ]
+        },
+        "sentence": {
+          "label": "✏️ 문장 만들기",
+          "items": [
+            {
+              "korean": "나는 사과를 좋아해요.",
+              "english": "I like apples",
+              "emoji": "🍎"
+            },
+            {
+              "korean": "이것은 강아지예요.",
+              "english": "It is a dog",
+              "emoji": "🐶"
+            },
+            {
+              "korean": "이것은 빨간색이에요.",
+              "english": "This is red",
+              "emoji": "🔴"
+            },
+            {
+              "korean": "나는 책을 가지고 있어요.",
+              "english": "I have a book",
+              "emoji": "📖"
+            },
+            {
+              "korean": "태양은 커요.",
+              "english": "The sun is big",
+              "emoji": "☀️"
+            },
+            {
+              "korean": "그녀는 행복해요.",
+              "english": "She is happy",
+              "emoji": "😊"
+            },
+            {
+              "korean": "나에게 달려와요.",
+              "english": "Run to me",
+              "emoji": "🏃"
+            },
+            {
+              "korean": "높이 점프해요.",
+              "english": "Jump high",
+              "emoji": "⬆️"
+            }
+          ]
+        }
+      },
+      "feedbackCorrect": "🎉 정답! 잘했어요!",
+      "feedbackWrong": "😊 아쉬워요! 정답은 [정답]이에요",
+      "resultMessages": [
+        "🏆 영어 천재! 대단해요!",
+        "👍 잘했어요! 조금만 더 연습하면 완벽!",
+        "💪 괜찮아요! 다시 도전해봐요!"
+      ]
+    }
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

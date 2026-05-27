@@ -1,0 +1,82 @@
+{
+  "appData": {
+    "canvasWidth": 1280,
+    "canvasHeight": 720,
+    "colors": {
+      "background": "#eceff1",
+      "beaker": "#b0bec5",
+      "water": "#4fc3f7",
+      "salt": "#ffffff",
+      "uiPrimary": "#263238",
+      "uiSecondary": "#4caf50",
+      "uiAccent": "#ff6f00",
+      "panelBg": "rgba(255, 255, 255, 0.9)",
+      "glass": "rgba(120, 144, 156, 0.5)"
+    }
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": true,
+    "ko": {
+      "title": "정밀 화학 농도 연구소",
+      "instruction": "전문적인 실험실 환경에서 소금물의 농도를 정밀하게 측정해 보세요.\n\n비커에 물과 소금을 추가하면 실시간으로 수위와 농도가 계산됩니다.\n소금 입자는 오직 물속에서만 이동하며, 수위가 높아지면 함께 위로 떠오르는 모습을 관찰할 수 있습니다.",
+      "startButton": "실험 시작하기",
+      "saltLabel": "소금의 양",
+      "waterLabel": "물의 양",
+      "resultLabel": "현재 농도",
+      "unitGram": "g",
+      "unitPercent": "%",
+      "resetButton": "초기화",
+      "hintText": "실험 도구함 아래에서 계산 과정을 확인하고, 우측 비커의 변화를 관찰해 보세요.",
+      "explanationTemplate": "물 {water}g에 소금 {salt}g을 넣으면,\n전체 소금물은 {total}g이 됩니다.",
+      "missionTitle": "도전! 농도 맞추기",
+      "missionInstruction": "목표 농도와 똑같은 농도의 소금물을 만들어 보세요.",
+      "missionGoalPrefix": "목표 농도:",
+      "missionSuccess": "축하합니다! 정확한 농도를 맞췄어요!",
+      "missionFail": "아쉬워요! 조금 더 조절해 볼까요?",
+      "missionButton": "미션",
+      "checkButton": "농도 확인하기",
+      "nextMissionButton": "다음 미션",
+      "exitMissionButton": "그만하기",
+      "concentrationPrinciple": "농도는 전체 소금물 중에서 소금이 차지하는 비율입니다.",
+      "quizButton": "퀴즈",
+      "quizTitle": "📝 수학 퀴즈: 농도 계산하기",
+      "quizCheckButton": "정답 확인",
+      "quizNextButton": "다음 문제",
+      "quizCorrect": "정답입니다! 정말 똑똑하시네요!",
+      "quizIncorrect": "아쉽게도 틀렸습니다. 다시 계산해볼까요?",
+      "quizProgressLabel": "문제",
+      "missionProgressLabel": "챌린지",
+      "allCompleteMsg": "모든 과정을 훌륭하게 마치셨습니다!\n이제 소금물 농도의 달인이 되셨군요!"
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": [
+      {
+        "id": "click",
+        "file_path": "assets/click.mp3",
+        "duration_seconds": 0.3,
+        "volume": 0.5,
+        "isBackgroundMusic": false,
+        "isNewAsset": false,
+        "description": "세련된 UI 클릭음"
+      },
+      {
+        "id": "bgm",
+        "file_path": "assets/bgm.mp3",
+        "duration_seconds": 180,
+        "volume": 0.2,
+        "isBackgroundMusic": true,
+        "isNewAsset": false,
+        "description": "연구에 집중할 수 있는 밝고 차분한 배경음악"
+      }
+    ]
+  }
+}
