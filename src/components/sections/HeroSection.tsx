@@ -160,13 +160,15 @@ export default function HeroSection() {
                 ))}
               </motion.div>
 
-              <div className="sm:max-w-xs sm:text-right">
+              <div className="sm:max-w-[30rem] sm:text-right">
+                {/* 데스크톱에서 딱 두 줄로 */}
                 <motion.p
                   style={{ opacity: aOpacity }}
                   className="text-sm leading-relaxed text-white/80"
                 >
-                  기획·모션·3D·개발을 하나로 묶어, 보는 즉시 빠져들고 직접 만지고 싶어지는 학습 경험을 만듭니다.
-                  캠페인부터 몰입형 교구까지.
+                  기획·모션·3D·개발을 하나로 묶어, 보는 즉시 빠져들고 직접 만지고 싶어지는{" "}
+                  <br className="hidden sm:block" />
+                  학습 경험을 만듭니다. 캠페인부터 몰입형 교구까지.
                 </motion.p>
 
                 {/* CTA는 항상 보이게 */}
