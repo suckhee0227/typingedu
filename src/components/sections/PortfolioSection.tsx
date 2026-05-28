@@ -3,6 +3,7 @@ import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PORTFOLIO_ITEMS } from "../../lib/constants";
 import type { Tier } from "../../types";
 import RevealText from "../ui/RevealText";
+import BlurFadeIn from "../ui/BlurFadeIn";
 
 const TIER_BADGE: Record<Tier, string> = {
   베이직: "bg-slate-100 text-slate-600",
@@ -260,7 +261,7 @@ export default function PortfolioSection() {
             <RevealText text="완성된 콘텐츠를 직접 체험해 보세요." />
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
-            카드를 클릭하면 실제 콘텐츠가 바로 실행됩니다.
+            <BlurFadeIn text="카드를 클릭하면 실제 콘텐츠가 바로 실행됩니다." />
           </p>
         </motion.div>
 

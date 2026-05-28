@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { PRICING_PLANS, PORTFOLIO_ITEMS } from "../../lib/constants";
-import Typewriter from "../ui/Typewriter";
-import RevealText from "../ui/RevealText";
+import ScrollSlideIn from "../ui/ScrollSlideIn";
 
 // 기능 항목이 하나씩 순차로 등장
 const listContainer: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.08, delayChildren: 0.15 } } };
@@ -18,19 +17,19 @@ export default function PricingSection() {
     <section id="pricing" className="py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          className="text-center mb-16"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, margin: "-80px" }}
+          className="text-center mb-16 overflow-hidden"
         >
           <span className="text-sm font-semibold uppercase tracking-[0.18em] text-primary-600">
             Pricing
           </span>
           <h2 className="mt-3 mb-4 text-[clamp(2rem,5vw,4rem)] font-bold tracking-tight text-gray-900">
-            <RevealText text="합리적인 가격 정책" />
+            <ScrollSlideIn text="합리적인 가격 정책" />
           </h2>
           <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
-            <Typewriter text="요구사항과 제작 기간에 따라 가격을 책정합니다." />
+            <ScrollSlideIn text="요구사항과 제작 기간에 따라 가격을 책정합니다." delay={0.04} />
           </p>
           <div className="mt-4 inline-block px-5 py-2 bg-yellow-50 border border-yellow-200 rounded-full">
             <span className="text-yellow-800 font-semibold text-sm">

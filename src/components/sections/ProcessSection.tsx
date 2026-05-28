@@ -1,6 +1,7 @@
 import { motion, type Variants } from "framer-motion";
 import { PROCESS_STEPS } from "../../lib/constants";
 import RevealText from "../ui/RevealText";
+import RevealTextDown from "../ui/RevealTextDown";
 
 // 섹션이 보이면 단계가 하나씩 바로바로 등장 (스크롤 고정 없음)
 const container: Variants = { hidden: {}, visible: { transition: { staggerChildren: 0.16, delayChildren: 0.1 } } };
@@ -24,7 +25,7 @@ export default function ProcessSection() {
             <RevealText text="간단한 4단계로 완성" />
           </h2>
           <p className="mx-auto max-w-2xl text-[clamp(1rem,1.4vw,1.25rem)] text-gray-600">
-            복잡한 절차 없이 빠르게 맞춤형 교구를 도입하세요.
+            <RevealTextDown text="복잡한 절차 없이 빠르게 맞춤형 교구를 도입하세요." />
           </p>
         </motion.div>
 
