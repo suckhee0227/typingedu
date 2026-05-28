@@ -45,7 +45,12 @@ export default function PortfolioSection() {
   const [iframeLoaded, setIframeLoaded] = useState(false);
   const [interacting, setInteracting] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
+
+  function enterFullscreen() {
+    iframeRef.current?.requestFullscreen?.().catch(() => {});
+  }
 
   useEffect(() => {
     function onOpenDemo(e: Event) {
@@ -189,11 +194,13 @@ export default function PortfolioSection() {
 
             {/* 딱 플레이 화면만. 클릭 전엔 휠 통과(데모 위에서도 페이지 스크롤 가능) */}
             <iframe
+              ref={iframeRef}
               src={activeItem.demoUrl}
               title={activeItem.title}
               className={`absolute inset-0 h-full w-full border-0 ${interacting ? "" : "pointer-events-none"}`}
               onLoad={() => setIframeLoaded(true)}
-              allow="autoplay"
+              allow="autoplay; fullscreen"
+              allowFullScreen
             />
 
             {iframeLoaded && !interacting && (
@@ -217,6 +224,20 @@ export default function PortfolioSection() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
+
+            {/* 전체화면 — 우측 하단 (Esc로 빠져나옴) */}
+            {iframeLoaded && (
+              <button
+                onClick={enterFullscreen}
+                aria-label="전체화면"
+                title="전체화면 (Esc로 종료)"
+                className="absolute right-3 bottom-3 z-20 flex h-9 w-9 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-sm transition-colors hover:bg-black/75"
+              >
+                <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 9V4h5M15 4h5v5M9 20H4v-5M20 15v5h-5" />
+                </svg>
+              </button>
+            )}
           </div>
         </motion.div>
       )}
