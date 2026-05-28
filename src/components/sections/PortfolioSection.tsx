@@ -49,6 +49,7 @@ export default function PortfolioSection() {
   const sectionRef = useRef<HTMLElement>(null);
 
   function enterFullscreen() {
+    setInteracting(true);
     iframeRef.current?.requestFullscreen?.().catch(() => {});
   }
 
@@ -68,19 +69,19 @@ export default function PortfolioSection() {
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  // 펼침 애니메이션(0.4s)이 끝난 뒤 "딱 한 번" 부드럽게 패널 위치로 (자라는 중 스크롤 → 이중 점프 방지)
+  // 패널이 열림과 동시에 그쪽으로 스크롤 시작 (애니메이션과 함께 진행돼 자연스러움)
   useEffect(() => {
     if (!activeId) return;
-    const t = setTimeout(() => {
+    const raf = requestAnimationFrame(() => {
       const el = panelRef.current;
       if (!el) return;
       const lenis = (window as unknown as {
-        __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number }) => void };
+        __lenis?: { scrollTo: (t: Element | number, o?: { offset?: number; duration?: number; lock?: boolean; force?: boolean }) => void };
       }).__lenis;
-      if (lenis) lenis.scrollTo(el, { offset: -100, duration: 0.8 });
+      if (lenis) lenis.scrollTo(el, { offset: -80, duration: 0.9, lock: true, force: true });
       else el.scrollIntoView({ behavior: "smooth", block: "start" });
-    }, 480);
-    return () => clearTimeout(t);
+    });
+    return () => cancelAnimationFrame(raf);
   }, [activeId]);
 
   const activeItem = PORTFOLIO_ITEMS.find((p) => p.id === activeId) ?? null;
