@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#2EA98C", "primaryDark": "#1E7D67", "accent": "#F0913E", "ink": "#19342C", "bgTop": "#E1F2EC", "bgBottom": "#F3FBF8" },
+      "brandIcon": "🤲",
+      "layout": "bottombar",
+      "brandLabel": "요양 교육",
+      "startSub": "방문요양센터",
+      "startTitle": "방문요양 안전수칙\n스마트 안내",
+      "startDesc": "어르신을 안전하게 돌보기 위한\n방문요양 안전 수칙을 학습해요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["개인위생·감염 예방", "어르신 안전 관리", "이동·보행 보조", "응급상황 대처", "복약 관리", "가족·기관 협력"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 수칙을 익혀요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "🏡", "label": "방문요양" },
+        { "icon": "👵", "label": "노인 요양" },
+        { "icon": "🤝", "label": "재가 케어" },
+        { "icon": "♿", "label": "복지서비스" },
+        { "icon": "🏥", "label": "요양기관" },
+        { "icon": "🎓", "label": "요양보호사 교육" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 안전수칙 카드",
+      "cards": [
+        { "icon": "🧼", "title": "손 위생·감염 예방", "desc": "방문 전후 손 위생과\n감염 예방 수칙을 지켜요." },
+        { "icon": "🛟", "title": "어르신 안전 관리", "desc": "낙상 등 안전 사고를\n미리 살피고 예방해요." },
+        { "icon": "🏠", "title": "낙상 위험 점검", "desc": "문턱·미끄러운 바닥 등\n위험 환경을 점검해요." },
+        { "icon": "🚶", "title": "이동·보행 보조", "desc": "올바른 자세로 안전하게\n이동과 보행을 보조해요." },
+        { "icon": "🚑", "title": "응급상황 대처", "desc": "이상 징후 시 침착하게\n대응하고 신속히 알려요." },
+        { "icon": "💊", "title": "복약·기록 관리", "desc": "복약 시간·용량을 지키고\n서비스 내용을 기록해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "업무 전 안전 체크리스트",
+      "checklistDesc": "방문 전·중에 지켜야 할 안전 수칙을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🧼", "label": "손 위생·보호장구를 착용했어요" },
+        { "icon": "❤️", "label": "어르신 건강 상태를 확인했어요" },
+        { "icon": "🏠", "label": "낙상 위험 요소를 점검했어요" },
+        { "icon": "💊", "label": "복약 시간·용량을 확인했어요" },
+        { "icon": "📝", "label": "서비스 내용을 기록했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 관심이 어르신의 안전을 지켜요.\n늘 어르신의 입장에서 살펴봐요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "어르신이 어지러워하면\n바로 일으켜 걷게 해야 한다?", "a": "X", "expl": "낙상 위험이 있어요.\n안정시킨 뒤 천천히 도와야 해요." },
+        { "q": "복약은 정해진 시간과\n용량을 지켜야 한다?", "a": "O", "expl": "복약 관리는 건강의 기본이에요.\n시간·용량을 꼭 지켜주세요." },
+        { "q": "응급상황 시 기관에 보고하고\n가족에게 연락해야 한다?", "a": "O", "expl": "신속한 보고와 연락이\n어르신의 안전을 지켜요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n방문요양 안전수칙을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 안전 수칙을 실천해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🛡️", "label": "어르신 안전 보호" },
+        { "icon": "🚫", "label": "안전 사고 예방" },
+        { "icon": "💚", "label": "케어 품질 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 방문요양센터", "phone": "02-1234-5678", "kakao": "카카오채널 @요양", "instagram": "인스타 DM 문의", "note": "케어·안전 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

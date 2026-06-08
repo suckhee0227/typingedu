@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#1E40AF", "primaryDark": "#15307E", "accent": "#C8A04B", "ink": "#1B2440", "bgTop": "#E5EAF7", "bgBottom": "#F5F7FD" },
+      "brandIcon": "🏠",
+      "layout": "sidebar",
+      "brandLabel": "중개 교육",
+      "startSub": "부동산중개업",
+      "startTitle": "계약 전 체크리스트\n스마트 안내",
+      "startDesc": "계약 전 확인해야 할 핵심 항목을 쉽게 학습해\n안전한 계약으로 고객 신뢰를 높여요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["등기부등본 확인", "권리관계·근저당 점검", "계약서 특약사항", "중개보수·비용 안내", "고객 정보 보호", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 항목을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "🏠", "label": "부동산중개" },
+        { "icon": "🏢", "label": "아파트·빌라" },
+        { "icon": "🏬", "label": "상가·오피스" },
+        { "icon": "🔑", "label": "전·월세" },
+        { "icon": "🏗️", "label": "토지·공장" },
+        { "icon": "📑", "label": "분양·관리" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "📜", "title": "등기부등본 확인", "desc": "소유권·근저당 등 권리 사항을\n계약 전 반드시 확인해요." },
+        { "icon": "⚖️", "title": "권리관계 점검", "desc": "가압류·제한물권 등 권리관계를\n꼼꼼히 점검해요." },
+        { "icon": "✍️", "title": "계약서 특약사항", "desc": "구두 약속은 반드시 특약으로\n계약서에 명확히 기재해요." },
+        { "icon": "💰", "title": "중개보수·비용", "desc": "중개보수와 부대 비용을\n거래 전에 미리 안내해요." },
+        { "icon": "🔒", "title": "고객 정보 보호", "desc": "개인정보와 계약 정보를\n안전하게 관리해요." },
+        { "icon": "⚠️", "title": "주의사항 안내", "desc": "계약 시 유의할 점을 안내해\n분쟁을 예방해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "계약 전 체크리스트",
+      "checklistDesc": "계약 전 반드시 확인할 항목을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "📜", "label": "등기부등본을 확인했어요" },
+        { "icon": "⚖️", "label": "권리관계·근저당을 확인했어요" },
+        { "icon": "✍️", "label": "계약서 특약사항을 점검했어요" },
+        { "icon": "💰", "label": "중개보수를 미리 안내했어요" },
+        { "icon": "🪪", "label": "본인·대리 여부를 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "확인 또 확인이 안전한 계약을 만들어요.\n전문가다운 중개로 고객 신뢰를 높여요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "계약 전에 등기부등본을\n반드시 확인해야 한다?", "a": "O", "expl": "소유권·권리관계 확인은 기본이에요.\n계약 전 꼭 확인하세요." },
+        { "q": "계약서 특약사항은\n구두로만 약속해도 된다?", "a": "X", "expl": "구두 약속은 분쟁의 원인이 돼요.\n반드시 특약으로 명시하세요." },
+        { "q": "중개보수는 거래 전에\n미리 안내해야 한다?", "a": "O", "expl": "비용을 사전에 안내하면\n신뢰와 투명성이 높아져요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n계약 전 핵심 점검을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 점검 항목을 실무에 적용해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🛡️", "label": "계약 안전성 향상" },
+        { "icon": "🤝", "label": "중개 신뢰도 상승" },
+        { "icon": "🚫", "label": "분쟁 예방" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 공인중개사사무소", "phone": "02-1234-5678", "kakao": "카카오채널 @중개", "instagram": "인스타 DM 문의", "note": "계약·중개 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

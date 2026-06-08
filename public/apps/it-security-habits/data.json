@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#1E3A8A", "primaryDark": "#14245C", "accent": "#06B6D4", "ink": "#16213F", "bgTop": "#E4E9F5", "bgBottom": "#F3F6FC" },
+      "brandIcon": "🔐",
+      "layout": "sidebar",
+      "brandLabel": "정보보안",
+      "startSub": "IT 보안",
+      "startTitle": "정보보안 습관 만들기\n스마트 퀴즈",
+      "startDesc": "누구나 쉽게 따라 하는 정보보안 습관!\n안전한 디지털 업무 환경을 함께 만들어요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["비밀번호 안전 관리", "피싱·스미싱 예방", "개인정보 보호", "악성코드·백신 관리", "보안사고 대응 방법", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 수칙을 익혀요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "💻", "label": "IT기업" },
+        { "icon": "🏛️", "label": "공공기관" },
+        { "icon": "🏦", "label": "금융" },
+        { "icon": "🛒", "label": "이커머스" },
+        { "icon": "🏥", "label": "의료기관" },
+        { "icon": "🏫", "label": "교육기관" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "🔑", "title": "강력한 비밀번호", "desc": "길고 복잡하게 설정하고\n사이트마다 다르게 관리해요." },
+        { "icon": "🎣", "title": "피싱·스미싱 주의", "desc": "의심스러운 링크·문자·메일은\n클릭하지 않아요." },
+        { "icon": "🪪", "title": "개인정보 보호", "desc": "꼭 필요한 정보만 입력하고\n화면을 잠그고 관리해요." },
+        { "icon": "🛡️", "title": "악성코드 차단", "desc": "백신과 보안 업데이트를\n항상 최신으로 유지해요." },
+        { "icon": "📶", "title": "안전한 Wi-Fi", "desc": "공용 와이파이에서 중요한\n업무·결제는 피해요." },
+        { "icon": "🚨", "title": "보안사고 대응", "desc": "이상 징후는 즉시 신고하고\n초기 대응 절차를 따라요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "정보보안 실전 체크리스트",
+      "checklistDesc": "매일 지켜야 할 보안 습관을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🔑", "label": "비밀번호를 주기적으로 변경했어요" },
+        { "icon": "🔐", "label": "2단계(OTP) 인증을 사용했어요" },
+        { "icon": "🎣", "label": "의심스러운 링크를 클릭하지 않았어요" },
+        { "icon": "🛡️", "label": "백신·보안 업데이트를 실행했어요" },
+        { "icon": "🖥️", "label": "자리를 비울 때 화면을 잠갔어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 실천이 큰 사고를 막아요.\n보안은 습관! 매일 한 가지씩 지켜가요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "여러 사이트에 같은 비밀번호를\n사용해도 안전하다?", "a": "X", "expl": "하나가 유출되면 전부 위험해요.\n사이트마다 다르게 설정하세요." },
+        { "q": "출처가 불분명한 메일 첨부파일은\n열지 않는 것이 좋다?", "a": "O", "expl": "악성코드 감염의 주요 경로예요.\n의심되면 열지 마세요." },
+        { "q": "보안사고 발생 시 즉시\n담당자에게 신고해야 한다?", "a": "O", "expl": "빠른 신고가 피해를 줄여요.\n숨기지 말고 바로 알리세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n정보보안 습관을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 보안 습관을 실천해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🚫", "label": "보안 사고 예방" },
+        { "icon": "🔒", "label": "정보 보호 강화" },
+        { "icon": "🧠", "label": "보안 의식 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 정보보안팀", "phone": "02-1234-5678", "kakao": "카카오채널 @보안", "instagram": "인스타 DM 문의", "note": "보안 사고·문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

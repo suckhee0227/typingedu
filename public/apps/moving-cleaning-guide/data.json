@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#0EA5E9", "primaryDark": "#0369A1", "accent": "#34D399", "ink": "#10283A", "bgTop": "#DEF0FB", "bgBottom": "#F2FAFE" },
+      "brandIcon": "🧹",
+      "layout": "bottombar",
+      "brandLabel": "서비스 안내",
+      "startSub": "이사 · 청소 · 방역",
+      "startTitle": "서비스 이용 전후\n안내 스마트 콘텐츠",
+      "startDesc": "서비스 절차와 주의사항, 이용 전후 준비를 안내해\n고객 만족과 재이용을 높여요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["서비스 이용 전 준비", "진행 중 주의사항", "귀중품 관리", "완료 상태 확인 방법", "고객 안내·응대", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 절차를 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "📦", "label": "이사업체" },
+        { "icon": "🧹", "label": "청소업체" },
+        { "icon": "🧴", "label": "방역업체" },
+        { "icon": "🏠", "label": "입주청소" },
+        { "icon": "🏢", "label": "건물관리" },
+        { "icon": "🚚", "label": "운송·물류" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "📝", "title": "이용 전 준비사항", "desc": "예약 일정과 공간 정리 등\n사전 준비를 안내해요." },
+        { "icon": "📦", "title": "이사 서비스 안내", "desc": "포장·운반·배치 절차를\n순서대로 익혀요." },
+        { "icon": "🧽", "title": "청소 서비스 안내", "desc": "청소 범위와 방식을\n명확히 안내해요." },
+        { "icon": "🧴", "title": "방역 서비스 안내", "desc": "방역 전후 환기와\n주의사항을 안내해요." },
+        { "icon": "✅", "title": "이용 후 확인", "desc": "완료 상태를 고객과\n함께 확인해요." },
+        { "icon": "⚠️", "title": "문제 발생 시 대처", "desc": "하자·분쟁 발생 시\n응대 방법을 익혀요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "서비스 준비 체크리스트",
+      "checklistDesc": "서비스 전·후에 확인할 항목을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🗓️", "label": "예약 일정과 범위를 확인했어요" },
+        { "icon": "💍", "label": "귀중품을 별도로 보관했어요" },
+        { "icon": "🧹", "label": "작업 공간을 정리했어요" },
+        { "icon": "✅", "label": "완료 상태를 함께 확인했어요" },
+        { "icon": "🧾", "label": "결제·영수증을 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 준비와 친절한 안내가\n고객 신뢰와 재이용을 만들어요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "귀중품은 작업 전에\n별도로 보관하는 것이 좋다?", "a": "O", "expl": "분실·파손을 막으려면\n귀중품은 따로 보관하세요." },
+        { "q": "서비스 완료 후 상태는\n확인하지 않아도 된다?", "a": "X", "expl": "완료 확인은 분쟁을 예방해요.\n고객과 함께 꼭 확인하세요." },
+        { "q": "방역 작업 후에는\n충분히 환기해야 한다?", "a": "O", "expl": "안전을 위해 방역 후에는\n충분히 환기해주세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n서비스 이용 전후 안내를 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 안내로 안심 서비스를 제공해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "😊", "label": "고객 만족도 향상" },
+        { "icon": "🚫", "label": "분쟁 예방" },
+        { "icon": "🔁", "label": "재이용률 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 이사·청소 서비스", "phone": "02-1234-5678", "kakao": "카카오채널 @서비스", "instagram": "인스타 DM 문의", "note": "예약·서비스 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

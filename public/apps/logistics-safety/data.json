@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#EA7317", "primaryDark": "#B8560B", "accent": "#2563EB", "ink": "#3A2710", "bgTop": "#FBEAD8", "bgBottom": "#FFF7F0" },
+      "brandIcon": "🦺",
+      "layout": "split",
+      "brandLabel": "안전 교육",
+      "startSub": "물류 · 배송업체",
+      "startTitle": "물류센터 안전수칙\n스마트 퀴즈",
+      "startDesc": "안전한 작업이 최고의 배송이다!\n물류센터 안전 수칙을 학습해 사고를 예방해요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["물류센터 주요 위험 요소", "안전 장비·보호구 착용", "작업별 안전 수칙", "운반·적재 안전", "응급·비상 상황 대처", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 수칙을 익혀요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "🏭", "label": "물류센터" },
+        { "icon": "🚚", "label": "배송업체" },
+        { "icon": "❄️", "label": "냉동·냉장" },
+        { "icon": "🛒", "label": "이커머스" },
+        { "icon": "📦", "label": "제조·유통" },
+        { "icon": "🔗", "label": "3PL 업체" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "⚠️", "title": "주요 위험 요소", "desc": "낙하·끼임·충돌 등\n현장의 위험 요소를 파악해요." },
+        { "icon": "🦺", "title": "보호구 착용", "desc": "안전화·안전모·장갑을\n작업 전 반드시 착용해요." },
+        { "icon": "🚜", "title": "지게차 안전수칙", "desc": "지게차 통행로와 신호를\n지키며 작업해요." },
+        { "icon": "📦", "title": "운반·적재 안전", "desc": "올바른 자세로 들고\n정해진 방식으로 적재해요." },
+        { "icon": "🧯", "title": "비상상황 대처", "desc": "화재·사고 시 대피로와\n초기 대응 방법을 익혀요." },
+        { "icon": "📋", "title": "작업 전 점검", "desc": "장비·구역 상태를 작업 전\n미리 점검해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "물류센터 안전 체크리스트",
+      "checklistDesc": "작업 전·중에 지켜야 할 안전 수칙을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🦺", "label": "작업 전 보호구를 착용했어요" },
+        { "icon": "🚜", "label": "지게차 통행로를 확인했어요" },
+        { "icon": "📦", "label": "정해진 방식으로 적재했어요" },
+        { "icon": "🧯", "label": "비상구·소화기 위치를 확인했어요" },
+        { "icon": "💪", "label": "무리한 중량물을 혼자 들지 않았어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 부주의가 큰 사고로 이어질 수 있어요.\n늘 안전을 먼저 생각하며 작업해요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "지게차와 보행자가 같은\n통로를 사용해도 안전하다?", "a": "X", "expl": "충돌 위험이 커요.\n지정 통행로를 분리해 이용하세요." },
+        { "q": "무거운 물건은 허리보다\n다리 힘으로 들어야 한다?", "a": "O", "expl": "허리 부상을 막으려면\n무릎을 굽혀 다리 힘으로 드세요." },
+        { "q": "비상구 앞에는 물건을\n쌓아두면 안 된다?", "a": "O", "expl": "대피로 확보는 필수예요.\n비상구 앞은 항상 비워두세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n물류센터 안전수칙을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 안전 수칙을 실천해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🚫", "label": "산업재해 예방" },
+        { "icon": "🦺", "label": "안전한 작업 환경" },
+        { "icon": "📈", "label": "작업 효율 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 물류센터 안전관리", "phone": "02-1234-5678", "kakao": "카카오채널 @안전", "instagram": "인스타 DM 문의", "note": "안전·사고 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

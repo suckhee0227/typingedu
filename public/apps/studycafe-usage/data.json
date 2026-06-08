@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#4C6EF5", "primaryDark": "#364FC7", "accent": "#38B2AC", "ink": "#1B2540", "bgTop": "#E4EAFB", "bgBottom": "#F4F7FE" },
+      "brandIcon": "📚",
+      "layout": "topbar",
+      "brandLabel": "이용 안내",
+      "startSub": "스터디카페 · 무인매장",
+      "startTitle": "이용수칙\n스마트 안내",
+      "startDesc": "스터디카페 이용수칙을 쉽게 익혀\n모두가 쾌적한 이용 문화를 만들어요.",
+      "learnTitle": "이런 내용을 확인해요",
+      "learnList": ["출입·결제 방법", "좌석 이용 방법", "정숙 및 매너", "음식물 반입 규정", "이용 시간 관리", "퇴실·정리"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 수칙을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "📚", "label": "스터디카페" },
+        { "icon": "🤖", "label": "무인카페" },
+        { "icon": "🏪", "label": "무인운영점" },
+        { "icon": "🏢", "label": "공유오피스" },
+        { "icon": "🕐", "label": "24시 편의시설" },
+        { "icon": "🖥️", "label": "코워킹스페이스" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 이용수칙 카드",
+      "cards": [
+        { "icon": "🚪", "title": "출입·이용 방법", "desc": "키오스크 결제와 출입 방법을\n익혀요." },
+        { "icon": "🪑", "title": "좌석 이용", "desc": "지정 좌석을 이용하고\n사용 시간을 지켜요." },
+        { "icon": "🤫", "title": "정숙 매너", "desc": "통화·소음을 자제하고\n조용히 이용해요." },
+        { "icon": "🍱", "title": "음식물 반입", "desc": "허용·금지 음식을 확인해\n규정을 지켜요." },
+        { "icon": "⏰", "title": "이용 시간 관리", "desc": "이용 시간과 연장 방법을\n확인해요." },
+        { "icon": "📹", "title": "CCTV·보안", "desc": "무인 매장도 CCTV로\n안전하게 관리돼요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "이용 다짐 체크리스트",
+      "checklistDesc": "이용 전·후에 지켜야 할 수칙을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🚪", "label": "출입·결제 방법을 확인했어요" },
+        { "icon": "🪑", "label": "지정 좌석을 이용했어요" },
+        { "icon": "🤫", "label": "정숙 매너를 지켰어요" },
+        { "icon": "🍱", "label": "음식물 반입 규정을 지켰어요" },
+        { "icon": "🧹", "label": "퇴실 시 자리를 정리했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "서로 배려하는 작은 매너가\n모두에게 쾌적한 공간을 만들어요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "스터디카페 안에서\n큰 소리로 통화해도 된다?", "a": "X", "expl": "정숙은 기본 매너예요.\n통화는 지정 공간에서 해주세요." },
+        { "q": "사용한 자리는 퇴실 시\n정리해야 한다?", "a": "O", "expl": "다음 이용자를 위해\n자리를 깨끗이 정리해주세요." },
+        { "q": "무인매장도 CCTV로\n안전하게 관리된다?", "a": "O", "expl": "CCTV로 안전을 관리하니\n안심하고 이용하세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n이용수칙을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 수칙으로 쾌적하게 이용해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🌿", "label": "쾌적한 이용 환경" },
+        { "icon": "🤝", "label": "분쟁·민원 감소" },
+        { "icon": "📈", "label": "매장 관리 효율화" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 스터디카페", "phone": "02-1234-5678", "kakao": "카카오채널 @스터디", "instagram": "인스타 DM 문의", "note": "이용·결제 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

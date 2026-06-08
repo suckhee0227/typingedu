@@ -38,6 +38,15 @@ export interface PortfolioItem {
   period: string;
 }
 
+export interface SampleItem {
+  id: string;
+  title: string;
+  description: string;
+  demoUrl: string;
+  thumbnail: string;
+  category: string;
+}
+
 export interface ProcessStep {
   step: number;
   title: string;

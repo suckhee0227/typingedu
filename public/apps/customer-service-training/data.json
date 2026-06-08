@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#2563EB", "primaryDark": "#1E40AF", "accent": "#14B8A6", "ink": "#1A2540", "bgTop": "#E4ECFB", "bgBottom": "#F4F8FE" },
+      "brandIcon": "🎓",
+      "layout": "topbar",
+      "brandLabel": "서비스 교육",
+      "startSub": "기업교육 · 고객서비스",
+      "startTitle": "고객 서비스 역량 강화\n스마트 상황 퀴즈",
+      "startDesc": "다양한 고객 응대 상황을 학습하며\n최고의 서비스 전문가로 성장해요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["고객 응대 기본 원칙", "상황별 응대 방법", "불만 고객 대응 전략", "경청·의사소통 스킬", "고객 중심 서비스 마인드", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 원칙을 익혀요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "🛍️", "label": "유통·매장" },
+        { "icon": "🎧", "label": "콜센터" },
+        { "icon": "🍽️", "label": "외식·서비스" },
+        { "icon": "🏫", "label": "교육·학원" },
+        { "icon": "🏦", "label": "금융·보험" },
+        { "icon": "🏥", "label": "의료기관" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "🤝", "title": "서비스 기본 원칙", "desc": "고객 응대의 기본 원칙으로\n첫인상의 신뢰를 만들어요." },
+        { "icon": "👂", "title": "경청과 공감", "desc": "고객의 말을 끝까지 듣고\n진심으로 공감해요." },
+        { "icon": "ℹ️", "title": "요청·문의 응대", "desc": "요청과 문의를 정확하고\n신속하게 처리해요." },
+        { "icon": "🙂", "title": "불만 고객 응대", "desc": "감정에 휘둘리지 않고\n침착하게 해결책을 안내해요." },
+        { "icon": "🧭", "title": "어려운 상황 대처", "desc": "돌발·난처한 상황을\n차분하고 유연하게 대응해요." },
+        { "icon": "💙", "title": "서비스 마인드", "desc": "고객 중심으로 생각하는\n태도를 몸에 익혀요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "서비스 실전 체크리스트",
+      "checklistDesc": "방금 배운 서비스 원칙을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🙌", "label": "밝게 인사하고 응대했어요" },
+        { "icon": "👂", "label": "고객의 말을 끝까지 경청했어요" },
+        { "icon": "ℹ️", "label": "정확하게 정보를 전달했어요" },
+        { "icon": "💗", "label": "불만에 침착하게 대응했어요" },
+        { "icon": "🧭", "label": "고객 입장에서 생각했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 배려가 고객의 마음을 움직여요.\n늘 고객 중심으로 서비스를 실천해요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "고객의 불만에는\n변명부터 하는 것이 좋다?", "a": "X", "expl": "먼저 경청하고 공감한 뒤\n해결책을 안내하는 것이 좋아요." },
+        { "q": "고객의 요청은 정확히\n확인한 후 처리해야 한다?", "a": "O", "expl": "정확한 확인은 실수를 줄이고\n신뢰를 높여줘요." },
+        { "q": "서비스 마인드는 교육으로\n향상시켜 나갈 수 있다?", "a": "O", "expl": "꾸준한 학습과 실천으로\n서비스 역량은 성장해요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n고객 서비스 역량을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 서비스 원칙을 실천해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "📈", "label": "응대 역량 향상" },
+        { "icon": "📐", "label": "서비스 품질 표준화" },
+        { "icon": "✨", "label": "브랜드 이미지 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 인재교육팀", "phone": "02-1234-5678", "kakao": "카카오채널 @교육", "instagram": "인스타 DM 문의", "note": "교육 과정 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

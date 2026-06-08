@@ -35,6 +35,15 @@ export default function Navbar() {
                 {item.label}
               </button>
             ))}
+            <button
+              onClick={() => window.dispatchEvent(new Event("open-sample-textbook"))}
+              className="ml-1 inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-[clamp(0.9rem,1vw,1.05rem)] font-semibold text-primary-600 bg-primary-50 hover:bg-primary-100 transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+              샘플교본
+            </button>
           </div>
 
           {/* CTA */}
@@ -111,6 +120,15 @@ export default function Navbar() {
                   {item.label}
                 </button>
               ))}
+              <button
+                onClick={() => {
+                  window.dispatchEvent(new Event("open-sample-textbook"));
+                  setMobileOpen(false);
+                }}
+                className="block w-full text-left px-4 py-2.5 rounded-lg text-sm font-semibold text-primary-600 bg-primary-50"
+              >
+                샘플교본 보기
+              </button>
             </div>
           </motion.div>
         )}

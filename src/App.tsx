@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import FloatingWidget from "./components/layout/FloatingWidget";
 import EventPopup from "./components/layout/EventPopup";
 import LegalModal from "./components/layout/LegalModal";
+import SampleTextbookOverlay from "./components/layout/SampleTextbookOverlay";
 import HeroSection from "./components/sections/HeroSection";
 import ExpertiseSection from "./components/sections/ExpertiseSection";
 import PortfolioSection from "./components/sections/PortfolioSection";
@@ -49,6 +50,7 @@ export default function App() {
       <FloatingWidget />
       <EventPopup />
       <LegalModal />
+      <SampleTextbookOverlay />
     </div>
   );
 }
