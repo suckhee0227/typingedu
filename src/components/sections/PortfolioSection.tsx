@@ -111,7 +111,7 @@ export default function PortfolioSection() {
         className={`group flex flex-col ${hasDemo ? "cursor-pointer" : "cursor-default opacity-60"}`}
       >
         <div
-          className={`relative aspect-[4/3] overflow-hidden rounded-2xl bg-gradient-to-br from-primary-100 to-accent-100 transition-shadow duration-300 ${
+          className={`relative aspect-video overflow-hidden rounded-2xl bg-gradient-to-br from-primary-100 to-accent-100 transition-shadow duration-300 ${
             isActive ? "ring-2 ring-primary-500 ring-offset-2" : ""
           }`}
         >
