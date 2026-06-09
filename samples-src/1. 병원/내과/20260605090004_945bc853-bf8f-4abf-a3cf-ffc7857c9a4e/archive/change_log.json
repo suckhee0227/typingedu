@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "08ae5ae0-60d7-48ba-8f70-5686e29903eb",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.338681+00:00",
+      "summary": "건강검진 전날 체크리스트 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "startTitle": "피부 시술 후 관리",
+      "startSub": "핵심 포인트 체크",
+      "startDesc": "시술 후 관리 포인트를\n쉽고 빠르게 확인해보세요!",
+      "timeInfo": "예상시간: 1~2분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "checklistTitle": "시술 후 관리 포인트",
+      "checklistDesc": "중요한 관리 사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        { "icon": "✋", "label": "시술 부위를 손으로 만지거나 문지르지 않기" },
+        { "icon": "♨️", "label": "사우나·찜질방·격한 운동 피하기" },
+        { "icon": "☀️", "label": "외출 시 자외선 차단제 꼼꼼히 바르기" },
+        { "icon": "🧴", "label": "처방받은 재생크림·연고 올바르게 사용하기" },
+        { "icon": "🏥", "label": "이상 증상 발생 시 즉시 병원 문의하기" }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "시술 후에는 사우나와\n격한 운동을 피하는 것이 좋다?",
+          "a": "O",
+          "expl": "열감과 자극을 줄이기 위해\n1~2주간 사우나·찜질방·격한 운동은 피해주세요."
+        },
+        {
+          "q": "실내에 있을 때는 자외선\n차단제를 바르지 않아도 된다?",
+          "a": "X",
+          "expl": "창문을 통과하는 자외선도 피부에 자극을 주므로\n실내에서도 자외선 차단제를 발라주세요."
+        },
+        {
+          "q": "딱지가 생기면 자연스럽게\n떨어질 때까지 두어야 한다?",
+          "a": "O",
+          "expl": "억지로 떼면 흉터가 남을 수 있어요.\n딱지는 자연스럽게 탈각되도록 두세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n시술 후 관리 포인트를 잘 기억해 주세요.",
+      "resultScore": "총 점수",
+      "resultDesc": "궁금한 점이 있으시면 언제든지 병원으로 문의해 주세요. 📞",
+      "restartBtn": "다시하기"
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

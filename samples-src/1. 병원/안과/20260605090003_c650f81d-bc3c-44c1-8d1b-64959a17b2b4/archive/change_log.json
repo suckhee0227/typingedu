@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "715e4068-5d6f-4e8a-9311-24508e2a7bcd",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.300436+00:00",
+      "summary": "안약 사용법·수술 후 주의사항 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

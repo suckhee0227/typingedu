@@ -1,0 +1,145 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": {
+        "primary": "#18B0C4",
+        "primaryDark": "#128998",
+        "bgTop": "#DEF3F6",
+        "bgBottom": "#F3FBFC",
+        "charTop": "#DAF2F5",
+        "charBottom": "#79D1DC"
+      },
+      "mascot": "🦷",
+      "motif": "✨",
+      "layout": "topBar",
+      "startSub": "발치·임플란트 후 관리",
+      "startTitle": "치과 치료 후\n관리 안내",
+      "startDesc": "치료 후 관리 포인트를\n쉽고 빠르게 확인해보세요!",
+      "usageGuide": [
+        {
+          "icon": "🗂️",
+          "label": "단계별\n관리 가이드"
+        },
+        {
+          "icon": "✅",
+          "label": "체크리스트로\n상태 점검"
+        },
+        {
+          "icon": "❓",
+          "label": "퀴즈로\n내용 확인"
+        }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "cardsTitle": "핵심 주의사항",
+      "cards": [
+        {
+          "icon": "🩹",
+          "title": "",
+          "desc": "거즈는 안내받은 시간 동안 물고 있어요."
+        },
+        {
+          "icon": "🥤",
+          "title": "",
+          "desc": "빨대 사용은 피해주세요."
+        },
+        {
+          "icon": "🚭",
+          "title": "",
+          "desc": "음주와 흡연은 최소 3일간 금지예요."
+        },
+        {
+          "icon": "🥣",
+          "title": "",
+          "desc": "부드러운 음식으로 식사하세요."
+        },
+        {
+          "icon": "🦷",
+          "title": "",
+          "desc": "통증·출혈이 심하면 병원에 연락하세요."
+        }
+      ],
+      "cardPrev": "이전",
+      "cardNext": "다음",
+      "cardDone": "체크리스트로",
+      "checklistTitle": "관리 체크리스트",
+      "checklistDesc": "치료 후 관리 사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        {
+          "icon": "🩹",
+          "label": "거즈를 안내 시간 동안 물고 있었어요"
+        },
+        {
+          "icon": "🥤",
+          "label": "빨대 사용을 하지 않았어요"
+        },
+        {
+          "icon": "🚭",
+          "label": "음주와 흡연을 피하고 있어요"
+        },
+        {
+          "icon": "🥣",
+          "label": "부드러운 음식을 섭취하고 있어요"
+        },
+        {
+          "icon": "🦷",
+          "label": "통증이나 출혈이 심하면 병원에 연락할 거예요"
+        }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 다음 단계로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "발치 후 빨대를 사용하면\n출혈이 멈추기 쉬워진다?",
+          "a": "X",
+          "expl": "빨대 사용은 음압을 만들 수 있어\n출혈이 다시 생길 수 있으므로 피해야 합니다."
+        },
+        {
+          "q": "발치 후에는 음주와 흡연을\n피하는 것이 좋다?",
+          "a": "O",
+          "expl": "음주·흡연은 회복을 늦추므로\n최소 3일간 피해주세요."
+        },
+        {
+          "q": "수술 당일에는 단단한 음식을\n마음껏 먹어도 된다?",
+          "a": "X",
+          "expl": "상처를 자극할 수 있어요.\n부드러운 음식으로 드세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n핵심 포인트를 잘 기억해 주세요.",
+      "resultScore": "관리 확인 점수",
+      "resultDesc": "회복될 때까지 꾸준히 관리해 주세요.",
+      "restartBtn": "처음으로 돌아가기",
+      "contact": {
+        "name": "OO 치과",
+        "phone": "02-123-4567",
+        "hours": "평일 09:00~18:00",
+        "note": "통증·출혈이 계속되면\n병원으로 문의해 주세요."
+      }
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": {
+        "primary": "#4CAF6E",
+        "primaryDark": "#3B8855",
+        "bgTop": "#E5F3EA",
+        "bgBottom": "#F6FBF7",
+        "charTop": "#E2F2E7",
+        "charBottom": "#97D0AA"
+      },
+      "mascot": "🩺",
+      "motif": "💊",
+      "layout": "document",
+      "startSub": "건강검진 전날 준비",
+      "startTitle": "건강검진 전날\n체크 안내",
+      "startDesc": "검진 전날 준비사항을\n쉽고 빠르게 확인해보세요!",
+      "usageGuide": [
+        {
+          "icon": "🗂️",
+          "label": "단계별\n관리 가이드"
+        },
+        {
+          "icon": "✅",
+          "label": "체크리스트로\n상태 점검"
+        },
+        {
+          "icon": "❓",
+          "label": "퀴즈로\n내용 확인"
+        }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "cardsTitle": "핵심 준비사항",
+      "cards": [
+        {
+          "icon": "🍽️",
+          "title": "",
+          "desc": "검진 전날 저녁은 9시 이전까지 가볍게 드세요."
+        },
+        {
+          "icon": "🥤",
+          "title": "",
+          "desc": "검진 8시간 전부터 금식하세요. (물은 소량 가능)"
+        },
+        {
+          "icon": "🚫",
+          "title": "",
+          "desc": "음주나 과식은 피해주세요."
+        },
+        {
+          "icon": "💊",
+          "title": "",
+          "desc": "복용 중인 약이 있다면 의사와 상의하세요."
+        },
+        {
+          "icon": "😴",
+          "title": "",
+          "desc": "충분한 수면을 취하고 편안한 상태를 유지하세요."
+        }
+      ],
+      "cardPrev": "이전",
+      "cardNext": "다음",
+      "cardDone": "체크리스트로",
+      "checklistTitle": "준비 체크리스트",
+      "checklistDesc": "검진 전날 준비사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        {
+          "icon": "🍽️",
+          "label": "저녁 식사는 오후 9시 이전에 가볍게 먹기"
+        },
+        {
+          "icon": "🥤",
+          "label": "검사 8시간 전부터 금식하기 (물은 소량만)"
+        },
+        {
+          "icon": "🚫",
+          "label": "음주나 과식을 하지 않기"
+        },
+        {
+          "icon": "💊",
+          "label": "복용 중인 약이 있다면 의료진과 상의하기"
+        },
+        {
+          "icon": "😴",
+          "label": "충분한 수면을 취하고 편안한 상태 유지하기"
+        }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 다음 단계로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "검진 전날 저녁 식사는\n자정까지 자유롭게 먹어도 된다?",
+          "a": "X",
+          "expl": "검진 전날 저녁은 9시 이전까지 가볍게 드세요.\n너무 늦은 식사는 위장에 영향을 줄 수 있습니다."
+        },
+        {
+          "q": "금식 중에도 소량의 물은\n마실 수 있다?",
+          "a": "O",
+          "expl": "물은 소량 마실 수 있어요.\n단, 음료·우유 등은 피하세요."
+        },
+        {
+          "q": "매일 복용하는 약은 검진 전\n무조건 끊어야 한다?",
+          "a": "X",
+          "expl": "약에 따라 다르므로\n반드시 의료진과 상의해 결정하세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n핵심 포인트를 잘 기억해 주세요.",
+      "resultScore": "준비 완료 점수",
+      "resultDesc": "정확한 검진을 위해 준비사항을 지켜주세요.",
+      "restartBtn": "처음으로 돌아가기",
+      "contact": {
+        "name": "OO 내과",
+        "phone": "02-123-4567",
+        "hours": "평일 09:00~18:00",
+        "note": "검진 준비가 궁금하면\n병원으로 문의해 주세요."
+      }
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

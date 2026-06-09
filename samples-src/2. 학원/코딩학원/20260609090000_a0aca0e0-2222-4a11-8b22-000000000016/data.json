@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#6741D9", "primaryDark": "#5235B0", "accent": "#20C997", "ink": "#241A40", "bgTop": "#ECE7FB", "bgBottom": "#F7F5FE" },
+      "brandIcon": "💻",
+      "brandLabel": "코딩학원",
+      "startSub": "코딩학원 · 초등·중등",
+      "startTitle": "코딩 개념 확인\n스마트 퀴즈",
+      "startDesc": "코딩의 핵심 개념을 카드로 익히고\n퀴즈로 점검하며 사고력을 키워요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["순차 구조", "반복 구조", "조건 구조", "변수의 개념", "알고리즘", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 개념을 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" },
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "코딩 개념 카드",
+      "cards": [
+        { "icon": "➡️", "title": "순차", "desc": "명령을 위에서 아래로\n차례대로 실행해요." },
+        { "icon": "🔁", "title": "반복", "desc": "같은 동작을 여러 번\n반복해 실행해요." },
+        { "icon": "🔀", "title": "조건", "desc": "'만약 ~라면'에 따라\n다르게 실행해요." },
+        { "icon": "📦", "title": "변수", "desc": "값을 담아 두는 상자.\n이름을 붙여 사용해요." },
+        { "icon": "🧭", "title": "알고리즘", "desc": "문제를 푸는 순서와\n방법을 정한 것이에요." },
+        { "icon": "🐞", "title": "디버깅", "desc": "코드의 오류(버그)를\n찾아서 고치는 일이에요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 개념을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "➡️", "label": "순차 구조를 이해했어요" },
+        { "icon": "🔁", "label": "반복 구조를 이해했어요" },
+        { "icon": "🔀", "label": "조건 구조를 이해했어요" },
+        { "icon": "📦", "label": "변수가 무엇인지 알았어요" },
+        { "icon": "🐞", "label": "디버깅의 의미를 알았어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "코딩은 문제를 작게 나누는 게 핵심이에요.\n오류가 나도 괜찮아요, 고치면서 배워요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "반복(루프)은 같은 동작을\n여러 번 실행하는 것이다?", "a": "O", "expl": "맞아요! 반복 구조로 같은 동작을\n여러 번 실행할 수 있어요." },
+        { "q": "변수에는 값을\n저장할 수 없다?", "a": "X", "expl": "변수는 값을 담아 두는 상자예요.\n값을 저장하고 바꿀 수 있어요." },
+        { "q": "디버깅은 코드의 오류를\n찾아 고치는 것이다?", "a": "O", "expl": "맞아요! 버그(오류)를 찾아\n고치는 일을 디버깅이라고 해요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n코딩 개념을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 개념을 직접 코딩하며 익혀봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "🧠", "label": "논리적 사고력 향상" },
+        { "icon": "🧩", "label": "문제해결력 향상" },
+        { "icon": "💪", "label": "코딩 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "개념 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 코딩학원", "phone": "02-1234-5678", "kakao": "카카오채널 @코딩학원", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

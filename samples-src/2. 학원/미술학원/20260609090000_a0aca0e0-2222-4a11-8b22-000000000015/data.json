@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#E64980", "primaryDark": "#C2255C", "accent": "#FCC419", "ink": "#3A1726", "bgTop": "#FCE6EF", "bgBottom": "#FFF5F9" },
+      "brandIcon": "🎨",
+      "brandLabel": "미술학원",
+      "startSub": "미술학원 · 유아·초등",
+      "startTitle": "미술 개념 확인\n스마트 퀴즈",
+      "startDesc": "색과 표현의 기초 개념을 카드로 익히고\n퀴즈로 점검하며 미술 감각을 키워요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["색의 삼원색", "색의 혼합", "난색과 한색", "점·선·면", "명암 표현", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 개념을 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "🧒", "label": "유아" },
+        { "icon": "1️⃣", "label": "초1" },
+        { "icon": "2️⃣", "label": "초2" },
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "미술 개념 카드",
+      "cards": [
+        { "icon": "🔴", "title": "색의 삼원색", "desc": "빨강·파랑·노랑.\n모든 색의 기본이 돼요." },
+        { "icon": "🎨", "title": "색의 혼합", "desc": "두 색을 섞으면 새로운\n색이 만들어져요." },
+        { "icon": "🔥", "title": "난색과 한색", "desc": "빨강·주황은 따뜻한 색,\n파랑·초록은 차가운 색." },
+        { "icon": "✏️", "title": "점·선·면", "desc": "점이 모여 선이 되고,\n선이 모여 면이 돼요." },
+        { "icon": "🌗", "title": "명암", "desc": "밝고 어두운 정도를\n표현해 입체감을 줘요." },
+        { "icon": "🟣", "title": "보색", "desc": "색상환에서 마주 보는 색.\n함께 쓰면 또렷해 보여요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 개념을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🔴", "label": "색의 삼원색을 알았어요" },
+        { "icon": "🎨", "label": "색을 섞어 새 색을 만드는 걸 알았어요" },
+        { "icon": "🔥", "label": "난색과 한색을 구분할 수 있어요" },
+        { "icon": "✏️", "label": "점·선·면의 관계를 이해했어요" },
+        { "icon": "🌗", "label": "명암으로 입체감을 표현함을 알았어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "정답보다 '나만의 표현'이 더 멋져요.\n자유롭게 색을 섞고 그려봐요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "빨강·파랑·노랑을\n색의 삼원색이라고 한다?", "a": "O", "expl": "맞아요! 빨강·파랑·노랑이\n색의 삼원색이에요." },
+        { "q": "파랑은 따뜻한 느낌의\n난색이다?", "a": "X", "expl": "파랑은 차가운 느낌의 한색이에요.\n난색은 빨강·주황이에요." },
+        { "q": "명암은 밝고 어두운 정도를\n표현하는 것이다?", "a": "O", "expl": "맞아요! 명암으로 밝기를 표현해\n입체감을 줄 수 있어요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n미술 개념을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 개념으로 멋지게 표현해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "🎨", "label": "색채 감각 향상" },
+        { "icon": "👀", "label": "관찰·표현력 향상" },
+        { "icon": "💪", "label": "미술 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "개념 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 미술학원", "phone": "02-1234-5678", "kakao": "카카오채널 @미술학원", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

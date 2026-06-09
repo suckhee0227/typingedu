@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#C2410C", "primaryDark": "#9A3412", "accent": "#CA8A04", "ink": "#3A2114", "bgTop": "#F8E9DF", "bgBottom": "#FDF6F1" },
+      "brandIcon": "🏯",
+      "brandLabel": "한국사",
+      "startSub": "한국사·사회 · 초등·중등",
+      "startTitle": "인물·사건 매칭\n스마트 퀴즈",
+      "startDesc": "역사 속 인물과 사건을 카드로 익히고\n퀴즈로 점검하며 한국사를 한눈에 정리해요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["고조선의 건국", "한글 창제", "임진왜란과 이순신", "삼국의 발전", "조선의 실학", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 인물·사건을 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" },
+        { "icon": "📗", "label": "중2" },
+        { "icon": "📘", "label": "중3" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "인물·사건 카드",
+      "cards": [
+        { "icon": "👑", "title": "단군왕검", "desc": "우리 역사 최초의 국가\n고조선을 세웠어요." },
+        { "icon": "📜", "title": "세종대왕", "desc": "백성을 위해 훈민정음\n(한글)을 만들었어요." },
+        { "icon": "🚢", "title": "이순신", "desc": "임진왜란 때 거북선으로\n나라를 지켰어요." },
+        { "icon": "🏇", "title": "광개토대왕", "desc": "고구려의 영토를\n크게 넓혔어요." },
+        { "icon": "⚔️", "title": "김유신", "desc": "신라가 삼국을\n통일하는 데 큰 공을 세웠어요." },
+        { "icon": "📐", "title": "정약용", "desc": "실학자로 거중기를 만들어\n수원 화성을 쌓았어요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 인물과 사건을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "👑", "label": "단군왕검이 고조선을 세운 걸 알았어요" },
+        { "icon": "📜", "label": "세종대왕이 한글을 만든 걸 알았어요" },
+        { "icon": "🚢", "label": "이순신과 거북선을 기억했어요" },
+        { "icon": "🏇", "label": "광개토대왕의 업적을 알았어요" },
+        { "icon": "📐", "label": "정약용과 실학을 이해했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "역사는 '누가·언제·무엇을'로 묶어 외우면 쉬워요.\n인물과 사건을 연결해 기억해봐요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "세종대왕은 훈민정음(한글)을\n만들었다?", "a": "O", "expl": "맞아요! 세종대왕이 백성을 위해\n훈민정음을 창제했어요." },
+        { "q": "이순신은 우리 역사 최초의 국가\n고조선을 세웠다?", "a": "X", "expl": "고조선을 세운 인물은 단군왕검이에요.\n이순신은 임진왜란의 영웅이에요." },
+        { "q": "거북선은 임진왜란 때\n사용되었다?", "a": "O", "expl": "맞아요! 이순신이 임진왜란에서\n거북선으로 큰 승리를 거뒀어요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n인물과 사건을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 역사를 복습하며 정리해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "📈", "label": "역사 흐름 이해" },
+        { "icon": "🔗", "label": "인물·사건 연결력" },
+        { "icon": "💪", "label": "한국사 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "인물 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 한국사·사회학원", "phone": "02-1234-5678", "kakao": "카카오채널 @한국사", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

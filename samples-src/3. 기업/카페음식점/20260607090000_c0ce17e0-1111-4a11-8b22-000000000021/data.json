@@ -1,0 +1,83 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#8B5E3C", "primaryDark": "#5C3A21", "accent": "#C8923B", "ink": "#33251A", "bgTop": "#F3E9DE", "bgBottom": "#FBF6F0" },
+      "brandIcon": "☕",
+      "layout": "split",
+      "brandLabel": "매장 교육",
+      "startSub": "카페 · 음식점",
+      "startTitle": "신입 알바\n매장교육 스마트 퀴즈",
+      "startDesc": "신입 알바가 꼭 알아야 할 업무·위생·응대·안전 수칙을\n재미있게 학습해 빠르게 적응해요.",
+      "learnTitle": "오늘의 교육 내용",
+      "learnList": ["매장 오픈 기본 준비", "위생 관리 수칙", "친절한 고객 응대", "메뉴 제조 기본", "안전·청결 관리", "마감 정리"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 업무를 익혀요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "☕", "label": "카페" },
+        { "icon": "🥐", "label": "베이커리" },
+        { "icon": "🍜", "label": "분식·식당" },
+        { "icon": "🥗", "label": "샐러드·도시락" },
+        { "icon": "🍔", "label": "프랜차이즈" },
+        { "icon": "🍰", "label": "디저트" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 업무 카드",
+      "cards": [
+        { "icon": "🔆", "title": "오픈 준비", "desc": "매장 오픈 전 청소·세팅·재료 준비\n절차를 순서대로 익혀요." },
+        { "icon": "🧾", "title": "주문 응대", "desc": "밝은 인사와 정확한 주문 확인으로\n친절하게 응대해요." },
+        { "icon": "🥤", "title": "메뉴 제조", "desc": "정해진 레시피와 용량대로\n일정한 맛을 유지해요." },
+        { "icon": "🙂", "title": "고객 응대", "desc": "요청과 컴플레인에 침착하게\n응대해 만족도를 높여요." },
+        { "icon": "🧹", "title": "마감 정리", "desc": "청결·재고·마감 점검으로\n다음 영업을 준비해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "위생 & 안전 체크리스트",
+      "checklistDesc": "근무 전·중에 꼭 지켜야 할 위생·안전 수칙을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🧼", "label": "손 위생과 복장 청결을 지켰어요" },
+        { "icon": "🌡️", "label": "식자재 보관 온도를 확인했어요" },
+        { "icon": "🍳", "label": "조리 도구를 위생적으로 사용했어요" },
+        { "icon": "✨", "label": "매장 청결 상태를 유지했어요" },
+        { "icon": "⚠️", "label": "안전 수칙을 준수했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "작은 습관이 매장의 신뢰를 만들어요.\n위생과 친절, 두 가지를 항상 기억해요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "유통기한이 지난 식자재도\n겉이 멀쩡하면 사용해도 된다?", "a": "X", "expl": "기한이 지난 식자재는 사용 금지!\n폐기하고 새 재료를 사용하세요." },
+        { "q": "손 씻기는 매장 위생 관리의\n가장 기본이다?", "a": "O", "expl": "손 위생은 식품 안전의 기본이에요.\n근무 전·후 꼭 씻어주세요." },
+        { "q": "마감 시 재고와 청결 상태를\n확인해야 한다?", "a": "O", "expl": "마감 점검은 다음 영업의 시작이에요.\n재고·청결을 꼭 확인하세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n매장 업무 기본기를 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 매장 수칙을 실천해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🚀", "label": "신입 적응 향상" },
+        { "icon": "🏪", "label": "매장 운영 효율" },
+        { "icon": "🤝", "label": "서비스 품질 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 매장 교육담당", "phone": "02-1234-5678", "kakao": "카카오채널 @매장", "instagram": "인스타 DM 문의", "note": "근무·교육 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

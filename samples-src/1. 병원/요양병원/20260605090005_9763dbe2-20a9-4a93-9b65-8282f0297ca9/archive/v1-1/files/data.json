@@ -1,0 +1,145 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": {
+        "primary": "#4666B0",
+        "primaryDark": "#364F89",
+        "bgTop": "#E5E9F3",
+        "bgBottom": "#F5F7FB",
+        "charTop": "#E1E6F2",
+        "charBottom": "#93A6D1"
+      },
+      "mascot": "🧓",
+      "motif": "💗",
+      "layout": "bottomBar",
+      "startSub": "낙상·욕창 예방",
+      "startTitle": "낙상·욕창 예방\n스마트 안내",
+      "startDesc": "안전을 지키는 예방수칙을\n쉽고 빠르게 확인해보세요!",
+      "usageGuide": [
+        {
+          "icon": "🗂️",
+          "label": "단계별\n관리 가이드"
+        },
+        {
+          "icon": "✅",
+          "label": "체크리스트로\n상태 점검"
+        },
+        {
+          "icon": "❓",
+          "label": "퀴즈로\n내용 확인"
+        }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "cardsTitle": "핵심 안전수칙",
+      "cards": [
+        {
+          "icon": "🛏️",
+          "title": "",
+          "desc": "침대 난간과 바퀴 고정을 확인해요."
+        },
+        {
+          "icon": "🔄",
+          "title": "",
+          "desc": "같은 자세가 오래 지속되지 않도록 해요."
+        },
+        {
+          "icon": "🧼",
+          "title": "",
+          "desc": "손위생과 마스크 등 감염예방 수칙을 지켜요."
+        },
+        {
+          "icon": "🍚",
+          "title": "",
+          "desc": "식사 중 사레·기침이 있으면 바로 알려요."
+        },
+        {
+          "icon": "🔔",
+          "title": "",
+          "desc": "거동이 불편하면 호출벨로 도움을 요청해요."
+        }
+      ],
+      "cardPrev": "이전",
+      "cardNext": "다음",
+      "cardDone": "체크리스트로",
+      "checklistTitle": "안전 체크리스트",
+      "checklistDesc": "안전 관리 사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        {
+          "icon": "⚠️",
+          "label": "낙상 위험 요소를 확인했어요"
+        },
+        {
+          "icon": "🛏️",
+          "label": "침대 난간·바퀴 등 상태를 확인했어요"
+        },
+        {
+          "icon": "🧹",
+          "label": "바닥에 미끄러운 물건이 없는지 확인했어요"
+        },
+        {
+          "icon": "👀",
+          "label": "피부(욕창) 상태를 관찰했어요"
+        },
+        {
+          "icon": "🏥",
+          "label": "이상 증상 발생 시 병원에 알리겠어요"
+        }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 다음 단계로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "환자가 혼자 화장실에 가려고 하면\n직원에게 먼저 알리는 것이 좋다?",
+          "a": "O",
+          "expl": "혼자 이동하면 낙상 위험이 커요.\n낙상을 줄이기 위해 도움 요청이 필요합니다."
+        },
+        {
+          "q": "같은 자세로 오래 누워 있어도\n욕창과는 상관없다?",
+          "a": "X",
+          "expl": "한 자세로 오래 있으면 욕창이 생겨요.\n자주 자세를 바꿔주세요."
+        },
+        {
+          "q": "손위생과 마스크 착용은\n감염 예방에 도움이 된다?",
+          "a": "O",
+          "expl": "감염을 막기 위해\n손위생과 마스크 착용 수칙을 지켜주세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n핵심 포인트를 잘 기억해 주세요.",
+      "resultScore": "안전 점수",
+      "resultDesc": "작은 습관이 큰 사고를 막아줍니다.",
+      "restartBtn": "처음으로 돌아가기",
+      "contact": {
+        "name": "OO 요양병원",
+        "phone": "02-123-4567",
+        "hours": "평일 09:00~18:00",
+        "note": "낙상·욕창이 걱정되면\n병원으로 문의해 주세요."
+      }
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

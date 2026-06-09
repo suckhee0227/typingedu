@@ -1,0 +1,155 @@
+{
+  "version": "v1-1",
+  "version_id": "17c7ac5c-8ec4-433c-9ac7-a589be9e4f12",
+  "parent": null,
+  "parent_id": null,
+  "timestamp": "2026-06-05T08:33:18.415522+00:00",
+  "summary": "임신 초기·산전검사 스마트 안내",
+  "changes": [
+    {
+      "name": "app.ts",
+      "path": "app.ts",
+      "type": "Add"
+    },
+    {
+      "name": "appHelper.ts",
+      "path": "appHelper.ts",
+      "type": "Add"
+    },
+    {
+      "name": "icon.webp",
+      "path": "assets/icon.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail.webp",
+      "path": "assets/thumbnail.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_128.webp",
+      "path": "assets/thumbnail_128.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_256.webp",
+      "path": "assets/thumbnail_256.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_512.webp",
+      "path": "assets/thumbnail_512.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_64.webp",
+      "path": "assets/thumbnail_64.webp",
+      "type": "Add"
+    },
+    {
+      "name": "data.json",
+      "path": "data.json",
+      "type": "Add"
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "type": "Add"
+    },
+    {
+      "name": "main.js",
+      "path": "main.js",
+      "type": "Add"
+    },
+    {
+      "name": "main.ts",
+      "path": "main.ts",
+      "type": "Add"
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "Add"
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "tsconfig.json",
+      "type": "Add"
+    }
+  ],
+  "no_changes": [],
+  "file_index": {
+    "app.ts": {
+      "hash": "089f5a7d3269cd70d868994210f524a1738ac0f3127596f8291f77c9112af8d2",
+      "size": 29136,
+      "mtime": 1780647938.7725377
+    },
+    "appHelper.ts": {
+      "hash": "6a19e4fefdf9b1fb69f0ac969cb952897f070ed835dfa88f291ae1ac39dbac5f",
+      "size": 12926,
+      "mtime": 1780639159.8154418
+    },
+    "assets/icon.webp": {
+      "hash": "d671ba8b3ad987e4de113083cbf2426810cf2fb6b7c0aaac7c250e8872cff631",
+      "size": 1096,
+      "mtime": 1780648398.4151988
+    },
+    "assets/thumbnail.webp": {
+      "hash": "8eb797817f19aa06b25bf8f4d228f709ae4fa3b04ca473668acd17e152c7d625",
+      "size": 10900,
+      "mtime": 1780648398.3962266
+    },
+    "assets/thumbnail_128.webp": {
+      "hash": "d40fc9af81f74386b602f52a5f57af6622928939a06072eafb97619daef6cee2",
+      "size": 2422,
+      "mtime": 1780648398.4127455
+    },
+    "assets/thumbnail_256.webp": {
+      "hash": "de8830af2b0ff04b31c0b591ba6ca38cf80291a36ae7f8a849d1ca2b1019d491",
+      "size": 5022,
+      "mtime": 1780648398.410427
+    },
+    "assets/thumbnail_512.webp": {
+      "hash": "03c628535c5c954e17c1674a1e28c2cacf1f78e16c5da2725402c0c11f4416c7",
+      "size": 9878,
+      "mtime": 1780648398.406287
+    },
+    "assets/thumbnail_64.webp": {
+      "hash": "ed65b27ded15400c2838c4d6eaa93f1c3af719780cf69f2e18025541b9e573a1",
+      "size": 914,
+      "mtime": 1780648398.4143536
+    },
+    "data.json": {
+      "hash": "88fbfae62cbc3771909fa0a0bbd6d775d7c643aa280c8a97eaeb75f7ed7ab93f",
+      "size": 4679,
+      "mtime": 1780648398.3829854
+    },
+    "index.html": {
+      "hash": "0f57e329738172cfd0a7bda4003e050b56dcbdb086f05c1a2101f1ee3eabbb90",
+      "size": 13358,
+      "mtime": 1780639159.816023
+    },
+    "main.js": {
+      "hash": "8e28dd41d4f7b22258af70b91783c6b41d17466d152ea3d5e2cfb43ba2c71262",
+      "size": 69641,
+      "mtime": 1780647955.8193865
+    },
+    "main.ts": {
+      "hash": "bb854eedcafcb798e1a5e010af89e3cf951fa86f53d9c08a9cdc128ccaaed047",
+      "size": 5099,
+      "mtime": 1780639159.8157628
+    },
+    "style.css": {
+      "hash": "9441d16d7ca5dc327f1d95eff470b99d2eac975e25e134c98ad94332e1c95480",
+      "size": 754,
+      "mtime": 1780639159.8162546
+    },
+    "tsconfig.json": {
+      "hash": "2d4ae3b301fae02ce25a2fd5a7b3ef2ba161ecb983a496dd5294ab5ec7f9b01c",
+      "size": 684,
+      "mtime": 1780639159.8164597
+    }
+  },
+  "engine_version": "0.3.2",
+  "request_id": "324234fb-fb29-4a53-9ca2-43fd88a46e72"
+}

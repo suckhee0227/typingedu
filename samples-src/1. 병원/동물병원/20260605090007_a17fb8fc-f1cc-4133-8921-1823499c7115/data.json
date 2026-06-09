@@ -1,0 +1,145 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": {
+        "primary": "#38B08A",
+        "primaryDark": "#2B896B",
+        "bgTop": "#E3F3EE",
+        "bgBottom": "#F5FBF9",
+        "charTop": "#DFF2EC",
+        "charBottom": "#8BD1BB"
+      },
+      "mascot": "🐶",
+      "motif": "🐾",
+      "layout": "mirrorR",
+      "startSub": "반려동물 수술·접종 후 관리",
+      "startTitle": "반려동물 관리\n스마트 안내",
+      "startDesc": "수술·접종 후 관리 포인트를\n쉽고 빠르게 확인해보세요!",
+      "usageGuide": [
+        {
+          "icon": "🗂️",
+          "label": "단계별\n관리 가이드"
+        },
+        {
+          "icon": "✅",
+          "label": "체크리스트로\n상태 점검"
+        },
+        {
+          "icon": "❓",
+          "label": "퀴즈로\n내용 확인"
+        }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "cardsTitle": "핵심 안내",
+      "cards": [
+        {
+          "icon": "🧴",
+          "title": "",
+          "desc": "넥카라를 착용시켜 상처를 핥지 않게 해요."
+        },
+        {
+          "icon": "💊",
+          "title": "",
+          "desc": "처방받은 약은 정해진 시간과 용량에 맞춰 급여해요."
+        },
+        {
+          "icon": "🩹",
+          "title": "",
+          "desc": "상처 부위를 깨끗하게 유지하고 핥지 않도록 주의해요."
+        },
+        {
+          "icon": "🍽️",
+          "title": "",
+          "desc": "식욕과 활동량 변화를 관찰하고 기록해요."
+        },
+        {
+          "icon": "🏥",
+          "title": "",
+          "desc": "이상 증상이 보이면 병원에 문의하세요."
+        }
+      ],
+      "cardPrev": "이전",
+      "cardNext": "다음",
+      "cardDone": "체크리스트로",
+      "checklistTitle": "관리 체크리스트",
+      "checklistDesc": "수술·접종 후 관리 사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        {
+          "icon": "🧴",
+          "label": "넥카라가 잘 착용되어 있는지 확인했어요"
+        },
+        {
+          "icon": "🩹",
+          "label": "상처 부위를 핥지 못하도록 관리하고 있어요"
+        },
+        {
+          "icon": "💊",
+          "label": "처방받은 약을 정해진 시간에 급여했어요"
+        },
+        {
+          "icon": "🍽️",
+          "label": "식욕·배변·활동량을 관찰했어요"
+        },
+        {
+          "icon": "🏥",
+          "label": "이상 증상 발생 시 병원에 문의하기로 확인했어요"
+        }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 다음 단계로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "수술 후 반려동물이 상처 부위를\n핥아도 괜찮다?",
+          "a": "X",
+          "expl": "상처를 핥으면 감염이나 염증이 생길 수 있어\n넥카라 착용과 관리가 매우 중요합니다."
+        },
+        {
+          "q": "처방받은 약은 정해진 시간과\n용량에 맞춰 급여해야 한다?",
+          "a": "O",
+          "expl": "임의로 조절하면 안 돼요.\n안내받은 시간·용량대로 급여하세요."
+        },
+        {
+          "q": "식욕이 없고 활동량이 줄어도\n그냥 두면 된다?",
+          "a": "X",
+          "expl": "이상 신호일 수 있어요.\n변화가 있으면 병원에 문의하세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n핵심 포인트를 잘 기억해 주세요.",
+      "resultScore": "관리 확인 점수",
+      "resultDesc": "우리 아이가 잘 회복하도록 함께 관리해요.",
+      "restartBtn": "처음으로 돌아가기",
+      "contact": {
+        "name": "OO 동물병원",
+        "phone": "02-123-4567",
+        "hours": "평일 09:00~18:00",
+        "note": "이상 증상이 보이면\n병원으로 문의해 주세요."
+      }
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

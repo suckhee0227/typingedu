@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#F76707", "primaryDark": "#E8590C", "accent": "#4DABF7", "ink": "#3A2410", "bgTop": "#FFEED9", "bgBottom": "#FFF8F0" },
+      "brandIcon": "🧸",
+      "brandLabel": "유아·초등",
+      "startSub": "유아·초등 · 놀이학습",
+      "startTitle": "그림 보고 말하기\n스마트 학습",
+      "startDesc": "그림을 보고 이름을 말하며\n낱말과 사물을 즐겁게 익혀요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["동물 이름 익히기", "과일 이름 익히기", "탈것 이름 익히기", "자연 낱말 익히기", "색깔 말하기", "퀴즈로 확인하기"],
+      "usageTitle": "이용 안내",
+      "usageList": ["그림 카드를 넘겨 말해봐요", "체크리스트로 스스로 점검해요", "퀴즈로 배운 내용을 확인해요", "완료 후 다시 해볼 수 있어요"],
+      "industriesTitle": "대상 연령",
+      "industries": [
+        { "icon": "🐣", "label": "5세" },
+        { "icon": "🐤", "label": "6세" },
+        { "icon": "🐥", "label": "7세" },
+        { "icon": "1️⃣", "label": "초1" },
+        { "icon": "2️⃣", "label": "초2" }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "시작하기",
+      "cardsTitle": "그림 낱말 카드",
+      "cards": [
+        { "icon": "🐘", "title": "코끼리", "desc": "코가 길고 몸집이 큰 동물이에요." },
+        { "icon": "🍎", "title": "사과", "desc": "빨갛고 동그란 맛있는 과일이에요." },
+        { "icon": "🚗", "title": "자동차", "desc": "바퀴로 달리는 탈것이에요." },
+        { "icon": "⭐", "title": "별", "desc": "밤하늘에서 반짝반짝 빛나요." },
+        { "icon": "🌸", "title": "꽃", "desc": "예쁜 색으로 피어나는 식물이에요." },
+        { "icon": "🐶", "title": "강아지", "desc": "멍멍 짖는 귀여운 동물이에요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "확인하기",
+      "checklistTitle": "오늘 한 일",
+      "checklistDesc": "내가 한 것을 손가락으로 콕! 눌러봐요!",
+      "checklistItems": [
+        { "icon": "🐘", "label": "동물 이름을 말했어요" },
+        { "icon": "🍎", "label": "과일 이름을 말했어요" },
+        { "icon": "🚗", "label": "탈것 이름을 말했어요" },
+        { "icon": "🌸", "label": "자연 낱말을 말했어요" },
+        { "icon": "🎨", "label": "색깔을 말했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 완료",
+      "checklistHint": "모두 누르면 퀴즈로 갈 수 있어요.",
+      "checklistNext": "퀴즈하러 가기",
+      "tipTitle": "TIP",
+      "tipDesc": "큰 소리로 또박또박 말해봐요.\n잘 모르면 다시 그림을 보면 돼요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "코끼리는 코가\n길까요?", "a": "O", "expl": "맞아요! 코끼리는\n코가 아주 길어요." },
+        { "q": "사과는 파란색\n일까요?", "a": "X", "expl": "사과는 빨간색이에요.\n참 잘 생각했어요!" },
+        { "q": "강아지는 '멍멍'\n하고 짖을까요?", "a": "O", "expl": "맞아요! 강아지는\n멍멍 하고 짖어요." }
+      ],
+      "nextBtn": "다음 문제", "lastBtn": "결과 보기",
+      "correctText": "정답이에요!", "wrongText": "다시 해봐요",
+      "resultTitle": "다 했어요!",
+      "resultPerfect": "참 잘했어요!\n그림 낱말을 모두 맞혔어요 👏",
+      "resultGood": "잘했어요!\n그림을 보며 한 번 더 말해봐요.",
+      "resultScore": "받은 점수",
+      "effectsTitle": "이런 점이 좋아요",
+      "effects": [
+        { "icon": "🗣️", "label": "말하기 자신감" },
+        { "icon": "📚", "label": "낱말 익히기" },
+        { "icon": "😊", "label": "즐거운 학습" }
+      ],
+      "actionsTitle": "다음에 할 일",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "그림 카드 다시 보기",
+      "reviewChecklistBtn": "오늘 한 일 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 유아·초등학원", "phone": "02-1234-5678", "kakao": "카카오채널 @유아", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

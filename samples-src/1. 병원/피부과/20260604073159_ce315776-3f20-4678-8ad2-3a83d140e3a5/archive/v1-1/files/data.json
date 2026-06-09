@@ -1,0 +1,61 @@
+{
+  "appData": {
+    "logicalWidth": 1080,
+    "logicalHeight": 1920
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "startTitle": "피부 시술 후 관리",
+      "startSub": "핵심 포인트 체크",
+      "startDesc": "시술 후 관리 포인트를\n쉽고 빠르게 확인해보세요!",
+      "timeInfo": "예상시간: 1~2분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "checklistTitle": "체크리스트",
+      "checklistDesc": "모든 항목을 확인하고 꼼꼼히 체크해주세요.",
+      "checklistItems": [
+        "시술 부위 만지지 않기",
+        "사우나 및 땀나는 운동 피하기",
+        "외출 시 자외선 차단제 꼼꼼히 바르기",
+        "처방받은 재생크림이나 연고 사용하기",
+        "이상 증상 발생 시 즉시 병원 문의하기"
+      ],
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "시술 후 바로 찜질방에 가도\n괜찮을까요?",
+          "a": "X",
+          "expl": "피부에 열감과 자극을 줄 수 있기 때문에\n1~2주간 사우나나 찜질방은 피해야 합니다."
+        },
+        {
+          "q": "실내에만 있을 때도\n자외선 차단제를 발라야 할까요?",
+          "a": "O",
+          "expl": "창문을 통과하는 자외선도 피부에 자극을\n줄 수 있어 실내에서도 꼭 발라야 합니다."
+        },
+        {
+          "q": "딱지가 생기면 자연스럽게\n떨어지도록 두어야 한다?",
+          "a": "O",
+          "expl": "딱지를 억지로 떼면 흉터가 남을 수 있으므로\n자연스럽게 탈각되도록 두어야 합니다."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "resultTitle": "퀴즈 완료!",
+      "resultScore": "총 점수",
+      "resultDesc": "시술 후 피부가 편안해지도록 위 항목들을 꼭 지켜주세요.\n궁금한 점이나 이상 증상이 있다면 즉시 병원(데스크)으로 문의해 주세요!",
+      "restartBtn": "다시하기"
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

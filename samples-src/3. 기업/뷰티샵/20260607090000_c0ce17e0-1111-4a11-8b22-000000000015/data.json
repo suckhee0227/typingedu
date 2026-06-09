@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#E0719C", "primaryDark": "#B8456F", "accent": "#F0A6C0", "ink": "#3A1F2B", "bgTop": "#FCE6EF", "bgBottom": "#FFF5F9" },
+      "brandIcon": "💆",
+      "layout": "hero",
+      "brandLabel": "홈케어 안내",
+      "startSub": "뷰티샵 · 에스테틱",
+      "startTitle": "시술 후 홈케어\n스마트 안내",
+      "startDesc": "시술 효과를 오래 유지하기 위한\n올바른 홈케어 방법을 안내해요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["시술 후 주의사항", "올바른 세안·보습", "자외선 차단", "피해야 할 행동", "홈케어 제품 사용", "재방문 관리"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 케어법을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "💆", "label": "피부관리" },
+        { "icon": "✨", "label": "에스테틱" },
+        { "icon": "🪒", "label": "왁싱" },
+        { "icon": "💇", "label": "두피관리" },
+        { "icon": "💅", "label": "뷰티샵" },
+        { "icon": "🧖", "label": "스파" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 케어 카드",
+      "cards": [
+        { "icon": "🚫", "title": "시술 직후 주의", "desc": "시술 부위를 만지거나\n자극하지 않아요." },
+        { "icon": "💧", "title": "세안 & 보습", "desc": "순한 제품으로 세안하고\n충분히 보습해요." },
+        { "icon": "☀️", "title": "자외선 차단", "desc": "외출 시 자외선 차단제를\n꼼꼼히 발라요." },
+        { "icon": "🧖", "title": "피해야 할 행동", "desc": "사우나·과한 운동·음주는\n일정 기간 피해요." },
+        { "icon": "🧴", "title": "홈케어 제품", "desc": "추천받은 제품을\n올바른 순서로 사용해요." },
+        { "icon": "📅", "title": "재방문 관리", "desc": "다음 관리 주기를 지켜\n효과를 유지해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "홈케어 실전 체크리스트",
+      "checklistDesc": "시술 후 집에서 지켜야 할 케어를 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🚫", "label": "시술 부위를 자극하지 않았어요" },
+        { "icon": "💧", "label": "순한 제품으로 세안·보습했어요" },
+        { "icon": "☀️", "label": "자외선 차단제를 발랐어요" },
+        { "icon": "🧖", "label": "사우나·음주를 피했어요" },
+        { "icon": "📅", "label": "다음 방문 일정을 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "홈케어가 시술 효과의 절반이에요.\n꾸준한 관리로 예쁜 피부를 오래 유지해요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "시술 직후 바로 사우나를\n해도 괜찮다?", "a": "X", "expl": "열과 자극은 진정에 방해돼요.\n일정 기간 사우나는 피하세요." },
+        { "q": "외출 시 자외선 차단제를\n발라야 한다?", "a": "O", "expl": "자외선은 색소·트러블의 원인!\n차단제를 꼼꼼히 발라주세요." },
+        { "q": "충분한 보습은 시술 후\n피부 진정에 도움이 된다?", "a": "O", "expl": "보습은 피부 장벽을 지켜\n진정과 회복을 도와줘요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n홈케어 방법을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 홈케어로 효과를 오래 유지해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "✨", "label": "시술 효과 유지" },
+        { "icon": "🛡️", "label": "피부 트러블 예방" },
+        { "icon": "🔁", "label": "재방문율 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 뷰티샵", "phone": "02-1234-5678", "kakao": "카카오채널 @뷰티", "instagram": "인스타 DM 문의", "note": "케어·예약 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

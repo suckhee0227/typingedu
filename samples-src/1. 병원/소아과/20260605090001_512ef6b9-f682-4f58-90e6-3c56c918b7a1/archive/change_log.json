@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "5ff9aca5-e10d-4dbb-80c8-6e655bb2896f",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.223157+00:00",
+      "summary": "아이 열날 때 대처 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

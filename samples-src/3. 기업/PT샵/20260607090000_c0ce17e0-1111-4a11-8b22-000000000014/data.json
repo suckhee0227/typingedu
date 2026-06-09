@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#EF4444", "primaryDark": "#B91C1C", "accent": "#F59E0B", "ink": "#3A1B1B", "bgTop": "#FCE4E4", "bgBottom": "#FFF5F4" },
+      "brandIcon": "💪",
+      "layout": "minimal",
+      "brandLabel": "운동 가이드",
+      "startSub": "PT샵 · 필라테스",
+      "startTitle": "첫 수업 준비\n스마트 안내",
+      "startDesc": "즐겁고 안전한 운동을 위한\n첫 수업 준비를 미리 확인해요.",
+      "learnTitle": "이런 내용을 배워요",
+      "learnList": ["운동 전 준비물", "운동 복장·신발", "효과적인 운동 TIP", "운동 전후 스트레칭", "부상 예방 수칙", "식사·수분 관리"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 준비물을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "💪", "label": "PT샵" },
+        { "icon": "🧘", "label": "필라테스" },
+        { "icon": "🧎", "label": "요가원" },
+        { "icon": "🏋️", "label": "헬스장" },
+        { "icon": "🤸", "label": "피트니스" },
+        { "icon": "🥊", "label": "복싱·크로스핏" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 준비 카드",
+      "cards": [
+        { "icon": "👕", "title": "운동 복장 준비", "desc": "활동이 편한 복장과\n운동화를 준비해요." },
+        { "icon": "🎒", "title": "준비물 챙기기", "desc": "수건·물병 등 필요한\n준비물을 미리 챙겨요." },
+        { "icon": "💧", "title": "수분 섭취", "desc": "운동 전후 수분을\n충분히 보충해요." },
+        { "icon": "🤸", "title": "스트레칭", "desc": "운동 전후 스트레칭으로\n부상을 예방해요." },
+        { "icon": "⏱️", "title": "운동 시간·강도", "desc": "무리하지 않는 강도로\n천천히 늘려가요." },
+        { "icon": "❤️", "title": "부상 예방", "desc": "통증이 느껴지면\n무리하지 않아요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "첫 수업 준비 체크리스트",
+      "checklistDesc": "첫 수업 전에 챙겨야 할 항목을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "👟", "label": "운동 복장·신발을 준비했어요" },
+        { "icon": "🎒", "label": "수건·물병을 챙겼어요" },
+        { "icon": "🤸", "label": "준비운동·스트레칭을 했어요" },
+        { "icon": "⏰", "label": "수업 시작 10분 전 도착했어요" },
+        { "icon": "❤️", "label": "몸 상태(통증·컨디션)를 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "무리한 욕심보다 꾸준함이 답이에요.\n내 몸에 맞게 한 걸음씩 나아가요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "수업 직전 2시간 이내에\n과식하는 것이 좋다?", "a": "X", "expl": "과식은 운동에 방해가 돼요.\n수업 전 식사는 가볍게 하세요." },
+        { "q": "운동 전후 스트레칭은\n부상 예방에 도움이 된다?", "a": "O", "expl": "스트레칭은 근육을 풀어\n부상을 예방해줘요." },
+        { "q": "통증이 느껴지면 무리하지 말고\n트레이너에게 알려야 한다?", "a": "O", "expl": "통증은 몸의 신호예요.\n무리하지 말고 바로 알리세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n첫 수업 준비를 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n준비된 자세로 즐겁게 운동해봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🛡️", "label": "부상 예방" },
+        { "icon": "📈", "label": "운동 효과 향상" },
+        { "icon": "😊", "label": "수업 만족도 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 피트니스 스튜디오", "phone": "02-1234-5678", "kakao": "카카오채널 @운동", "instagram": "인스타 DM 문의", "note": "수업·회원권 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

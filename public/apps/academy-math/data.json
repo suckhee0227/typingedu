@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#4263EB", "primaryDark": "#2B44B5", "accent": "#FAB005", "ink": "#20264A", "bgTop": "#E7ECFD", "bgBottom": "#F6F8FE" },
+      "brandIcon": "📐",
+      "brandLabel": "수학학원",
+      "startSub": "수학학원 · 초등·중등",
+      "startTitle": "수학 공식·연산 체크\n스마트 퀴즈",
+      "startDesc": "도형 공식과 연산 규칙을 카드로 익히고\n퀴즈로 점검하며 수학 실력을 다져요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["도형의 넓이 공식", "둘레 구하는 법", "분수의 계산", "비와 비율", "연산 순서 규칙", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 공식을 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" },
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "개념·공식 카드",
+      "cards": [
+        { "icon": "⬛", "title": "직사각형 넓이", "desc": "넓이 = 가로 × 세로\n단위를 꼭 함께 써요." },
+        { "icon": "🔺", "title": "삼각형 넓이", "desc": "넓이 = (밑변 × 높이) ÷ 2\n높이는 밑변과 수직이에요." },
+        { "icon": "⭕", "title": "원의 둘레·넓이", "desc": "둘레 = 지름 × 3.14\n넓이 = 반지름 × 반지름 × 3.14" },
+        { "icon": "➗", "title": "분수의 덧셈", "desc": "분모가 다르면 통분한 뒤\n분자끼리 더해요." },
+        { "icon": "⚖️", "title": "비와 비율", "desc": "비율 = 비교하는 양 ÷ 기준량\n백분율은 비율 × 100." },
+        { "icon": "🔢", "title": "연산 순서", "desc": "괄호 → 곱셈·나눗셈 →\n덧셈·뺄셈 순으로 계산해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 개념을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🔺", "label": "삼각형 넓이 공식을 이해했어요" },
+        { "icon": "⭕", "label": "원의 둘레·넓이를 알았어요" },
+        { "icon": "➗", "label": "분수는 통분 후 더하는 걸 알았어요" },
+        { "icon": "⚖️", "label": "비와 비율 구하는 법을 익혔어요" },
+        { "icon": "🔢", "label": "연산 순서를 기억했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "공식은 외우기보다 '왜 그런지' 이해하면\n오래 기억돼요. 직접 그려보며 익혀봐요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "삼각형의 넓이는\n(밑변 × 높이) ÷ 2 이다?", "a": "O", "expl": "맞아요! 삼각형 넓이는\n(밑변 × 높이) ÷ 2 로 구해요." },
+        { "q": "분수의 덧셈은 분모가 달라도\n분자끼리 그냥 더한다?", "a": "X", "expl": "분모가 다르면 먼저 통분한 뒤\n분자끼리 더해야 해요." },
+        { "q": "곱셈·나눗셈은 덧셈·뺄셈보다\n먼저 계산한다?", "a": "O", "expl": "맞아요! 곱셈·나눗셈을\n덧셈·뺄셈보다 먼저 계산해요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n수학 공식을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 공식을 복습하며 다져봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "📈", "label": "연산 정확도 향상" },
+        { "icon": "🧠", "label": "개념 정리" },
+        { "icon": "💪", "label": "수학 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "개념 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 수학학원", "phone": "02-1234-5678", "kakao": "카카오채널 @수학학원", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

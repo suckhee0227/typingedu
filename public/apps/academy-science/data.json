@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#2F9E44", "primaryDark": "#2B8A3E", "accent": "#4DABF7", "ink": "#173A20", "bgTop": "#E5F6E8", "bgBottom": "#F5FCF6" },
+      "brandIcon": "🔬",
+      "brandLabel": "과학학원",
+      "startSub": "과학 · 초등·중등",
+      "startTitle": "과학 개념 확인\n스마트 콘텐츠",
+      "startDesc": "핵심 과학 개념을 카드로 익히고\n퀴즈로 점검하며 원리를 이해해요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["물질의 상태 변화", "식물과 광합성", "힘과 운동", "전기와 회로", "물의 순환", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 개념을 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" },
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "과학 개념 카드",
+      "cards": [
+        { "icon": "🧊", "title": "물질의 상태", "desc": "고체·액체·기체로 변해요.\n온도에 따라 상태가 바뀌어요." },
+        { "icon": "🌱", "title": "광합성", "desc": "식물은 빛·물·이산화탄소로\n양분과 산소를 만들어요." },
+        { "icon": "🚗", "title": "힘과 운동", "desc": "힘은 물체를 밀거나 당겨요.\n힘이 클수록 빠르게 움직여요." },
+        { "icon": "💡", "title": "전기와 회로", "desc": "전지·전선·전구가 이어지면\n전기가 흘러 불이 켜져요." },
+        { "icon": "💧", "title": "물의 순환", "desc": "증발 → 응결 → 강수로\n물은 끊임없이 돌고 돌아요." },
+        { "icon": "🌑", "title": "빛과 그림자", "desc": "빛은 곧게 나아가고,\n빛이 막히면 그림자가 생겨요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 개념을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🧊", "label": "물질의 세 가지 상태를 알았어요" },
+        { "icon": "🌱", "label": "광합성의 과정을 이해했어요" },
+        { "icon": "🚗", "label": "힘과 운동의 관계를 알았어요" },
+        { "icon": "💡", "label": "전기 회로의 원리를 익혔어요" },
+        { "icon": "💧", "label": "물의 순환 과정을 기억했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "과학은 '왜 그럴까?'를 떠올리는 게 시작이에요.\n주변에서 직접 관찰하며 익혀봐요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "물은 100℃에서\n끓어 수증기가 된다?", "a": "O", "expl": "맞아요! 물은 100℃에서 끓어\n기체인 수증기가 돼요." },
+        { "q": "식물은 광합성으로\n산소를 만든다?", "a": "O", "expl": "맞아요! 광합성으로 양분과\n함께 산소를 만들어요." },
+        { "q": "그림자는 빛이 물체를\n통과해서 생긴다?", "a": "X", "expl": "그림자는 빛이 물체에 막혀\n통과하지 못할 때 생겨요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n과학 개념을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 개념을 복습하며 다져봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "📈", "label": "개념 이해 향상" },
+        { "icon": "🔎", "label": "관찰·탐구력 향상" },
+        { "icon": "💪", "label": "과학 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "개념 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 과학학원", "phone": "02-1234-5678", "kakao": "카카오채널 @과학학원", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

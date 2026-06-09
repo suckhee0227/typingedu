@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#8E5CC0", "primaryDark": "#6C3F9E", "accent": "#E0A6D8", "ink": "#2E1E3A", "bgTop": "#EEE5F7", "bgBottom": "#F9F5FD" },
+      "brandIcon": "👁️",
+      "layout": "minimal",
+      "brandLabel": "속눈썹 케어",
+      "startSub": "속눈썹샵",
+      "startTitle": "속눈썹 연장 후\n관리 안내 스마트 퀴즈",
+      "startDesc": "연장 후 주의사항과 관리 방법을 익혀\n유지 기간을 늘리고 만족도를 높여요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["연장 후 주의사항", "물 접촉 관리(24시간)", "올바른 세안 방법", "관리 제품 사용", "손상 예방", "재방문 주기"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 관리법을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "👁️", "label": "속눈썹샵" },
+        { "icon": "💖", "label": "뷰티샵" },
+        { "icon": "✨", "label": "연장·미용" },
+        { "icon": "💄", "label": "메이크업샵" },
+        { "icon": "💅", "label": "네일&뷰티" },
+        { "icon": "🏬", "label": "프랜차이즈" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 관리 카드",
+      "cards": [
+        { "icon": "⏳", "title": "연장 후 24시간", "desc": "24시간 동안 물과 습기를\n피해주세요." },
+        { "icon": "💦", "title": "물 접촉 주의", "desc": "사우나·수영·찜질은\n며칠간 자제해요." },
+        { "icon": "🧼", "title": "세안 방법", "desc": "비비지 않고 부드럽게\n세안해요." },
+        { "icon": "🚫", "title": "관리 제품", "desc": "오일 성분 제품은\n접촉을 피해요." },
+        { "icon": "🖐️", "title": "손상 예방", "desc": "비비거나 잡아당기지\n않아요." },
+        { "icon": "📅", "title": "재방문 주기", "desc": "2~3주 간격 리터치로\n풍성하게 유지해요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "속눈썹 관리 체크리스트",
+      "checklistDesc": "연장 후 집에서 지켜야 할 관리를 점검해보세요!",
+      "checklistItems": [
+        { "icon": "⏳", "label": "연장 후 24시간 물을 피했어요" },
+        { "icon": "💦", "label": "사우나·수영을 자제했어요" },
+        { "icon": "🧼", "label": "비비지 않고 부드럽게 세안했어요" },
+        { "icon": "🚫", "label": "오일 성분 제품을 피했어요" },
+        { "icon": "📅", "label": "2~3주 리터치 주기를 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "예쁜 속눈썹을 오래 유지하는 건 작은 관리부터!\n비비지 않는 습관이 가장 중요해요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "연장 후 24시간 이내에\n물에 닿아도 괜찮다?", "a": "X", "expl": "접착이 굳기 전 물은 금물!\n24시간은 물을 피해주세요." },
+        { "q": "오일 성분 제품은 속눈썹\n유지에 영향을 줄 수 있다?", "a": "O", "expl": "오일은 접착력을 약하게 해요.\n오일프리 제품을 사용하세요." },
+        { "q": "속눈썹을 자주 비비면\n손상되기 쉽다?", "a": "O", "expl": "비비고 잡아당기면 빠지기 쉬워요.\n부드럽게 다뤄주세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n속눈썹 관리 방법을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 관리로 풍성한 속눈썹을 오래 유지해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "⏱️", "label": "유지 기간 향상" },
+        { "icon": "👁️", "label": "속눈썹 손상 예방" },
+        { "icon": "🔁", "label": "재방문율 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 속눈썹샵", "phone": "02-1234-5678", "kakao": "카카오채널 @속눈썹", "instagram": "인스타 DM 문의", "note": "관리·예약 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

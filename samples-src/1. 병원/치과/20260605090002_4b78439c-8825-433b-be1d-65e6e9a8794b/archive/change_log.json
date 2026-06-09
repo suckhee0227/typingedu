@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "50f2ffc7-4d03-4abc-9d0b-6c4ba3672060",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.261467+00:00",
+      "summary": "발치·임플란트 후 관리 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

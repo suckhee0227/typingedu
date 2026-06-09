@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#1864AB", "primaryDark": "#0B4884", "accent": "#E8590C", "ink": "#16263F", "bgTop": "#E4EEF8", "bgBottom": "#F5F9FD" },
+      "brandIcon": "📖",
+      "brandLabel": "국어·논술",
+      "startSub": "국어·논술 · 초등·중등",
+      "startTitle": "어휘·문장 이해\n스마트 퀴즈",
+      "startDesc": "핵심 어휘와 표현을 카드로 익히고\n퀴즈로 점검하며 독해력을 키워요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["핵심 어휘 익히기", "관용 표현·속담", "비유와 표현 방법", "글의 요약", "주장과 근거", "퀴즈로 핵심 점검"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 어휘를 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" },
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "어휘·표현 카드",
+      "cards": [
+        { "icon": "🤔", "title": "신중하다", "desc": "뜻: 매우 조심스럽게\n생각하고 행동하다." },
+        { "icon": "💗", "title": "공감", "desc": "뜻: 남의 감정이나 생각을\n함께 느끼는 것." },
+        { "icon": "🎭", "title": "비유", "desc": "어떤 것을 다른 것에\n빗대어 표현하는 방법." },
+        { "icon": "📝", "title": "요약", "desc": "글의 중요한 내용만\n짧게 간추리는 것." },
+        { "icon": "⚖️", "title": "주장과 근거", "desc": "주장은 내 의견,\n근거는 그렇게 생각한 까닭." },
+        { "icon": "🗣️", "title": "속담", "desc": "조상의 지혜와 교훈을\n담은 짧은 말." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 어휘와 표현을 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🤔", "label": "'신중하다'의 뜻을 알았어요" },
+        { "icon": "💗", "label": "'공감'의 뜻을 알았어요" },
+        { "icon": "🎭", "label": "비유가 무엇인지 이해했어요" },
+        { "icon": "📝", "label": "글을 요약하는 법을 익혔어요" },
+        { "icon": "⚖️", "label": "주장에는 근거가 필요함을 알았어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "모르는 낱말은 앞뒤 문장으로 뜻을 짐작해봐요.\n많이 읽을수록 어휘력이 자라요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "'신중하다'는 '조심스럽게 생각하고\n행동하다'라는 뜻이다?", "a": "O", "expl": "맞아요! '신중하다'는 조심스럽게\n생각하고 행동하는 것을 뜻해요." },
+        { "q": "비유는 사실을 있는 그대로만\n설명하는 방법이다?", "a": "X", "expl": "비유는 어떤 것을 다른 것에\n빗대어 표현하는 방법이에요." },
+        { "q": "주장을 할 때에는\n근거가 필요하다?", "a": "O", "expl": "맞아요! 주장에는 그렇게 생각한\n근거가 있어야 설득력이 생겨요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n어휘·표현을 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 어휘를 복습하며 익혀봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "📈", "label": "어휘력·독해력 향상" },
+        { "icon": "✍️", "label": "표현력 향상" },
+        { "icon": "💪", "label": "국어 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "어휘 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 국어·논술학원", "phone": "02-1234-5678", "kakao": "카카오채널 @국어논술", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

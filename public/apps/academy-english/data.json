@@ -1,0 +1,82 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#0CA678", "primaryDark": "#087F5B", "accent": "#FAB005", "ink": "#143A30", "bgTop": "#E3F6EF", "bgBottom": "#F4FCF9" },
+      "brandIcon": "🔤",
+      "brandLabel": "영어학원",
+      "startSub": "영어학원 · 초등·중등",
+      "startTitle": "영어 단어 복습\n스마트 카드",
+      "startDesc": "핵심 영단어를 카드로 익히고\n퀴즈로 점검하며 어휘력을 키워요.",
+      "learnTitle": "오늘의 학습 목표",
+      "learnList": ["핵심 영단어 익히기", "단어의 뜻 확인", "발음과 예문", "반의어·유의어", "퀴즈로 핵심 점검", "복습으로 기억 굳히기"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 단어를 익혀요", "체크리스트로 스스로 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "대상 학년",
+      "industries": [
+        { "icon": "3️⃣", "label": "초3" },
+        { "icon": "4️⃣", "label": "초4" },
+        { "icon": "5️⃣", "label": "초5" },
+        { "icon": "6️⃣", "label": "초6" },
+        { "icon": "🎒", "label": "중1" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "영어 단어 카드",
+      "cards": [
+        { "icon": "🍎", "title": "apple", "desc": "뜻: 사과\n예문: I eat an apple." },
+        { "icon": "🦁", "title": "brave", "desc": "뜻: 용감한\n예문: a brave boy." },
+        { "icon": "📚", "title": "library", "desc": "뜻: 도서관\n예문: Be quiet in the library." },
+        { "icon": "🍽️", "title": "hungry", "desc": "뜻: 배고픈\n예문: I am hungry now." },
+        { "icon": "🧼", "title": "clean", "desc": "뜻: 깨끗한 / 청소하다\n예문: Clean your room." },
+        { "icon": "✈️", "title": "travel", "desc": "뜻: 여행하다\n예문: I travel by train." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "점검하기",
+      "checklistTitle": "학습 점검",
+      "checklistDesc": "방금 익힌 단어를 스스로 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🍎", "label": "apple 의 뜻을 알았어요" },
+        { "icon": "🦁", "label": "brave 의 뜻을 알았어요" },
+        { "icon": "📚", "label": "library 의 뜻을 알았어요" },
+        { "icon": "🍽️", "label": "hungry 의 뜻을 알았어요" },
+        { "icon": "✈️", "label": "travel 의 뜻을 알았어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "단어는 예문과 함께 외우면 오래 기억돼요.\n소리 내어 읽으며 익혀봐요!",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "library 는 '도서관'\n이라는 뜻이다?", "a": "O", "expl": "맞아요! library 는\n'도서관'이라는 뜻이에요." },
+        { "q": "hungry 는 '목마른'\n이라는 뜻이다?", "a": "X", "expl": "hungry 는 '배고픈'이에요.\n'목마른'은 thirsty 예요." },
+        { "q": "brave 는 '용감한'\n이라는 뜻이다?", "a": "O", "expl": "맞아요! brave 는\n'용감한'이라는 뜻이에요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n오늘의 영단어를 완벽하게 익혔어요 👏",
+      "resultGood": "수고했어요!\n오늘 배운 단어를 복습하며 익혀봐요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "학습 효과",
+      "effects": [
+        { "icon": "📈", "label": "어휘력 향상" },
+        { "icon": "🗣️", "label": "발음·예문 학습" },
+        { "icon": "💪", "label": "영어 자신감 상승" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "단어 카드 다시 보기",
+      "reviewChecklistBtn": "학습 점검 다시 보기",
+      "contactTitle": "학원 안내",
+      "contact": { "name": "OO 영어학원", "phone": "02-1234-5678", "kakao": "카카오채널 @영어학원", "instagram": "인스타 DM 문의", "note": "수업·상담 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

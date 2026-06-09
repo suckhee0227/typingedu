@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#C062A6", "primaryDark": "#97417E", "accent": "#F4B8D0", "ink": "#371E31", "bgTop": "#F8E5F1", "bgBottom": "#FEF5FB" },
+      "brandIcon": "💅",
+      "layout": "hero",
+      "brandLabel": "네일 케어",
+      "startSub": "네일샵",
+      "startTitle": "네일 시술 후\n관리 안내 스마트 퀴즈",
+      "startDesc": "시술 후 관리 방법을 익혀\n네일 유지 기간을 늘리고 만족도를 높여요.",
+      "learnTitle": "이런 내용을 배워요",
+      "learnList": ["시술 후 주의사항", "손톱 보호 방법", "큐티클·손 보습", "생활 속 주의", "손상 예방", "재방문 관리"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 관리법을 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "💅", "label": "네일샵" },
+        { "icon": "✨", "label": "젤네일 전문" },
+        { "icon": "🦶", "label": "네일&페디" },
+        { "icon": "🏬", "label": "프랜차이즈" },
+        { "icon": "🛍️", "label": "네일 용품점" },
+        { "icon": "💖", "label": "뷰티샵" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 관리 카드",
+      "cards": [
+        { "icon": "⏳", "title": "시술 후 2~3시간 주의", "desc": "완전히 굳을 때까지\n충격을 주지 않아요." },
+        { "icon": "🖐️", "title": "손톱 보호", "desc": "손톱을 무리하게\n사용하지 않아요." },
+        { "icon": "💧", "title": "보습 관리", "desc": "큐티클과 손을\n자주 보습해요." },
+        { "icon": "🧤", "title": "생활 속 주의", "desc": "설거지·청소할 때는\n장갑을 착용해요." },
+        { "icon": "🚫", "title": "손상 예방", "desc": "네일을 도구처럼\n사용하지 않아요." },
+        { "icon": "📅", "title": "재방문 관리", "desc": "3~4주 간격으로\n정기 관리를 받아요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "네일 관리 체크리스트",
+      "checklistDesc": "시술 후 집에서 지켜야 할 관리를 점검해보세요!",
+      "checklistItems": [
+        { "icon": "⏳", "label": "시술 후 2~3시간 충격을 주지 않았어요" },
+        { "icon": "🖐️", "label": "손톱을 도구처럼 사용하지 않았어요" },
+        { "icon": "💧", "label": "큐티클·손 보습을 했어요" },
+        { "icon": "🧤", "label": "물·세제 작업 시 장갑을 착용했어요" },
+        { "icon": "📅", "label": "3~4주 관리 주기를 확인했어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "보습과 작은 주의가 예쁜 네일을 오래가게 해요.\n생활 속 습관으로 관리해봐요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "시술 직후 바로\n설거지를 해도 괜찮다?", "a": "X", "expl": "굳기 전 물·세제는 손상의 원인!\n장갑을 끼거나 시간을 두세요." },
+        { "q": "손·큐티클 보습은\n네일 유지에 도움이 된다?", "a": "O", "expl": "보습은 들뜸을 막아\n네일을 오래 유지해줘요." },
+        { "q": "네일을 도구처럼 사용하면\n손상되기 쉽다?", "a": "O", "expl": "긁고 뜯는 사용은 손상의 원인!\n손톱은 손톱으로만 써주세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "학습 완료!",
+      "resultPerfect": "참 잘했어요!\n네일 관리 방법을 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n오늘 배운 관리로 예쁜 네일을 오래 유지해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "⏱️", "label": "네일 유지 기간 향상" },
+        { "icon": "🖐️", "label": "손톱 건강 보호" },
+        { "icon": "🔁", "label": "재방문율 향상" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 네일샵", "phone": "02-1234-5678", "kakao": "카카오채널 @네일", "instagram": "인스타 DM 문의", "note": "관리·예약 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}

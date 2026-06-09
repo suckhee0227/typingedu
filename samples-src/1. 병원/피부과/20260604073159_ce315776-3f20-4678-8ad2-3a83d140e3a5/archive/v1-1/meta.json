@@ -1,0 +1,155 @@
+{
+  "version": "v1-1",
+  "version_id": "34fa90e6-fb6a-4661-8c9f-9d744fafe6f6",
+  "parent": null,
+  "parent_id": null,
+  "timestamp": "2026-06-04T07:35:37.497057+00:00",
+  "summary": "당신은 의료 환자교육용 인터랙티브 웹 콘텐츠를 제작하는 전문가입니다.\n아래 명세에 따라 모바일 환경에서 동작하는 단일 HTML 파일(인터랙티브 퀴즈)을 만들어 주세요.\n\n[콘텐츠 개요]\n- 제목: 피부 시술 후 관리 퀴즈\n- 대상: 피부과 / 성형외과 / 에스테틱 의원 내원 환자 (1인용)\n- 사용 환경: 모바일 링크 및 QR코드 접속\n- 예상 소요 시간: 1~2분\n- 목적: 시술 후 주의사항을 쉽고 빠르게 안내하고, 환자가 스스로 체크하며 핵심 내용을 기억하도록 돕는다.\n\n[화면 구성 — 총 3단계]\n\n1단계) 시작 화면\n- 콘텐츠 제목과 간단한 안내 문구 표시\n- 안내 문구: \"시술 후 관리 포인트를 쉽고 빠르게 확인해보세요!\"\n- 우상단에 '예상시간 1~2분', '총 문항 3문항' 표시\n- '시작하기' 버튼 배치 → 누르면 다음 단계로 이동\n- 분위기: 부드럽고 따뜻한 피부과 톤, 환자 교육용 콘텐츠 느낌\n\n2단계) 시술 후 관리 포인트 (체크리스트)\n- 환자가 직접 체크할 수 있는 체크리스트 형식\n- 안내: \"중요한 관리 사항을 확인하고 체크해보세요!\"\n- 항목:\n  · 시술 부위를 손으로 만지지 않기\n  · 사우나·찜질방·격한 운동 피하기\n  · 자외선 차단제 사용하기\n  · 재생크림 또는 연고 올바르게 사용하기\n  · 이상 증상 발생 시 병원 문의하기\n- 각 항목에 어울리는 아이콘 배치\n\n3단계) OX 퀴즈 (3문항)\n- 핵심 내용을 OX 형식으로 다시 확인\n- 정답 선택 시 짧은 피드백 제공\n  예) 문항: \"시술 후에는 사우나와 격한 운동을 피하는 것이 좋다.\"\n      정답: O → \"정답! 열감과 자극을 줄이기 위해 사우나와 격한 운동을 피해주세요.\"\n- 3문항을 모두 풀면 완료 화면으로 이동\n\n완료 화면)\n- \"퀴즈 완료!\" 메시지 및 \"수고하셨습니다.\" 문구\n- \"시술 후 관리 포인트를 잘 기억해 주세요.\" 안내\n- 총 점수 표시 (예: 3 / 3)\n- 병원 문의 안내: \"궁금한 점이 있으시면 언제든지 병원으로 문의해주세요.\"\n\n[디자인 가이드]\n- 컬러: 연한 핑크/코랄 계열 + 화이트 배경, 부드럽고 깨끗한 의료 톤\n- 폰트: 가독성 높은 한글 산세리프\n- 캐릭터/아이콘: 친근한 일러스트(예: 미소짓는 물방울 캐릭터, 의료진 일러스트)\n- 모바일 세로 화면에 최적화, 버튼은 손가락으로 누르기 쉬운 크기\n\n[기술 요구사항]\n- 단일 HTML 파일로 작성 (HTML + CSS + JavaScript 포함)\n- 별도 라이브러리 없이 동작하도록 구성\n- 단계 전환은 화면 내에서 자연스럽게 처리\n\n핵심 의도: 환자가 안내문을 단순히 읽고 끝나는 것이 아니라,\n직접 체크하고 퀴즈에 참여하며 이해도를 높이는 구조로 만들어 주세요.",
+  "changes": [
+    {
+      "name": "main.js",
+      "path": "main.js",
+      "type": "Add"
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "Add"
+    },
+    {
+      "name": "data.json",
+      "path": "data.json",
+      "type": "Add"
+    },
+    {
+      "name": "main.ts",
+      "path": "main.ts",
+      "type": "Add"
+    },
+    {
+      "name": "app.ts",
+      "path": "app.ts",
+      "type": "Add"
+    },
+    {
+      "name": "appHelper.ts",
+      "path": "appHelper.ts",
+      "type": "Add"
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "tsconfig.json",
+      "type": "Add"
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail.webp",
+      "path": "assets/thumbnail.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_256.webp",
+      "path": "assets/thumbnail_256.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_128.webp",
+      "path": "assets/thumbnail_128.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_64.webp",
+      "path": "assets/thumbnail_64.webp",
+      "type": "Add"
+    },
+    {
+      "name": "icon.webp",
+      "path": "assets/icon.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_512.webp",
+      "path": "assets/thumbnail_512.webp",
+      "type": "Add"
+    }
+  ],
+  "no_changes": [],
+  "file_index": {
+    "app.ts": {
+      "hash": "e8751a8aeb55a8bd35fa75225501c5926dc3784f36bdc325907a5d474324cab6",
+      "size": 19034,
+      "mtime": 1780558532.957
+    },
+    "main.js": {
+      "hash": "36192ef294976d9d1f547025e1c685f39c9c318e5bfddf64c301f541fc55de59",
+      "size": 64748,
+      "mtime": 1780558537.452
+    },
+    "main.ts": {
+      "hash": "bb854eedcafcb798e1a5e010af89e3cf951fa86f53d9c08a9cdc128ccaaed047",
+      "size": 5099,
+      "mtime": 1779816985.0
+    },
+    "data.json": {
+      "hash": "e95d28d5b88e4e2e150bf8817e42c7e11fbdb184002b9c86acb5c5e073a1c181",
+      "size": 2316,
+      "mtime": 1780558484.744
+    },
+    "style.css": {
+      "hash": "9441d16d7ca5dc327f1d95eff470b99d2eac975e25e134c98ad94332e1c95480",
+      "size": 754,
+      "mtime": 1779816985.0
+    },
+    "index.html": {
+      "hash": "0f57e329738172cfd0a7bda4003e050b56dcbdb086f05c1a2101f1ee3eabbb90",
+      "size": 13358,
+      "mtime": 1779816985.0
+    },
+    "appHelper.ts": {
+      "hash": "6a19e4fefdf9b1fb69f0ac969cb952897f070ed835dfa88f291ae1ac39dbac5f",
+      "size": 12926,
+      "mtime": 1779816985.0
+    },
+    "tsconfig.json": {
+      "hash": "2d4ae3b301fae02ce25a2fd5a7b3ef2ba161ecb983a496dd5294ab5ec7f9b01c",
+      "size": 684,
+      "mtime": 1779816985.0
+    },
+    "assets/icon.webp": {
+      "hash": "45f0ec6f62092921d350bd7c7a705929e5049426ebd9f3eae03077f5b6e3477a",
+      "size": 1008,
+      "mtime": 1779816985.0
+    },
+    "assets/thumbnail.webp": {
+      "hash": "f0a028030439b3de74847e70722921d51572c8628797c873cec2e79f61144b53",
+      "size": 7446,
+      "mtime": 1779816985.0
+    },
+    "assets/thumbnail_64.webp": {
+      "hash": "37aa54138742116bb16cd2b00f2ee52cb3a5cb26c3a5875378231a172aa41d89",
+      "size": 414,
+      "mtime": 1779816985.0
+    },
+    "assets/thumbnail_128.webp": {
+      "hash": "dcce43aa961a0f646043ac50fd60898ab98cd69fe3192039c403a65c7adc48a8",
+      "size": 954,
+      "mtime": 1779816985.0
+    },
+    "assets/thumbnail_256.webp": {
+      "hash": "610092cf019589b2259d8330fc9acd2629c494ea56fb69f810c925b5e6c33db2",
+      "size": 1924,
+      "mtime": 1779816985.0
+    },
+    "assets/thumbnail_512.webp": {
+      "hash": "e18d3524c493ecd9287563d17ea55bdb978557d7a9c7c83580501e905e69848b",
+      "size": 3862,
+      "mtime": 1779816985.0
+    }
+  },
+  "engine_version": "0.3.2",
+  "request_id": "bf987525-60e0-4169-b21b-40814d9fd3eb"
+}

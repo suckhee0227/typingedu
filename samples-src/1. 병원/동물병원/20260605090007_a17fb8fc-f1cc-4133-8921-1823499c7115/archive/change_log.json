@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "5f296925-4868-4133-9bdc-0cbf8e1cc2ae",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.454597+00:00",
+      "summary": "반려동물 수술·접종 후 관리 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

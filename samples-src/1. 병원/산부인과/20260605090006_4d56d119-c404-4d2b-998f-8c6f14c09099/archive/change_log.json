@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "17c7ac5c-8ec4-433c-9ac7-a589be9e4f12",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.415522+00:00",
+      "summary": "임신 초기·산전검사 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

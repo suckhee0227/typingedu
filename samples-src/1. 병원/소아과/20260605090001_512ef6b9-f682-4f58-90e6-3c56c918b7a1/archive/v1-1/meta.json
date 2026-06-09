@@ -1,0 +1,155 @@
+{
+  "version": "v1-1",
+  "version_id": "5ff9aca5-e10d-4dbb-80c8-6e655bb2896f",
+  "parent": null,
+  "parent_id": null,
+  "timestamp": "2026-06-05T08:33:18.223157+00:00",
+  "summary": "아이 열날 때 대처 스마트 안내",
+  "changes": [
+    {
+      "name": "app.ts",
+      "path": "app.ts",
+      "type": "Add"
+    },
+    {
+      "name": "appHelper.ts",
+      "path": "appHelper.ts",
+      "type": "Add"
+    },
+    {
+      "name": "icon.webp",
+      "path": "assets/icon.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail.webp",
+      "path": "assets/thumbnail.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_128.webp",
+      "path": "assets/thumbnail_128.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_256.webp",
+      "path": "assets/thumbnail_256.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_512.webp",
+      "path": "assets/thumbnail_512.webp",
+      "type": "Add"
+    },
+    {
+      "name": "thumbnail_64.webp",
+      "path": "assets/thumbnail_64.webp",
+      "type": "Add"
+    },
+    {
+      "name": "data.json",
+      "path": "data.json",
+      "type": "Add"
+    },
+    {
+      "name": "index.html",
+      "path": "index.html",
+      "type": "Add"
+    },
+    {
+      "name": "main.js",
+      "path": "main.js",
+      "type": "Add"
+    },
+    {
+      "name": "main.ts",
+      "path": "main.ts",
+      "type": "Add"
+    },
+    {
+      "name": "style.css",
+      "path": "style.css",
+      "type": "Add"
+    },
+    {
+      "name": "tsconfig.json",
+      "path": "tsconfig.json",
+      "type": "Add"
+    }
+  ],
+  "no_changes": [],
+  "file_index": {
+    "app.ts": {
+      "hash": "089f5a7d3269cd70d868994210f524a1738ac0f3127596f8291f77c9112af8d2",
+      "size": 29136,
+      "mtime": 1780647938.7725377
+    },
+    "appHelper.ts": {
+      "hash": "6a19e4fefdf9b1fb69f0ac969cb952897f070ed835dfa88f291ae1ac39dbac5f",
+      "size": 12926,
+      "mtime": 1780639159.8154418
+    },
+    "assets/icon.webp": {
+      "hash": "6015fb58c677fcd25cb27aa4a399a1ddc3408e5f9d6c32a0e800572a88d4318e",
+      "size": 1290,
+      "mtime": 1780648398.2228887
+    },
+    "assets/thumbnail.webp": {
+      "hash": "f9ccde8523195fb759a3a6a70fa36af04c5f73a977e687dbc14c1423b4960dc0",
+      "size": 10312,
+      "mtime": 1780648398.2039707
+    },
+    "assets/thumbnail_128.webp": {
+      "hash": "b667b2165f113b9bae65f433e20c2c1e87fa5a2f05862d952db3cc345d06aa40",
+      "size": 2212,
+      "mtime": 1780648398.2206085
+    },
+    "assets/thumbnail_256.webp": {
+      "hash": "20982b212f98593d199a427c2b4b20282ba43d182573ce1e1d520af3d612cad6",
+      "size": 4680,
+      "mtime": 1780648398.218529
+    },
+    "assets/thumbnail_512.webp": {
+      "hash": "6c91091039358c56abd93315f7f9045e34a73e5f4b81aea64f9bfc54e2c09b18",
+      "size": 9330,
+      "mtime": 1780648398.2144244
+    },
+    "assets/thumbnail_64.webp": {
+      "hash": "2739b3a85adbdd78b9ee278bdab6834d90b4b7caf3408ef4518dc4a7f3eb42d7",
+      "size": 872,
+      "mtime": 1780648398.2221088
+    },
+    "data.json": {
+      "hash": "fb329011b4082d77a328b33ac8c75ee8874eae57b9fb00ff83b9a6eb2d5e606a",
+      "size": 4560,
+      "mtime": 1780648398.190277
+    },
+    "index.html": {
+      "hash": "0f57e329738172cfd0a7bda4003e050b56dcbdb086f05c1a2101f1ee3eabbb90",
+      "size": 13358,
+      "mtime": 1780639159.816023
+    },
+    "main.js": {
+      "hash": "8e28dd41d4f7b22258af70b91783c6b41d17466d152ea3d5e2cfb43ba2c71262",
+      "size": 69641,
+      "mtime": 1780647955.8193865
+    },
+    "main.ts": {
+      "hash": "bb854eedcafcb798e1a5e010af89e3cf951fa86f53d9c08a9cdc128ccaaed047",
+      "size": 5099,
+      "mtime": 1780639159.8157628
+    },
+    "style.css": {
+      "hash": "9441d16d7ca5dc327f1d95eff470b99d2eac975e25e134c98ad94332e1c95480",
+      "size": 754,
+      "mtime": 1780639159.8162546
+    },
+    "tsconfig.json": {
+      "hash": "2d4ae3b301fae02ce25a2fd5a7b3ef2ba161ecb983a496dd5294ab5ec7f9b01c",
+      "size": 684,
+      "mtime": 1780639159.8164597
+    }
+  },
+  "engine_version": "0.3.2",
+  "request_id": "788cbe4c-4a78-4aa9-b7b0-14248a854245"
+}

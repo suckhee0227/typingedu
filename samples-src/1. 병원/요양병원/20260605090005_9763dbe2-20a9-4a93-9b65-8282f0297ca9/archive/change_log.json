@@ -1,0 +1,15 @@
+{
+  "versions": [
+    {
+      "version": "v1-1",
+      "version_id": "e8c5549f-a80f-4173-a734-a74b63566a3a",
+      "parent": null,
+      "parent_id": null,
+      "timestamp": "2026-06-05T08:33:18.376680+00:00",
+      "summary": "낙상·욕창 예방 스마트 안내",
+      "is_latest": true,
+      "is_current": true,
+      "is_published": false
+    }
+  ]
+}

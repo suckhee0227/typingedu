@@ -1,0 +1,145 @@
+{
+  "appData": {
+    "logicalWidth": 1920,
+    "logicalHeight": 1080
+  },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": {
+        "primary": "#2FA98E",
+        "primaryDark": "#24836E",
+        "bgTop": "#E1F2EF",
+        "bgBottom": "#F4FAF9",
+        "charTop": "#DDF1EC",
+        "charBottom": "#86CDBD"
+      },
+      "mascot": "👀",
+      "motif": "👓",
+      "layout": "centered",
+      "startSub": "안약 사용법·수술 후 관리",
+      "startTitle": "눈 건강 관리\n스마트 안내",
+      "startDesc": "안약 사용법과 주의사항을\n쉽고 빠르게 확인해보세요!",
+      "usageGuide": [
+        {
+          "icon": "🗂️",
+          "label": "단계별\n관리 가이드"
+        },
+        {
+          "icon": "✅",
+          "label": "체크리스트로\n상태 점검"
+        },
+        {
+          "icon": "❓",
+          "label": "퀴즈로\n내용 확인"
+        }
+      ],
+      "timeInfo": "예상시간: 2~3분",
+      "quizInfo": "총 문항: 3문항",
+      "startBtn": "시작하기",
+      "cardsTitle": "핵심 안내",
+      "cards": [
+        {
+          "icon": "💧",
+          "title": "",
+          "desc": "안약은 처방된 시간과 횟수에 맞게 사용해요."
+        },
+        {
+          "icon": "🧼",
+          "title": "",
+          "desc": "안약 넣기 전 손을 깨끗이 씻어요."
+        },
+        {
+          "icon": "🙈",
+          "title": "",
+          "desc": "눈을 비비거나 만지지 않아요."
+        },
+        {
+          "icon": "🕶️",
+          "title": "",
+          "desc": "외출 시 선글라스 착용, 자외선 차단을 해요."
+        },
+        {
+          "icon": "🏥",
+          "title": "",
+          "desc": "통증, 시력 저하는 병원에 연락해요."
+        }
+      ],
+      "cardPrev": "이전",
+      "cardNext": "다음",
+      "cardDone": "체크리스트로",
+      "checklistTitle": "관리 체크리스트",
+      "checklistDesc": "안약 사용과 주의사항을 확인하고 체크해보세요!",
+      "checklistItems": [
+        {
+          "icon": "💧",
+          "label": "안약을 처방된 시간과 횟수에 맞게 사용하기"
+        },
+        {
+          "icon": "🧼",
+          "label": "안약 사용 전 손을 깨끗이 씻기"
+        },
+        {
+          "icon": "🙈",
+          "label": "눈을 비비거나 만지지 않기"
+        },
+        {
+          "icon": "🕶️",
+          "label": "외출 시 선글라스 착용과 자외선 차단하기"
+        },
+        {
+          "icon": "🏥",
+          "label": "통증·시력 저하 등 증상이 있으면 병원에 연락하기"
+        }
+      ],
+      "checklistProgress": "{done} / {total} 확인 완료",
+      "checklistHint": "모든 항목을 체크하면 다음 단계로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "quizTitle": "OX 퀴즈",
+      "quizItems": [
+        {
+          "q": "안약을 넣은 직후 눈을 감지 않고\n바로 깜빡거리는 것이 좋다?",
+          "a": "X",
+          "expl": "안약을 넣은 후에는 1~2분 눈을 감고\n눈 안쪽을 살짝 눌러주면 흡수가 잘 됩니다."
+        },
+        {
+          "q": "안약을 넣기 전에는 손을\n깨끗이 씻어야 한다?",
+          "a": "O",
+          "expl": "손의 세균이 눈에 들어가면\n감염될 수 있어 꼭 씻어야 합니다."
+        },
+        {
+          "q": "수술 후 눈이 가려우면\n비벼도 괜찮다?",
+          "a": "X",
+          "expl": "비비면 상처가 생길 수 있어요.\n눈을 비비거나 만지지 마세요."
+        }
+      ],
+      "nextBtn": "다음 문항",
+      "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!",
+      "wrongText": "다시 확인해요",
+      "resultTitle": "퀴즈 완료!",
+      "resultPerfect": "수고하셨습니다!\n완벽하게 기억하고 계세요 👏",
+      "resultGood": "수고하셨습니다!\n핵심 포인트를 잘 기억해 주세요.",
+      "resultScore": "관리 확인 점수",
+      "resultDesc": "눈을 깨끗하고 편안하게 관리해 주세요.",
+      "restartBtn": "처음으로 돌아가기",
+      "contact": {
+        "name": "OO 안과",
+        "phone": "02-123-4567",
+        "hours": "평일 09:00~18:00",
+        "note": "통증·시야 이상이 있으면\n병원으로 문의해 주세요."
+      }
+    },
+    "en": {},
+    "zh": {},
+    "ja": {},
+    "es": {},
+    "fr": {}
+  },
+  "assetList": {
+    "images": [],
+    "sounds": []
+  }
+}

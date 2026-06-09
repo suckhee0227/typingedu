@@ -1,0 +1,84 @@
+{
+  "appData": { "logicalWidth": 1920, "logicalHeight": 1080 },
+  "textData": {
+    "default_language": "ko",
+    "supported_multiple_languages": false,
+    "need_update": false,
+    "ko": {
+      "theme": { "primary": "#4F46E5", "primaryDark": "#3730A3", "accent": "#22C55E", "ink": "#1E2140", "bgTop": "#E7E6FB", "bgBottom": "#F5F5FE" },
+      "brandIcon": "🏢",
+      "layout": "sidebar",
+      "brandLabel": "온보딩",
+      "startSub": "신입사원 온보딩",
+      "startTitle": "신입사원 온보딩\n스마트 안내 퀴즈",
+      "startDesc": "회사 생활의 첫걸음!\n신입사원이 알아야 할 핵심 정보를 학습해요.",
+      "learnTitle": "오늘의 학습 내용",
+      "learnList": ["회사 비전과 핵심 가치", "조직도·업무 구조", "근무 규정·근태", "복지·지원 제도", "보안·정보 보호", "사내 시스템·프로세스"],
+      "usageTitle": "이용 안내",
+      "usageList": ["카드를 넘겨 정보를 확인해요", "체크리스트로 직접 점검해요", "퀴즈로 학습 내용을 확인해요", "완료 후 다시 복습할 수 있어요"],
+      "industriesTitle": "적용 가능 업종",
+      "industries": [
+        { "icon": "🏢", "label": "기업·회사" },
+        { "icon": "🏫", "label": "교육기관" },
+        { "icon": "🏥", "label": "의료기관" },
+        { "icon": "🏬", "label": "프랜차이즈" },
+        { "icon": "🏛️", "label": "공공기관" },
+        { "icon": "🏭", "label": "제조·물류" }
+      ],
+      "timeInfo": "예상시간: 3~4분",
+      "quizInfo": "총 3문항 · 문항당 +10점",
+      "startBtn": "학습 시작하기",
+      "cardsTitle": "핵심 학습 카드",
+      "cards": [
+        { "icon": "🏷️", "title": "회사 소개", "desc": "비전·미션·핵심 가치를\n이해하고 소속감을 키워요." },
+        { "icon": "🗂️", "title": "조직과 업무", "desc": "조직도와 내 담당 업무,\n협업 구조를 파악해요." },
+        { "icon": "🗓️", "title": "근무 규정", "desc": "근태·휴가·복무 규정을\n정확히 익혀요." },
+        { "icon": "💝", "title": "복지 제도", "desc": "복지와 지원 제도를 확인해\n적극 활용해요." },
+        { "icon": "🔒", "title": "보안 & 윤리", "desc": "정보 보안과 윤리 기준을\n반드시 지켜요." },
+        { "icon": "💻", "title": "시스템·프로세스", "desc": "사내 시스템과 업무 프로세스\n사용법을 익혀요." }
+      ],
+      "cardPrev": "이전", "cardNext": "다음", "cardDone": "체크리스트로",
+      "checklistTitle": "온보딩 실전 체크리스트",
+      "checklistDesc": "입사 첫 주에 꼭 익혀야 할 항목을 점검해보세요!",
+      "checklistItems": [
+        { "icon": "🏷️", "label": "회사 비전·가치를 이해했어요" },
+        { "icon": "🗂️", "label": "조직도와 담당 업무를 파악했어요" },
+        { "icon": "🗓️", "label": "근무 규정·근태 방식을 확인했어요" },
+        { "icon": "🔒", "label": "보안·정보 보호 수칙을 숙지했어요" },
+        { "icon": "💻", "label": "사내 시스템 사용법을 익혔어요" }
+      ],
+      "checklistProgress": "{done} / {total} 점검 완료",
+      "checklistHint": "모든 항목을 체크하면 퀴즈로 넘어갈 수 있어요.",
+      "checklistNext": "퀴즈로 넘어가기",
+      "tipTitle": "TIP",
+      "tipDesc": "모르면 바로 질문하는 것이 가장 빠른 적응법!\n동료와 소통하며 한 걸음씩 익혀가요.",
+      "quizTitle": "확인 퀴즈",
+      "quizPointLabel": "+10",
+      "quizItems": [
+        { "q": "회사의 비밀 정보는 외부에\n자유롭게 공유해도 된다?", "a": "X", "expl": "기밀 정보는 외부 공유 금지!\n보안 규정을 반드시 지켜주세요." },
+        { "q": "연차 휴가는 입사 후 규정에\n따라 사용할 수 있다?", "a": "O", "expl": "근로기준과 사내 규정에 따라\n연차를 사용할 수 있어요." },
+        { "q": "보안·정보 보호 수칙은\n의무적으로 지켜야 한다?", "a": "O", "expl": "보안은 선택이 아닌 의무예요.\n작은 수칙부터 지켜주세요." }
+      ],
+      "nextBtn": "다음 문항", "lastBtn": "결과 확인하기",
+      "correctText": "정답이에요!", "wrongText": "다시 확인해요",
+      "resultTitle": "온보딩 완료!",
+      "resultPerfect": "참 잘했어요!\n회사의 핵심 정보를 완벽하게 익혔어요 👏",
+      "resultGood": "수고하셨어요!\n앞으로의 회사 생활을 응원해요.",
+      "resultScore": "획득 점수",
+      "effectsTitle": "기대 효과",
+      "effects": [
+        { "icon": "🚀", "label": "신입 적응 향상" },
+        { "icon": "🧩", "label": "조직 이해도 향상" },
+        { "icon": "🎓", "label": "온보딩 교육 효율화" }
+      ],
+      "actionsTitle": "다음 행동 선택",
+      "restartBtn": "처음으로",
+      "reviewCardsBtn": "핵심 카드 다시 보기",
+      "reviewChecklistBtn": "체크리스트 다시 보기",
+      "contactTitle": "문의 및 안내",
+      "contact": { "name": "OO 인사팀", "phone": "02-1234-5678", "kakao": "카카오채널 @인사", "instagram": "인스타 DM 문의", "note": "온보딩 관련 문의는 위 채널로 연락해 주세요." }
+    },
+    "en": {}, "zh": {}, "ja": {}, "es": {}, "fr": {}
+  },
+  "assetList": { "images": [], "sounds": [] }
+}
