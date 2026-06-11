@@ -59,6 +59,7 @@ export default function SampleTextbookOverlay() {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.25 }}
+          data-lenis-prevent
           className="fixed inset-0 z-[60] bg-gray-50 overflow-y-auto overscroll-contain"
         >
           {/* 헤더 + 카테고리 탭 */}
