@@ -44,7 +44,7 @@ npm run lint       # ESLint (flat config: eslint.config.js)
 
 ### 데모 교구 (live demo)
 `public/apps/<slug>/`에 독립 실행형 정적 앱(자체 `index.html` + `main.js` 번들)이 들어있고, 사이트는 iframe으로 띄운다.
-- **포트폴리오 데모**는 `PORTFOLIO_ITEMS`(`src/lib/constants.ts`)로 정의되고 PortfolioSection이 렌더. **DemoSection.tsx는 미사용 고아 컴포넌트** — 손대지 말 것.
+- **포트폴리오 데모**는 `PORTFOLIO_ITEMS`(`src/lib/constants.ts`)로 정의되고 PortfolioSection이 렌더. **미사용 고아 컴포넌트** — `App.tsx`에서 import되지 않으며 손대지 말 것: `sections/DemoSection.tsx`, `sections/TextbookSampleSection.tsx`, `three/TabletScene.tsx`(실험용 WIP, `@react-three/fiber`·`@react-three/drei` import하지만 둘 다 `package.json`에 없어 빌드 불가). 어떤 컴포넌트를 수정/삭제하기 전에 `App.tsx`(또는 다른 섹션)에서 실제로 import되는지 먼저 확인할 것.
 - **샘플교본 갤러리**는 `SAMPLE_ITEMS` + `SAMPLE_CATEGORIES`(`src/lib/constants.ts`)로 정의되고 `SampleTextbookOverlay`가 업종별 탭 그리드로 렌더.
 - 새 교구 추가: `public/apps/`에 정적 앱 폴더를 두고, 해당 상수 배열에 `demoUrl`/`thumbnail` 경로를 가리키는 항목을 추가한다. `samples-src/`는 갤러리에 올리기 전 **원본 소스 보관용**(빌드에 포함 안 됨).
 
